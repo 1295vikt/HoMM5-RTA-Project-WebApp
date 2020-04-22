@@ -1,4 +1,5 @@
-﻿using RTA_Project_DAL.Models;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using RTA_Project_DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace RTA_Project_DAL
 {
-    public class RTADatabaseContext : DbContext
+    public class RTADatabaseContext : IdentityDbContext
     {
         public RTADatabaseContext() : base(@"Data Source = .\SQLEXPRESS;integrated security = true; initial catalog = RTA")
         {

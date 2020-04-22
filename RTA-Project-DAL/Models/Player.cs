@@ -9,6 +9,7 @@ namespace RTA_Project_DAL.Models
     public class Player
     {
         public int Id { get; set; }
+        public Guid GuidKey { get; set; }
         public int AccountId { get; set; }
         public string Name { get; set; }
 

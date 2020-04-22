@@ -13,7 +13,7 @@ namespace RTA_Project_DAL.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202004201641594_InitialCreate"; }
+            get { return "202004220805435_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source
