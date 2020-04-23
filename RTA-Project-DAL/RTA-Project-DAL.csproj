@@ -90,16 +90,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202004220805435_InitialCreate.cs" />
-    <Compile Include="Migrations\202004220805435_InitialCreate.Designer.cs">
-      <DependentUpon>202004220805435_InitialCreate.cs</DependentUpon>
-    </Compile>
+    <Compile Include="enums\Faction.cs" />
+    <Compile Include="enums\Season.cs" />
+    <Compile Include="enums\TournamentGroupFormat.cs" />
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Faction.cs" />
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\Hero.cs" />
     <Compile Include="Models\Match.cs" />
     <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\PlayerStats.cs" />
     <Compile Include="Models\Tournament.cs" />
     <Compile Include="Models\TournamentGroup.cs" />
     <Compile Include="Models\TournamentPlayer.cs" />
@@ -110,11 +109,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202004220805435_InitialCreate.resx">
-      <DependentUpon>202004220805435_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

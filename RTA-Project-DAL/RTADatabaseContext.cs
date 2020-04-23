@@ -22,7 +22,6 @@ namespace RTA_Project_DAL
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
         }
 
-        public DbSet<Faction> Factions { get; set; }
         public DbSet<Hero> Heroes { get; set; }
         public DbSet<Game> Games { get; set; }
         public DbSet<Match> Matches { get; set; }

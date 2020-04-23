@@ -4,16 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RTA_Project_DAL.Models
+namespace RTA_Project_BL.Models
 {
-    public class Player
+    public class PlayerBL
     {
-        public int Id { get; set; }
-        public Guid GuidKey { get; set; }
         public int AccountId { get; set; }
         public string Name { get; set; }
-
-        public virtual PlayerStats Stats { get; set; }
     }
 
 }

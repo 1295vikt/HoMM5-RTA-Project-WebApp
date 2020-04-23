@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -11,7 +13,15 @@ namespace RTA_Project_DAL.Models
     {
         public int Id { get; set; }
         public int TournamentGroupId { get; set; }
+        public int NumberOfGames { get; set; }
+        [DefaultValue(false)]
+        public bool IsBestOfFormat { get; set; }
+        [DefaultValue(false)]
         public bool IsFinished { get; set; }
+        [DefaultValue(false)]
+        public bool IsCancelled { get; set; }
+        [DefaultValue(false)]
+        public bool IsTechnicalWin { get; set; }
         public DateTime DateFinished { get; set; }
 
         [ForeignKey("Player1")]
