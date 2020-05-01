@@ -8,6 +8,7 @@ namespace RTA_Project_BL.Models
 {
     public class MatchBL
     {
+        public int Id { get; set; }
         public int TournamentGroupId { get; set; }
         public int NumberOfGames { get; set; }
         public bool IsBestOfFormat { get; set; }

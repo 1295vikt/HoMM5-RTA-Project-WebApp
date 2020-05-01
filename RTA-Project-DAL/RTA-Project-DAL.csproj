@@ -100,6 +100,7 @@
     <Compile Include="Models\Player.cs" />
     <Compile Include="Models\PlayerStats.cs" />
     <Compile Include="Models\Tournament.cs" />
+    <Compile Include="Models\TournamentBracket.cs" />
     <Compile Include="Models\TournamentGroup.cs" />
     <Compile Include="Models\TournamentPlayer.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
@@ -109,6 +110,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SeedFiles\Players.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

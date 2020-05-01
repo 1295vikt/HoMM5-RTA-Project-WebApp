@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace RTA_Project_BL.Models
 {
-    public class TournamentPlayerBL
+    class TournamentBracketBL
     {
         public int Id { get; set; }
-        public bool Disqualified { get; set; }
-
-        public PlayerBL Player { get; set; }
+        public string BracketTag { get; set; }
+        public string NextBracketTagWinner { get; set; }
+        public string NextBracketTagLoser { get; set; }
     }
 }

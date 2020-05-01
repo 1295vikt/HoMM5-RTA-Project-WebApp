@@ -9,6 +9,7 @@ namespace RTA_Project_BL.Models
 {
     public class GameBL
     {
+        public int Id { get; set; }
         public int MatchId { get; set; }
         public int ReportingPlayerId { get; set; }
         public DateTime DateSubmitted { get; set; }

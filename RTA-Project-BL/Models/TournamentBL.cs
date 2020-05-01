@@ -8,6 +8,7 @@ namespace RTA_Project_BL.Models
 {
     public class TournamentBL
     {
+        public int Id { get; set; }
         public string NameRus { get; set; }
         public string NameEng { get; set; }
         public string MapVersion { get; set; }
