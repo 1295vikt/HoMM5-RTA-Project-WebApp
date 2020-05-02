@@ -9,35 +9,53 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Турниры", "Index", "Tournaments")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <center>
+        <div id="maincontainer">
+
+            <div id="ltop"></div>
+            <div id="rtop"></div>
+
+            <div id="left">
+
+                <a href="/" id="hlogo"></a>
+
+                <div class="mpoint"><img src="/Resources/icons/H5Pathfinding.png" height="34" width="34"><a href="http://forum.heroesleague.ru/viewtopic.php?f=27&t=20883">Все об RTA</a></div>
+                <div class="mpoint"><img src="/Resources/icons/H5Empathy.png" height="34" width="34"><a href="/Tournaments">Турниры</a></div>
+                <div class="mpoint"><img src="/Resources/icons/H5Archery.png" height="34" width="34"><a href="http://forum.heroesleague.ru/viewtopic.php?f=14&t=22488">Рейтинг</a></div>
+                <div class="mpoint"><img src="/Resources/icons/H5Scholar.png" height="34" width="34"><a href="#">Статистика</a></div>
+                <div class="mpoint"><img src="/Resources/icons/H5Recruitment.png" height="34" width="34"><a href="#">Новичкам</a></div>
+                <div class="mpoint"><img src="/Resources/icons/H5Diplomacy.png" height="34" width="34"><a href="http://forum.heroesleague.ru/">Форум</a></div>
+                <div class="mpoint"><img src="/Resources/icons/discord-logo.png" height="34" width="34"><a href="https://discord.gg/DCxUAvY">Группа Discord</a></div>
+
+
+                <div class="lseparator"></div>
+
+            </div>
+
+            <div id="right">
+                <div id="ltcorn"></div>
+                <div id="rtcorn"></div>
+                <div id="rtop2"></div>
+
+                <div id="loginpart">@Html.Partial("_LoginPartial")</div>
+
+                <div class="container body-content">
+                    @RenderBody()
+
+                </div>
+                <div id="rbot2"></div>
+            </div>
+
+
+
+
+
+
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+            @RenderSection("scripts", required: false)
+        </div>
+    </center>
 </body>
 </html>

@@ -1,7 +1,222 @@
-﻿body {
+﻿html {
+    height: 100%;
+}
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    padding: 0;
+    border: 0;
+    min-height: 100%;
+    margin: 0;
+    position: relative;
+    background: url('../Resources/background.jpg') no-repeat center fixed;
+    background-size: cover;
 }
+
+IMG {
+    border: 0;
+}
+
+A:link, A:active {
+    color: #0069b3;
+    text-decoration: underline;
+}
+
+A:visited {
+    color: #0069b3;
+}
+
+A:hover {
+    color: #c00;
+}
+
+
+/* Main styles */
+#maincontainer {
+    width: 1200px;
+    text-align: left;
+    padding-top: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+#left {
+    background: url('../Resources/lbg.jpg') 100% 0% repeat-y;
+    padding-bottom: 8192px;
+    margin-bottom: -8192px;
+    width: 265px;
+    float: left;
+}
+
+#right {
+    background: url('../Resources/rbg.jpg') 0% 0% repeat-y;
+    padding-bottom: 8192px;
+    margin-bottom: -8192px;
+    width: 935px;
+    float: right;
+    position: relative;
+}
+
+/* Left column styles */
+#ltop {
+    width: 265px;
+    height: 19px;
+    background: url('../Resources/ltop.gif') top left no-repeat;
+    float: left;
+}
+
+#hlogo {
+    display: block;
+    width: 265px;
+    height: 173px;
+    background: url('../Resources/hlogo.jpg') top right no-repeat;
+    margin-bottom: 5px;
+}
+
+.mpoint {
+    height: 32px;
+    background: url('../Resources/mpointbg.jpg') center right no-repeat;
+    padding-left: 45px;
+    margin-bottom: 3px;
+}
+
+    .mpoint IMG {
+        float: left;
+        margin-right: 5px;
+    }
+
+    .mpoint A:link,
+    .mpoint A:active,
+    .mpoint A:visited {
+        font-family: Times New Roman, Tahoma, sans-serif;
+        font-size: 16px;
+        color: #873420;
+        text-decoration: none;
+        font-weight: bold;
+        padding-top: 8px;
+        display: block;
+    }
+
+    .mpoint A:hover {
+        font-family: Times New Roman, Tahoma, sans-serif;
+        font-size: 16px;
+        color: #c00;
+        text-decoration: none;
+        font-weight: bold;
+        padding-top: 8px;
+        display: block;
+    }
+
+#mlsel A:link,
+#mlsel A:active,
+#mlsel A:visited,
+#mlsel A:hover {
+    padding-top: 6px !important;
+}
+
+#mlsel_empty {
+    background: url('../Resources/mpointbg_s.jpg') center right no-repeat;
+    margin-bottom: 3px;
+}
+
+#mlsel {
+    background: url('../Resources/mpointbg_s.jpg') center right no-repeat;
+    margin-bottom: 0;
+}
+
+    #mlsel P,
+    #mlsel_empty P {
+        font-family: Times New Roman, Tahoma, sans-serif;
+        font-size: 16px;
+        color: #900;
+        text-decoration: none;
+        font-weight: bold;
+        padding-top: 7px;
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+
+.lseparator {
+    height: 28px;
+    background: url('../Resources/lsepar.jpg') top right no-repeat;
+    margin-top: 5px;
+}
+
+
+#allt A:link,
+#allt A:active,
+#allt A:visited,
+#allt A:hover {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+
+#rtop {
+    width: 735px;
+    height: 19px;
+    background: url('../Resources/rtop.gif') top right no-repeat;
+    float: right;
+}
+
+#rtop2 {
+    width: 935px;
+    height: 75px;
+    background: url('../Resources/rtop2.jpg') top left no-repeat;
+}
+
+#rbot2 {
+    width: 935px;
+    height: 75px;
+    background: url('../Resources/rbot2.jpg') bottom left no-repeat;
+    position: relative;
+}
+
+
+#content {
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-top: 8px;
+}
+
+#content_wide {
+    padding-left: 16px;
+    padding-top: 8px;
+    position: relative;
+}
+
+
+
+#ltcorn {
+    position: absolute;
+    z-index: 2;
+    top: -5px;
+    left: -5px;
+    width: 50px;
+    height: 46px;
+    background: url('../Resources/ltcorn.png') top left no-repeat;
+    //background:none;
+    //filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Resources/ltcorn.png', sizingMethod='scale');
+}
+
+#rtcorn {
+    position: absolute;
+    z-index: 2;
+    top: -5px;
+    right: 20px;
+    width: 49px;
+    height: 46px;
+    background: url('../Resources/rtcorn.png') top left no-repeat;
+    //background:none;
+    //filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Resources/rtcorn.png', sizingMethod='scale');
+}
+
+
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
