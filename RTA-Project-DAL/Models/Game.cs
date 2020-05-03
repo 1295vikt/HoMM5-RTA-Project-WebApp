@@ -23,7 +23,7 @@ namespace RTA_Project_DAL.Models
         public bool IsTechnicalWin { get; set; }
 
         public Faction Faction1Id { get; set; }
-        public Faction Faction2Id { get; set; }
+        public Faction Faction2Id { get; set; }        
 
         [ForeignKey("Hero1")]
         public int Hero1Id { get; set; }
@@ -32,5 +32,8 @@ namespace RTA_Project_DAL.Models
 
         public virtual Hero Hero1 { get; set; }
         public virtual Hero Hero2 { get; set; }
+
+        public string Comment { get; set; }
+        public string MediaLink { get; set; }
     }
 }

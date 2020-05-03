@@ -90,10 +90,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbInitializer.cs" />
     <Compile Include="enums\Faction.cs" />
     <Compile Include="enums\Season.cs" />
     <Compile Include="enums\TournamentGroupFormat.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Article.cs" />
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\Hero.cs" />
     <Compile Include="Models\Match.cs" />
@@ -101,6 +103,7 @@
     <Compile Include="Models\PlayerStats.cs" />
     <Compile Include="Models\Tournament.cs" />
     <Compile Include="Models\TournamentBracket.cs" />
+    <Compile Include="Models\TournamentDescription.cs" />
     <Compile Include="Models\TournamentGroup.cs" />
     <Compile Include="Models\TournamentPlayer.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />

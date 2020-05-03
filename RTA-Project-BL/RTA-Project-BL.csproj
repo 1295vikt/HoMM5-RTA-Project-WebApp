@@ -68,12 +68,15 @@
   <ItemGroup>
     <Compile Include="Configs\BLAutofacConfig.cs" />
     <Compile Include="Configs\BLAutomapperProfile.cs" />
+    <Compile Include="Models\ArticleBL.cs" />
     <Compile Include="Models\GameBL.cs" />
     <Compile Include="Models\HeroBL.cs" />
     <Compile Include="Models\MatchBL.cs" />
     <Compile Include="Models\PlayerBL.cs" />
+    <Compile Include="Models\PlayerStatsBL.cs" />
     <Compile Include="Models\TournamentBL.cs" />
     <Compile Include="Models\TournamentBracketBL.cs" />
+    <Compile Include="Models\TournamentDescriptionBL.cs" />
     <Compile Include="Models\TournamentGroupBL.cs" />
     <Compile Include="Models\TournamentPlayerBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

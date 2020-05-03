@@ -20,8 +20,11 @@ namespace RTA_Project_MVC.App_Start
                   new List<Profile>() { new WebAutomapperProfile(), new BLAutomapperProfile() }));
             builder.Register(c => config.CreateMapper());
 
-            builder.RegisterType<TournamentService>().As<ITournamentService>();
 
+            builder.RegisterType<TournamentService>().As<ITournamentService>();
+            builder.RegisterType<TournamentGroupService>().As<ITournamentGroupService>();
+
+            builder.RegisterModule<BLAutofacConfig>();
 
             var container = builder.Build();
 

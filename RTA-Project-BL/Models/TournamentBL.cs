@@ -16,9 +16,13 @@ namespace RTA_Project_BL.Models
         public byte Season { get; set; }
 
         public bool IsOfficial { get; set; }
+        public bool IsSeasonal { get; set; }
         public bool IsPrivate { get; set; }
+
 
         public virtual List<TournamentGroupBL> TournamentGroups { get; set; }
         public virtual List<TournamentPlayerBL> TournamentPlayers { get; set; }
+
+        public TournamentDescriptionBL Description { get; set; }
     }
 }

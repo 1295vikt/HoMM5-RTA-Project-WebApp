@@ -16,7 +16,7 @@ namespace RTA_Project_DAL.Models
         public string NameEng { get; set; }
         public string MapVersion { get; set; }
         public int Year { get; set; }
-        public Season Season { get; set; }
+        public Season Season { get; set; }        
 
         [DefaultValue(false)]
         public bool IsActive { get; set; }
@@ -27,10 +27,14 @@ namespace RTA_Project_DAL.Models
         [DefaultValue(false)]
         public bool IsOfficial { get; set; }
         [DefaultValue(false)]
+        public bool IsSeasonal { get; set; }
+        [DefaultValue(false)]
         public bool IsPrivate { get; set; }
 
         public virtual List<TournamentGroup> TournamentGroups { get; set; }
         public virtual List<TournamentPlayer> TournamentPlayers { get; set; }
+
+        public virtual TournamentDescription Description { get; set; }
 
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RTA_Project_MVC.App_Start;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,6 +17,7 @@ namespace RTA_Project_MVC
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            WebAutofacConfig.ConfigureContainer();
         }
     }
 }

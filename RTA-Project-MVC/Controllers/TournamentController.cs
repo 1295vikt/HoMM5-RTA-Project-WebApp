@@ -12,15 +12,15 @@ namespace RTA_Project_MVC.Controllers
     public class TournamentController : Controller
     {
 
-        //private readonly ITournamentService _tournamentService;
-        //private readonly ITournamentGroupService _tournamentGroupService;
-        //private readonly IMapper _mapper;
-        //public TournamentController(ITournamentService tournamentService, ITournamentGroupService tournamentGroupService, IMapper mapper)
-        //{
-        //    _tournamentService = tournamentService;
-        //    _tournamentGroupService = tournamentGroupService;
-        //    _mapper = mapper;
-        //}
+        private readonly ITournamentService _tournamentService;
+        private readonly ITournamentGroupService _tournamentGroupService;
+        private readonly IMapper _mapper;
+        public TournamentController(ITournamentService tournamentService, ITournamentGroupService tournamentGroupService, IMapper mapper)
+        {
+            _tournamentService = tournamentService;
+            _tournamentGroupService = tournamentGroupService;
+            _mapper = mapper;
+        }
 
         // GET: Tournament
         public ActionResult Index()
@@ -37,7 +37,7 @@ namespace RTA_Project_MVC.Controllers
         // GET: Tournament/Create
         public ActionResult Create()
         {
-            var model = new TournamentCreateModel();
+            var model = new TournamentCreateModel() { Year = DateTime.Now.Year};
             return View(model);
         }
 
@@ -45,16 +45,7 @@ namespace RTA_Project_MVC.Controllers
         [HttpPost]
         public ActionResult Create(TournamentCreateModel modlel)
         {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
                 return View();
-            }
         }
 
         // GET: Tournament/Edit/5

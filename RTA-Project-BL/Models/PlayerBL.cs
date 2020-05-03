@@ -11,6 +11,8 @@ namespace RTA_Project_BL.Models
         public int Id { get; set; }
         public int AccountId { get; set; }
         public string Name { get; set; }
+
+        public PlayerStatsBL Stats { get; set; }
     }
 
 }

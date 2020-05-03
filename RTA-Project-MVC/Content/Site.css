@@ -4,7 +4,6 @@
 
 body {
     padding-top: 50px;
-    padding-bottom: 20px;
     font-family: Tahoma, Arial, sans-serif;
     font-size: 14px;
     color: #000;
@@ -200,8 +199,6 @@ A:hover {
     width: 50px;
     height: 46px;
     background: url('../Resources/ltcorn.png') top left no-repeat;
-    //background:none;
-    //filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Resources/ltcorn.png', sizingMethod='scale');
 }
 
 #rtcorn {
@@ -212,8 +209,6 @@ A:hover {
     width: 49px;
     height: 46px;
     background: url('../Resources/rtcorn.png') top left no-repeat;
-    //background:none;
-    //filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Resources/rtcorn.png', sizingMethod='scale');
 }
 
 
@@ -237,3 +232,47 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#loginpart {
+    position: relative;
+    float: right;
+    right: -114px;
+    top: -52px;
+}
+
+ul#account-tab {
+    min-width: 400px;
+    list-style: none;
+    position: relative;
+}
+
+    ul#account-tab li {
+        display: inline;
+        padding-right: 5px;
+    }
+
+.account-tab-button {
+    background: url(../Resources/mpointbg.jpg);
+    width: 96px;
+    height: 32px;
+    display: inline-block;
+    text-align: center;
+}
+
+    .account-tab-button A:link,
+    .account-tab-button A:active,
+    .account-tab-button A:visited {
+        font-family: Times New Roman, Tahoma, sans-serif;
+        font-size: 16px;
+        color: #873420;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .account-tab-button A:hover {
+        font-family: Times New Roman, Tahoma, sans-serif;
+        font-size: 16px;
+        color: #c00;
+        text-decoration: none;
+        font-weight: bold;
+    }

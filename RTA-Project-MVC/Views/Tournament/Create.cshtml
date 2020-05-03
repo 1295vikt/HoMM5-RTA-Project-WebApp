@@ -4,98 +4,117 @@
     ViewBag.Title = "Create";
 }
 
-<h2>Create</h2>
+<script src="~/Plugins/ckeditor/ckeditor.js"></script>
+
+<h2>Создание турнира</h2>
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
-<div class="form-horizontal">
-    <h4>TournamentCreateModel</h4>
-    <hr />
-    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-    <div class="form-group">
-        @Html.LabelFor(model => model.NameRus, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.NameRus, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.NameRus, "", new { @class = "text-danger" })
-        </div>
-    </div>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.MapVersion, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.MapVersion, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.MapVersion, "", new { @class = "text-danger" })
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <b class="control-label col-md-2">Название турнира</b>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NameRus, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NameRus, "", new { @class = "text-danger" })
+            </div>
         </div>
-    </div>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Year, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.Year, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Year, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <b class="control-label col-md-2">Версия карты</b>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.MapVersion, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MapVersion, "", new { @class = "text-danger" })
+            </div>
         </div>
-    </div>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Season, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.Season, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Season, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <b class="control-label col-md-2">Официальный турнир</b>
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.CheckBoxFor(model => model.IsOfficial, new { @id = "checkboxofficial" })
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Is2Stage, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            <div class="checkbox">
-                @Html.CheckBoxFor(model => model.Is2Stage, new { @checked = "checked", id = "checkbox2stage" })
+        <div class="form-group" id="yeardiv" style="display:none">
+            <b class="control-label col-md-2">Год</b>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Year, new { htmlAttributes = new { @class = "form-control", min = 2020, max = 2050 } })
+                @Html.ValidationMessageFor(model => model.Year, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <b class="control-label col-md-2">Сезонный турнир</b>
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.CheckBoxFor(model => model.IsSeasonal, new { id = "checkboxseasonal" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group" id="seasondiv" style="display:none">
+            <b class="control-label col-md-2">Сезон</b>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Season, Model.Seasons)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <b class="control-label col-md-2">Двухэтапный турнир</b>
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.CheckBoxFor(model => model.Is2Stage, new { id = "checkbox2stage" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <b class="control-label col-md-2" id="stage1desc">Формат турнира</b>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Stage1Format, Model.Formats)
+            </div>
+        </div>
+
+        <div class="form-group" id="stage2div" style="display:none">
+            <b class="control-label col-md-2" id="stage1desc">Формат 2го этапа</b>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Stage2Format, Model.Formats)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <b class="control-label col-md-2">Закрытый турнир</b>
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.CheckBoxFor(model => model.IsPrivate)
+                    @Html.ValidationMessageFor(model => model.IsPrivate, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <b class="control-label col-md-2">Описание турнира</b>
+            <div class="col-md-10" style="margin-top: 10px; max-width: 680px">
+                @Html.TextAreaFor(model => model.Description, new { @id = "TournamentDescription", @class = "form-control" }) @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                <script>
+                    CKEDITOR.replace("TournamentDescription", { htmlEncodeOutput: true });
+                </script>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Создать" class="btn btn-default" />
             </div>
         </div>
     </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Stage1Format, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.DropDownListFor(model => model.Stage1Format, Model.Format)
-        </div>
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Stage2Format, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.DropDownListFor(model => model.Stage2Format, Model.Format, new { htmlAttributes = new { @id = "2stagelist" } })
-        </div>
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.IsOfficial, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            <div class="checkbox">
-                @Html.CheckBoxFor(model => model.IsOfficial)
-                @Html.ValidationMessageFor(model => model.IsOfficial, "", new { @class = "text-danger" })
-            </div>
-        </div>
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.IsPrivate, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            <div class="checkbox">
-                @Html.CheckBoxFor(model => model.IsPrivate)
-                @Html.ValidationMessageFor(model => model.IsPrivate, "", new { @class = "text-danger" })
-            </div>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Create" class="btn btn-default" />
-        </div>
-    </div>
-</div>
 }
 
 <div>
@@ -104,15 +123,48 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+
     <script>
         $(document).ready(function () {
             $("#checkbox2stage").click(function () {
-                if ($(this).is(":checked"))
-                    $("#2stagelist").attr("disabled", false);
-                else
-                    $("#2stagelist").attr("disabled", true);
+                if ($(this).is(":checked")) {
+                    $("#stage1desc").text("Формат 1го этапа");
+                    $("#stage2div").show();
+                }
+
+                else {
+                    $("#stage1desc").text("Формат турнира");
+                    $("#stage2div").hide();
+                }
+
             });
         });
-
     </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#checkboxseasonal").click(function () {
+                if ($(this).is(":checked"))
+                    $("#seasondiv").show();
+
+                else
+                    $("#seasondiv").hide();
+
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#checkboxofficial").click(function () {
+                if ($(this).is(":checked"))
+                    $("#yeardiv").show();
+
+                else
+                    $("#yeardiv").hide();
+
+            });
+        });
+    </script>
+
 }

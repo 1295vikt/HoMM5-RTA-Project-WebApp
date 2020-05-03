@@ -10,10 +10,11 @@ using System.Threading.Tasks;
 
 namespace RTA_Project_DAL
 {
-    public class RTADatabaseContext : IdentityDbContext
+    public class RTADatabaseContext : DbContext
     {
         public RTADatabaseContext() : base(@"Data Source = .\SQLEXPRESS;integrated security = true; initial catalog = RTA")
         {
+            Database.SetInitializer(new DbInitializer());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -28,6 +29,11 @@ namespace RTA_Project_DAL
         public DbSet<Tournament> Tournaments { get; set; }
         public DbSet<TournamentGroup> TournamentGroups { get; set; }
         public DbSet<TournamentPlayer> TournamentPlayers { get; set; }
+        public DbSet<TournamentBracket> TournamentBrackets { get; set; }
+        public DbSet<TournamentDescription> TournamentDescriptions { get; set; }
+        public DbSet<Player> Players { get; set; }
+        public DbSet<PlayerStats> PlayerStats { get; set; }
+        public DbSet<Article> Articles { get; set; }
 
     }
 }

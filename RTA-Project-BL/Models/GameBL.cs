@@ -21,5 +21,8 @@ namespace RTA_Project_BL.Models
 
         public virtual HeroBL Hero1 { get; set; }
         public virtual HeroBL Hero2 { get; set; }
+
+        public string Comment { get; set; }
+        public string MediaLink { get; set; }
     }
 }

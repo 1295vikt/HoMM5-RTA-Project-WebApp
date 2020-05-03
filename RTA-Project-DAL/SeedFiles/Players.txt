@@ -1,64 +1,67 @@
-﻿Mithrandir
-RomaGl
-Mosol
-contrique  
-NirvanaWiz
-Sithis 
-Strider HL
-Mind
-vadolazo
-Miff
-kArtorFun
-Arantir
-dexterwar
-Dio
-Alex_nv
-Armadill0
-yungyarik
-sigurt900
-byterbrod
-mizargurus
-Sky
-BlackFox
-tek
-Kauzal
-Imladris
-dipper
-theOverlord 
-Sanguinius
-zub
-tomatan
-kuryndinm
-GedxBlood
-dwarve
-Diego
-Moonitouch
-shushu
-Esk1m0
-HRISTOS
-Zoulmur
-Corpse
-Disheppard
-JuDaR
-Nargott
-GODzilla
-Gerodot
-allemin
-Delta
-Techno
-RayFever
-9Energy
-Levis
-Veles201
-SpaceCowboy
-Syrill
-Longford
-Azaroof
-WhiteSwan
-Xokkeistik
-bezumnuixleb
-Jester101
-Kha
-WINgaeLL
-anduBrutus
-MoloX
+﻿Mithrandir	S	1383	1383	1	0	0	3
+vadolazo	S	1379	1382	3	5	6	24
+RomaGl	S	1357	1359	0	2	3	24
+Sithis 	S	1349	1396	2	5	2	15
+contrique	S	1349	1359	2	0	1	9
+Strider HL	S	1339	1373	3	3	2	21
+Moonitouch 	A+	1333	1333	1	0	2	4
+Armadill0  	S	1330	1390	3	2	0	13
+Ftor	A+	1320	1320	1	0	0	1
+Dexterwar	A+	1318	1318	5	1	5	18
+Mind 	S	1315	1377	0	2	3	17
+Kauzal	A+	1304	1304	0	0	0	5
+Mosol	S	1295	1364	1	2	0	10
+kArtorFun	S	1288	1355	5	3	5	27
+Arantir	A+	1277	1302	0	2	0	8
+sigurt900	A	1266	1266	0	0	0	6
+theOverlord	A	1265	1276	0	0	1	6
+Yung_Yarik	A	1265	1265	0	0	0	6
+Doge	A	1263	1263	0	0	0	2
+Diego	A	1259	1259	0	0	0	4
+Sanguinius	B+	1248	1248	0	0	1	1
+NirvanaWiz 	A+	1245	1313	0	2	1	14
+GedxBlood	A	1241	1289	0	0	0	11
+Alex_nv	A	1234	1291	1	0	0	31
+zub	A	1232	1284	1	1	2	23
+tomatan	B+	1224	1224	0	0	0	1
+Imladris	B+	1223	1223	0	0	0	11
+Mizargurus	B+	1221	1221	0	0	0	20
+banana	B+	1218	1218	0	0	0	1
+Levis 	B+	1216	1240	0	0	1	9
+Nargott	B+	1213	1236	0	0	0	4
+Techno	B+	1210	1216	0	0	0	3
+Miff	A	1208	1298	1	0	0	22
+Dio 	A	1200	1254	0	0	1	12
+Dwarve	B	1198	1198	0	0	0	5
+Gerodot 	B+	1198	1237	0	0	0	10
+Glock	B	1193	1193	0	0	0	1
+SpaceCowboy	B	1193	1198	0	0	0	2
+Delta	B	1190	1190	0	0	0	1
+esklm0	B	1186	1186	0	0	0	1
+Shushu	B+	1183	1204	0	0	0	3
+JuDaR	A	1182	1264	0	0	0	3
+RayFever	B	1177	1177	0	0	0	1
+Cliffe86	B	1171	1171	0	0	0	1
+Sky	B	1170	1170	0	0	0	2
+dim013	B	1169	1169	0	0	0	1
+Ngbfka	B	1169	1169	0	0	0	1
+kuryndinm	B	1168	1188	0	0	0	2
+9Energy	B	1163	1163	0	0	0	1
+Kha	B	1163	1163	0	0	0	1
+dipper	A	1162	1261	0	0	0	7
+Longford	B	1160	1160	0	0	0	1
+Zoulmur	B	1159	1191	0	0	0	2
+Jester101	B	1155	1155	0	0	0	1
+Smoker-	B	1154	1154	0	0	0	1
+BlackFox	B	1153	1153	0	0	0	4
+byterbrod	B	1150	1191	0	0	0	3
+Lolok	B	1149	1149	0	0	0	1
+Azaroof	B	1148	1180	0	0	0	2
+C0rpse	B+	1140	1203	0	0	0	5
+Tek	B	1137	1137	0	0	0	4
+Godzilla	B	1125	1168	0	0	0	6
+aliemin	B	1123	1165	0	0	0	2
+Syrill	B	1087	1087	0	0	0	18
+Disheppard	B	1080	1159	0	0	0	4
+WINgaeLL	B	1076	1142	0	0	0	3
+HRISTOS	B	1046	1091	0	0	0	5
