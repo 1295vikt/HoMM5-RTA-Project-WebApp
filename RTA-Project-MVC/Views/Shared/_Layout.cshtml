@@ -10,7 +10,6 @@
 </head>
 <body>
 
-    <center>
         <div id="maincontainer">
 
             <div id="ltop"></div>
@@ -36,15 +35,20 @@
             <div id="right">
                 <div id="ltcorn"></div>
                 <div id="rtcorn"></div>
+
                 <div id="rtop2"></div>
+                <div id="mainframe">
 
-                <div id="loginpart">@Html.Partial("_LoginPartial")</div>
+                    <div id="loginpart">@Html.Partial("_LoginPartial")</div>
 
-                <div class="container body-content">
-                    @RenderBody()
+                    <div class="container body-content col-md-10">
+                        @RenderBody()
 
+                    </div>
                 </div>
                 <div id="rbot2"></div>
+
+
             </div>
 
 
@@ -56,6 +60,6 @@
             @Scripts.Render("~/bundles/bootstrap")
             @RenderSection("scripts", required: false)
         </div>
-    </center>
+
 </body>
 </html>

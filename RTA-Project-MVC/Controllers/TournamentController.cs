@@ -37,6 +37,7 @@ namespace RTA_Project_MVC.Controllers
         // GET: Tournament/Create
         public ActionResult Create()
         {
+            var crap = _tournamentService.GetAll();
             var model = new TournamentCreateModel() { Year = DateTime.Now.Year};
             return View(model);
         }

@@ -13,6 +13,9 @@ namespace RTA_Project_BL.Models
         public string ShortDescription { get; set; }
         public string Content { get; set; }
 
+        public string Author { get; set; }
+        public DateTime Date { get; set; }
+
         public bool IsGuideMaterial { get; set; }
     }
 }

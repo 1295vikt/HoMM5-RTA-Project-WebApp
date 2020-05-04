@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
-using RTA_Project_DAL.Models;
+﻿using RTA_Project_DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

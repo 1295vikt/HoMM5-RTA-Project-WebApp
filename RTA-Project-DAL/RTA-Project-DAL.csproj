@@ -94,6 +94,10 @@
     <Compile Include="enums\Faction.cs" />
     <Compile Include="enums\Season.cs" />
     <Compile Include="enums\TournamentGroupFormat.cs" />
+    <Compile Include="Migrations\202005041019013_InitialCreate.cs" />
+    <Compile Include="Migrations\202005041019013_InitialCreate.Designer.cs">
+      <DependentUpon>202005041019013_InitialCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Article.cs" />
     <Compile Include="Models\Game.cs" />
@@ -116,6 +120,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="SeedFiles\Players.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202005041019013_InitialCreate.resx">
+      <DependentUpon>202005041019013_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

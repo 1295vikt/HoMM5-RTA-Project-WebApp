@@ -1,5 +1,7 @@
 ﻿html {
     height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -39,22 +41,22 @@ A:hover {
     width: 1200px;
     text-align: left;
     padding-top: 50px;
+    padding-bottom: 50px;
     overflow: hidden;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
 }
 
 #left {
     background: url('../Resources/lbg.jpg') 100% 0% repeat-y;
-    padding-bottom: 8192px;
-    margin-bottom: -8192px;
     width: 265px;
     float: left;
 }
 
 #right {
-    background: url('../Resources/rbg.jpg') 0% 0% repeat-y;
-    padding-bottom: 8192px;
-    margin-bottom: -8192px;
+    background: url('../Resources/rbg.jpg') 0% 0% repeat-y; 
     width: 935px;
     float: right;
     position: relative;
@@ -173,7 +175,8 @@ A:hover {
     width: 935px;
     height: 75px;
     background: url('../Resources/rbot2.jpg') bottom left no-repeat;
-    position: relative;
+    position: absolute;
+    bottom: 0px;
 }
 
 
@@ -233,15 +236,18 @@ textarea {
     max-width: 280px;
 }
 
-#loginpart {
+
+#mainframe {
     position: relative;
-    float: right;
-    right: -114px;
-    top: -52px;
+    top: -50px;
 }
 
+#loginpart {
+    position: relative;
+}
+
+
 ul#account-tab {
-    min-width: 400px;
     list-style: none;
     position: relative;
 }

@@ -20,7 +20,7 @@ namespace RTA_Project_MVC.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base(@"Data Source = .\SQLEXPRESS;integrated security = true; initial catalog = RTA", throwIfV1Schema: false)
+            : base(@"Data Source = .\SQLEXPRESS;integrated security = true; initial catalog = AccountsRTA", throwIfV1Schema: false)
         {
         }
 
