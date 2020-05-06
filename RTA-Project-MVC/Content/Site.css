@@ -6,7 +6,7 @@
 
 body {
     padding-top: 50px;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Monotype Corsiva, Times, Serif;
     font-size: 14px;
     color: #000;
     padding: 0;
@@ -16,24 +16,26 @@ body {
     position: relative;
     background: url('../Resources/background.jpg') no-repeat center fixed;
     background-size: cover;
+    cursor: url('../Resources/cursor/Default.png') 6 2, auto;
 }
 
-IMG {
-    border: 0;
+
+a {
+    cursor: url('../Resources/cursor/Finger.png') 6 2, pointer;
 }
 
-A:link, A:active {
-    color: #0069b3;
-    text-decoration: underline;
-}
+    A:link, A:active {
+        color: #0069b3;
+        text-decoration: underline;
+    }
 
-A:visited {
-    color: #0069b3;
-}
+    A:visited {
+        color: #0069b3;
+    }
 
-A:hover {
-    color: #c00;
-}
+    A:hover {
+        color: #c00;
+    }
 
 
 /* Main styles */
@@ -46,20 +48,28 @@ A:hover {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    height: 100%;
+    display: flex;
 }
 
 #left {
     background: url('../Resources/lbg.jpg') 100% 0% repeat-y;
     width: 265px;
     float: left;
+    margin-top: 18px;
+    padding-top: -18px;
+    min-height: 750px;
+    flex-grow: 1;
 }
 
 #right {
-    background: url('../Resources/rbg.jpg') 0% 0% repeat-y; 
+    background: url('../Resources/rbg.jpg') 0% 0% repeat-y;
     width: 935px;
     float: right;
+    margin-top: 18px;
+    margin-left: -1px;
+    min-height: 750px;
     position: relative;
+    flex-grow: 1;
 }
 
 /* Left column styles */
@@ -67,6 +77,8 @@ A:hover {
     width: 265px;
     height: 19px;
     background: url('../Resources/ltop.gif') top left no-repeat;
+    position: relative;
+    top: -18px;
     float: left;
 }
 
@@ -93,7 +105,6 @@ A:hover {
     .mpoint A:link,
     .mpoint A:active,
     .mpoint A:visited {
-        font-family: Times New Roman, Tahoma, sans-serif;
         font-size: 16px;
         color: #873420;
         text-decoration: none;
@@ -103,42 +114,12 @@ A:hover {
     }
 
     .mpoint A:hover {
-        font-family: Times New Roman, Tahoma, sans-serif;
         font-size: 16px;
         color: #c00;
         text-decoration: none;
         font-weight: bold;
         padding-top: 8px;
         display: block;
-    }
-
-#mlsel A:link,
-#mlsel A:active,
-#mlsel A:visited,
-#mlsel A:hover {
-    padding-top: 6px !important;
-}
-
-#mlsel_empty {
-    background: url('../Resources/mpointbg_s.jpg') center right no-repeat;
-    margin-bottom: 3px;
-}
-
-#mlsel {
-    background: url('../Resources/mpointbg_s.jpg') center right no-repeat;
-    margin-bottom: 0;
-}
-
-    #mlsel P,
-    #mlsel_empty P {
-        font-family: Times New Roman, Tahoma, sans-serif;
-        font-size: 16px;
-        color: #900;
-        text-decoration: none;
-        font-weight: bold;
-        padding-top: 7px;
-        margin: 0;
-        padding-bottom: 0;
     }
 
 
@@ -157,12 +138,21 @@ A:hover {
     font-weight: normal;
 }
 
-
+/* Right column styles */
 #rtop {
     width: 735px;
     height: 19px;
     background: url('../Resources/rtop.gif') top right no-repeat;
+    position: relative;
+    top: -18px;
     float: right;
+}
+
+#bartop {
+    background: url('../Resources/InfoBlock.png') top left no-repeat;
+    background-size: 900px 75px;
+    width: 900px;
+    height: 75px;
 }
 
 #rtop2 {
@@ -174,30 +164,19 @@ A:hover {
 #rbot2 {
     width: 935px;
     height: 75px;
-    background: url('../Resources/rbot2.jpg') bottom left no-repeat;
+    background: url('../Resources/rbot2.jpg') top left no-repeat;
     position: absolute;
     bottom: 0px;
-}
-
-
-#content {
-    padding-left: 30px;
-    padding-right: 50px;
-    padding-top: 8px;
-}
-
-#content_wide {
-    padding-left: 16px;
-    padding-top: 8px;
-    position: relative;
+    z-index: 2;
 }
 
 
 
 #ltcorn {
-    position: absolute;
+    position: relative;
+    top: -80px;
+    float: left;
     z-index: 2;
-    top: -5px;
     left: -5px;
     width: 50px;
     height: 46px;
@@ -205,29 +184,51 @@ A:hover {
 }
 
 #rtcorn {
-    position: absolute;
+    position: relative;
+    top: -80px;
+    float: right;
     z-index: 2;
-    top: -5px;
-    right: 20px;
+    right: 22px;
     width: 49px;
     height: 46px;
     background: url('../Resources/rtcorn.png') top left no-repeat;
+}
+
+#ltcorn2 {
+    position: absolute;
+    float: left;
+    z-index: 2;
+    left: -5px;
+    width: 50px;
+    height: 46px;
+    background: url('../Resources/ltcorn2.png') top left no-repeat;
+    margin-top: -46px;
+    bottom: -5px;
+}
+
+#rtcorn2 {
+    position: absolute;
+    float: right;
+    z-index: 2;
+    right: 22px;
+    width: 49px;
+    height: 46px;
+    background: url('../Resources/rtcorn2.png') top left no-repeat;
+    margin-top: -46px;
+    bottom: -5px;
 }
 
 
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 26px;
+    padding-right: 44px;
+    position: relative;
+    margin-top: -74px;
+    z-index: 3;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
-}
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
@@ -237,13 +238,9 @@ textarea {
 }
 
 
-#mainframe {
-    position: relative;
-    top: -50px;
-}
 
 #loginpart {
-    position: relative;
+    display: inline-block;
 }
 
 
@@ -268,7 +265,6 @@ ul#account-tab {
     .account-tab-button A:link,
     .account-tab-button A:active,
     .account-tab-button A:visited {
-        font-family: Times New Roman, Tahoma, sans-serif;
         font-size: 16px;
         color: #873420;
         text-decoration: none;
@@ -276,9 +272,118 @@ ul#account-tab {
     }
 
     .account-tab-button A:hover {
-        font-family: Times New Roman, Tahoma, sans-serif;
         font-size: 16px;
         color: #c00;
         text-decoration: none;
         font-weight: bold;
     }
+
+
+.form-group {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn {
+    width: 122px;
+    height: 34px;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: goldenrod;
+    background: url(../Resources/ui/Button.png);
+}
+
+    .btn:hover {
+        color: azure;
+        cursor: url('../Resources/cursor/Finger.png') 6 2, pointer;
+    }
+
+    .btn:focus {
+        color: goldenrod;
+    }
+
+        .btn:focus:hover {
+            color: azure;
+        }
+
+    .btn:active {
+        background: url(../Resources/ui/ButtonClick.png);
+    }
+
+
+    .btn:disabled {
+        background: url(../Resources/ui/ButtonDisabled.png);
+        color: gray;
+    }
+
+
+input[type]:not([type=text]) {
+    cursor: url('../Resources/cursor/Finger.png') 6 2, pointer;
+}
+
+/*input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    background: url(../Resources/ui/Up_Normal.png) no-repeat center center;
+    background-size: 33px 11px;
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    width: 33px;
+    height: 11px;
+}*/
+
+
+input[type='checkbox'] {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background: url(../Resources/ui/Checkbox.png) no-repeat;
+    vertical-align: middle;
+}
+
+    input[type='checkbox']:checked {
+        background-image: url(../Resources/ui/Checked.png);
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../Resources/ui/SelectBox.png);
+    width: 211px;
+    height: 28px;
+    color: azure;
+    position: relative;
+    top: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    border: none;
+}
+
+    select:hover {
+        cursor: url('../Resources/cursor/Finger.png') 6 2, pointer;
+    }
+
+    select option {
+        background: #312821;
+        border: 2px solid #946631;
+    }
+
+
+.text-box {
+    background: url('../Resources/ui/TextForm.png') no-repeat;
+    border: none;
+    background-size: 256px 28px;
+    width: 256px;
+    height: 28px;
+    color: azure;
+    font-size: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+    margin-top: 5px;
+}

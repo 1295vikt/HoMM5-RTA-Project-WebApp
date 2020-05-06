@@ -14,6 +14,7 @@ namespace RTA_Project_MVC.Models
         public string NameRus { get; set; }
         [MaxLength(40, ErrorMessage = "Название не должно содержать более 40 символов")]
         public string NameEng { get; set; }
+        [Required]
         public string MapVersion { get; set; }
         public int Year { get; set; }
         public byte Season { get; set; }

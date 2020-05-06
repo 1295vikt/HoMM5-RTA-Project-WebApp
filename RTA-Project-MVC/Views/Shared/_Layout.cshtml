@@ -10,56 +10,61 @@
 </head>
 <body>
 
-        <div id="maincontainer">
+    <div id="maincontainer">
+
+
+        <div id="left">
 
             <div id="ltop"></div>
+            <a href="/" id="hlogo"></a>
+
+            <div class="mpoint"><img src="/Resources/icons/H5Pathfinding.png" height="34" width="34"><a href="http://forum.heroesleague.ru/viewtopic.php?f=27&t=20883">Все об RTA</a></div>
+            <div class="mpoint"><img src="/Resources/icons/H5Empathy.png" height="34" width="34"><a href="/Tournaments">Турниры</a></div>
+            <div class="mpoint"><img src="/Resources/icons/ExpPic.png" height="34" width="34"><a href="http://forum.heroesleague.ru/viewtopic.php?f=14&t=22488">Рейтинг</a></div>
+            <div class="mpoint"><img src="/Resources/icons/H5Scholar.png" height="34" width="34"><a href="#">Статистика</a></div>
+            <div class="mpoint"><img src="/Resources/icons/H5Recruitment.png" height="34" width="34"><a href="#">Новичкам</a></div>
+            <div class="mpoint"><img src="/Resources/icons/H5Diplomacy.png" height="34" width="34"><a href="http://forum.heroesleague.ru/">Форум</a></div>
+            <div class="mpoint"><img src="/Resources/icons/discord-logo.png" height="34" width="34"><a href="https://discord.gg/DCxUAvY">Группа Discord</a></div>
+
+
+            <div class="lseparator"></div>
+
+        </div>
+
+        <div id="right">
+
             <div id="rtop"></div>
 
-            <div id="left">
+            <div id="rtop2"></div>
+            <div id="ltcorn"></div>
+            <div id="rtcorn"></div>
 
-                <a href="/" id="hlogo"></a>
-
-                <div class="mpoint"><img src="/Resources/icons/H5Pathfinding.png" height="34" width="34"><a href="http://forum.heroesleague.ru/viewtopic.php?f=27&t=20883">Все об RTA</a></div>
-                <div class="mpoint"><img src="/Resources/icons/H5Empathy.png" height="34" width="34"><a href="/Tournaments">Турниры</a></div>
-                <div class="mpoint"><img src="/Resources/icons/H5Archery.png" height="34" width="34"><a href="http://forum.heroesleague.ru/viewtopic.php?f=14&t=22488">Рейтинг</a></div>
-                <div class="mpoint"><img src="/Resources/icons/H5Scholar.png" height="34" width="34"><a href="#">Статистика</a></div>
-                <div class="mpoint"><img src="/Resources/icons/H5Recruitment.png" height="34" width="34"><a href="#">Новичкам</a></div>
-                <div class="mpoint"><img src="/Resources/icons/H5Diplomacy.png" height="34" width="34"><a href="http://forum.heroesleague.ru/">Форум</a></div>
-                <div class="mpoint"><img src="/Resources/icons/discord-logo.png" height="34" width="34"><a href="https://discord.gg/DCxUAvY">Группа Discord</a></div>
+            @*<div id="bartop"></div>*@
 
 
-                <div class="lseparator"></div>
+            <div class="body-content">
+                <div id="loginpart">@Html.Partial("_LoginPartial")</div>
+
+                @RenderBody()
 
             </div>
 
-            <div id="right">
-                <div id="ltcorn"></div>
-                <div id="rtcorn"></div>
-
-                <div id="rtop2"></div>
-                <div id="mainframe">
-
-                    <div id="loginpart">@Html.Partial("_LoginPartial")</div>
-
-                    <div class="container body-content col-md-10">
-                        @RenderBody()
-
-                    </div>
-                </div>
-                <div id="rbot2"></div>
+            <div id="rbot2"></div>
+            <div id="ltcorn2"></div>
+            <div id="rtcorn2"></div>
 
 
-            </div>
-
-
-
-
-
-
-            @Scripts.Render("~/bundles/jquery")
-            @Scripts.Render("~/bundles/bootstrap")
-            @RenderSection("scripts", required: false)
         </div>
+
+
+
+
+
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </div>
 
 </body>
 </html>
