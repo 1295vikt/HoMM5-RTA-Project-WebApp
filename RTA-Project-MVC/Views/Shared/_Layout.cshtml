@@ -16,22 +16,56 @@
         <div id="left">
 
             <div id="ltop"></div>
-            <a href="/" id="hlogo"></a>
 
-            <div class="mpoint"><img src="/Resources/icons/H5Pathfinding.png" height="34" width="34"><a href="http://forum.heroesleague.ru/viewtopic.php?f=27&t=20883">Все об RTA</a></div>
-            <div class="mpoint"><img src="/Resources/icons/H5Empathy.png" height="34" width="34"><a href="/Tournaments">Турниры</a></div>
-            <div class="mpoint"><img src="/Resources/icons/ExpPic.png" height="34" width="34"><a href="http://forum.heroesleague.ru/viewtopic.php?f=14&t=22488">Рейтинг</a></div>
-            <div class="mpoint"><img src="/Resources/icons/H5Scholar.png" height="34" width="34"><a href="#">Статистика</a></div>
-            <div class="mpoint"><img src="/Resources/icons/H5Recruitment.png" height="34" width="34"><a href="#">Новичкам</a></div>
-            <div class="mpoint"><img src="/Resources/icons/H5Diplomacy.png" height="34" width="34"><a href="http://forum.heroesleague.ru/">Форум</a></div>
-            <div class="mpoint"><img src="/Resources/icons/discord-logo.png" height="34" width="34"><a href="https://discord.gg/DCxUAvY">Группа Discord</a></div>
+            <div id="jog-area">
 
 
-            <div class="lseparator"></div>
+
+                    @Html.Partial("_LoginPartial")
+
+
+            </div>
+
+            <div id="lseparator"></div>
+
+            <div id="nav-block">
+                <a class="btn btn-block" href="@Url.Action("Info", "Home")">
+                    <img src="/Resources/icons/H5Pathfinding.png" height="34" width="34" />
+                    Все об RTA
+                </a>
+                <a class="btn btn-block" href="@Url.Action("Index", "Tournament")">
+                    <img src="/Resources/icons/H5Empathy.png" height="34" width="34" />
+                    Турниры
+                </a>
+                <a class="btn btn-block" href="http://forum.heroesleague.ru/viewtopic.php?f=14&t=22488">
+                    <img src="/Resources/icons/ExpPic.png" height="34" width="34" />
+                    Рейтинг
+                </a>
+                <a class="btn btn-block" href="#">
+                    <img src="/Resources/icons/H5Scholar.png" height="34" width="34" />
+                    Статистика
+                </a>
+                <a class="btn btn-block" href="#">
+                    <img src="/Resources/icons/H5ExpertTrainer.png" height="34" width="34" />
+                    Руководства
+                </a>
+                <a class="btn btn-block" href="http://forum.heroesleague.ru/">
+                    <img src="/Resources/icons/H5Diplomacy.png" height="34" width="34" />
+                    Форум
+                </a>
+                <a class="btn btn-block" href="https://discord.gg/DCxUAvY">
+                    <img src="/Resources/icons/discord-logo.png" height="34" width="34" />
+                    Сервер Discord
+                </a>
+            </div>
+
+            <div id="lseparator"></div>
+
 
         </div>
 
         <div id="right">
+
 
             <div id="rtop"></div>
 
@@ -39,11 +73,8 @@
             <div id="ltcorn"></div>
             <div id="rtcorn"></div>
 
-            @*<div id="bartop"></div>*@
-
 
             <div class="body-content">
-                <div id="loginpart">@Html.Partial("_LoginPartial")</div>
 
                 @RenderBody()
 

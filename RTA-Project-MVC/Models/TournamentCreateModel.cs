@@ -28,6 +28,8 @@ namespace RTA_Project_MVC.Models
         public bool IsSeasonal { get; set; }
         public bool IsPrivate { get; set; }
 
+        public List<TournamentHostModel> Hosts { get; set; }
+
         [Required]
         public string Description { get; set; }
 
@@ -40,7 +42,7 @@ namespace RTA_Project_MVC.Models
                     new SelectListItem() {Text = "Round Robin", Value = "1"},
                     new SelectListItem() {Text = "Swiss", Value = "2"},
                     new SelectListItem() {Text = "Playoff SE", Value = "3"},
-                    new SelectListItem() {Text = "Playoff DE", Value = "4"}
+                    new SelectListItem() {Text = "Playoff DE", Value = "4"},
                 };
             }
         }

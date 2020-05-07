@@ -24,19 +24,6 @@ a {
     cursor: url('../Resources/cursor/Finger.png') 6 2, pointer;
 }
 
-    A:link, A:active {
-        color: #0069b3;
-        text-decoration: underline;
-    }
-
-    A:visited {
-        color: #0069b3;
-    }
-
-    A:hover {
-        color: #c00;
-    }
-
 
 /* Main styles */
 #maincontainer {
@@ -59,6 +46,7 @@ a {
     padding-top: -18px;
     min-height: 750px;
     flex-grow: 1;
+    flex-direction: column;
 }
 
 #right {
@@ -82,61 +70,90 @@ a {
     float: left;
 }
 
-#hlogo {
+
+
+
+#jog-area {
+    width: 204px;
+    height: 248px;
+    margin-left: auto;
+    margin-right: 14px;
+    position: relative;
+}
+
+.jog-5 {    
+    position: absolute;   
+    background: url('../Resources/ui/jog/Back_5Buttons.png') no-repeat;
+    width: 204px;
+    height: 182px;
     display: block;
-    width: 265px;
-    height: 173px;
-    background: url('../Resources/hlogo.jpg') top right no-repeat;
-    margin-bottom: 5px;
+    bottom: 0;
 }
 
-.mpoint {
-    height: 32px;
-    background: url('../Resources/mpointbg.jpg') center right no-repeat;
-    padding-left: 45px;
-    margin-bottom: 3px;
+.jog-center-button {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    width: 82px;
+    height: 82px;
+    top: 50px;
+    left: 61px;
 }
 
-    .mpoint IMG {
+    .jog-center-button:hover {
+        filter: brightness(120%)
+    }
+
+
+
+
+
+    #nav-block {
+        display: block;
+        margin-top: 3px;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+.btn.btn-block {
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: bold;
+    height: 48px;
+    background: url('../Resources/ui/PanelBlock.png') no-repeat;
+    width: 202px;
+    height: 48px;
+    margin-bottom: 2px;
+    padding-top: 12px;
+    color: #b1aa90;
+    text-decoration: none;
+    text-align: left;
+    position: relative;
+    float: right;
+    margin-right: 15px;
+}
+
+    .btn.btn-block img {
         float: left;
-        margin-right: 5px;
+        margin-top: -5px;
+        margin-right: 10px;
     }
 
-    .mpoint A:link,
-    .mpoint A:active,
-    .mpoint A:visited {
-        font-size: 16px;
-        color: #873420;
-        text-decoration: none;
-        font-weight: bold;
-        padding-top: 8px;
-        display: block;
-    }
-
-    .mpoint A:hover {
-        font-size: 16px;
-        color: #c00;
-        text-decoration: none;
-        font-weight: bold;
-        padding-top: 8px;
-        display: block;
+    .btn.btn-block:hover {
+        filter: brightness(120%)
     }
 
 
-.lseparator {
+
+#lseparator {
     height: 28px;
     background: url('../Resources/lsepar.jpg') top right no-repeat;
-    margin-top: 5px;
+    margin-top: 3px;
+    display: block;
 }
 
 
-#allt A:link,
-#allt A:active,
-#allt A:visited,
-#allt A:hover {
-    font-size: 11px;
-    font-weight: normal;
-}
 
 /* Right column styles */
 #rtop {
@@ -173,8 +190,8 @@ a {
 
 
 #ltcorn {
-    position: relative;
-    top: -80px;
+    position: absolute;
+    top: -5px;
     float: left;
     z-index: 2;
     left: -5px;
@@ -184,8 +201,8 @@ a {
 }
 
 #rtcorn {
-    position: relative;
-    top: -80px;
+    position: absolute;
+    top: -5px;
     float: right;
     z-index: 2;
     right: 22px;
@@ -239,44 +256,9 @@ textarea {
 
 
 
-#loginpart {
-    display: inline-block;
-}
 
 
-ul#account-tab {
-    list-style: none;
-    position: relative;
-}
 
-    ul#account-tab li {
-        display: inline;
-        padding-right: 5px;
-    }
-
-.account-tab-button {
-    background: url(../Resources/mpointbg.jpg);
-    width: 96px;
-    height: 32px;
-    display: inline-block;
-    text-align: center;
-}
-
-    .account-tab-button A:link,
-    .account-tab-button A:active,
-    .account-tab-button A:visited {
-        font-size: 16px;
-        color: #873420;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .account-tab-button A:hover {
-        font-size: 16px;
-        color: #c00;
-        text-decoration: none;
-        font-weight: bold;
-    }
 
 
 .form-group {
@@ -284,7 +266,7 @@ ul#account-tab {
     font-weight: bold;
 }
 
-.btn {
+.btn.btn-default {
     width: 122px;
     height: 34px;
     font-family: Tahoma, sans-serif;
@@ -292,46 +274,38 @@ ul#account-tab {
     font-weight: bold;
     color: goldenrod;
     background: url(../Resources/ui/Button.png);
+    border: none;
 }
 
-    .btn:hover {
-        color: azure;
-        cursor: url('../Resources/cursor/Finger.png') 6 2, pointer;
-    }
-
-    .btn:focus {
-        color: goldenrod;
-    }
-
-        .btn:focus:hover {
-            color: azure;
-        }
-
-    .btn:active {
+    .btn.btn-default:active {
         background: url(../Resources/ui/ButtonClick.png);
     }
 
-
-    .btn:disabled {
-        background: url(../Resources/ui/ButtonDisabled.png);
-        color: gray;
+    .btn.btn-default :focus {
+        color: goldenrod;
     }
+
+
+.btn:hover {
+    color: azure;
+    cursor: url('../Resources/cursor/Finger.png') 6 2, pointer;
+}
+
+.btn:focus:hover {
+    color: azure;
+}
+
+
+
+.btn:disabled {
+    background: url(../Resources/ui/ButtonDisabled.png);
+    color: gray;
+}
 
 
 input[type]:not([type=text]) {
     cursor: url('../Resources/cursor/Finger.png') 6 2, pointer;
 }
-
-/*input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    background: url(../Resources/ui/Up_Normal.png) no-repeat center center;
-    background-size: 33px 11px;
-    position: absolute;
-    top: 4px;
-    right: 8px;
-    width: 33px;
-    height: 11px;
-}*/
 
 
 input[type='checkbox'] {
@@ -339,7 +313,6 @@ input[type='checkbox'] {
     width: 25px;
     height: 25px;
     background: url(../Resources/ui/Checkbox.png) no-repeat;
-    vertical-align: middle;
 }
 
     input[type='checkbox']:checked {
@@ -352,14 +325,14 @@ input[type='checkbox'] {
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
-    background: url(../Resources/ui/SelectBox.png);
-    width: 211px;
-    height: 28px;
-    color: azure;
+    background: url(../Resources/ui/ComboBox.png) no-repeat;
+    width: 201px;
+    height: 33px;
+    color: #fef2e4;
     position: relative;
     top: 5px;
     padding-left: 6px;
-    padding-right: 6px;
+    padding-right: 32px;
     padding-top: 2px;
     border: none;
 }
@@ -368,19 +341,25 @@ select {
         cursor: url('../Resources/cursor/Finger.png') 6 2, pointer;
     }
 
+    select:active {
+        background: url(../Resources/ui/ComboBoxPushed.png) no-repeat;
+    }
+
     select option {
         background: #312821;
         border: 2px solid #946631;
     }
 
 
-.text-box {
+input.form-control.text-box,
+input.form-control[type=password] {
     background: url('../Resources/ui/TextForm.png') no-repeat;
+    border-radius: 11px;
     border: none;
     background-size: 256px 28px;
     width: 256px;
     height: 28px;
-    color: azure;
+    color: #fef2e4;
     font-size: 16px;
     padding-left: 8px;
     padding-right: 8px;

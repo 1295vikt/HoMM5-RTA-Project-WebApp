@@ -1,22 +1,52 @@
 ﻿@using Microsoft.AspNet.Identity
+
+
+@{
+    int day = (int)DateTime.Now.DayOfWeek;
+    string imgDoorNormal = $"/Resources/ui/jog/DoorNormal_{day}.png";
+    string imgDoorPushed = $"/Resources/ui/jog/DoorPushed_{day}.png";
+}
+
+
+<style>
+    .jog-center-button {
+        background: url('@imgDoorNormal')
+    }
+
+    .jog-center-button:active {
+        background: url('@imgDoorPushed')
+    }
+</style>
+
 @if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
     {
-    @Html.AntiForgeryToken()
+        @Html.AntiForgeryToken()
 
-    <ul id="account-tab">
-        <li>
-            @Html.ActionLink(User.Identity.GetUserName(), "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
-        </li>
-        <li><a href="javascript:document.getElementById('logoutForm').submit()">Выход</a></li>
-    </ul>
+
+
+        @Html.ActionLink(User.Identity.GetUserName(), "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+
+        <a href="javascript:document.getElementById('logoutForm').submit()">Выход</a>
+
     }
 }
 else
 {
-    <ul id="account-tab">
-        <li><div class = "account-tab-button"><a href="/Account/Register">Регистрация</a></div></li>
-        <li><div class="account-tab-button"><a href="/Account/LogIn">Вход</a></div></li>
-    </ul>
+    @*<div class="account-tab-button"><a href="/Account/Register">Регистрация</a></div>
+
+        <div class="account-tab-button"><a href="/Account/LogIn">Вход</a></div>*@
+
+    <div class="jog-5">
+
+
+        <a class="jog-center-button" href="/Account/LogIn">
+        </a>
+
+    </div>
+
+
+
 }
+
