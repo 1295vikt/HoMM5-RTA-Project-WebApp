@@ -20,10 +20,19 @@ body {
 }
 
 
+
+#placeholder{
+    height: 250px;
+}
+
+
 a {
     cursor: url('../Resources/cursor/Finger.png') 6 2, pointer;
 }
 
+h2 {
+    font-weight: bold;
+}
 
 /* Main styles */
 #maincontainer {
@@ -39,7 +48,7 @@ a {
 }
 
 #left {
-    background: url('../Resources/lbg.jpg') 100% 0% repeat-y;
+    background: url('../Resources/lbg.jpg') 100% 0 repeat-y;
     width: 265px;
     float: left;
     margin-top: 18px;
@@ -50,7 +59,7 @@ a {
 }
 
 #right {
-    background: url('../Resources/rbg.jpg') 0% 0% repeat-y;
+    background: url('../Resources/rbg.jpg') repeat-y;
     width: 935px;
     float: right;
     margin-top: 18px;
@@ -75,14 +84,32 @@ a {
 
 #jog-area {
     width: 204px;
-    height: 248px;
+    height: 220px;
     margin-left: auto;
-    margin-right: 14px;
+    margin-right: 13px;
     position: relative;
 }
 
-.jog-5 {    
-    position: absolute;   
+
+#greetings-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: url('../Resources/ui/UsernamePlate.png') no-repeat;
+    width: 160px;
+    height: 32px;
+    color: azure;
+    position: relative;
+    top: -12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.jog-5 {
+    position: absolute;
     background: url('../Resources/ui/jog/Back_5Buttons.png') no-repeat;
     width: 204px;
     height: 182px;
@@ -90,30 +117,98 @@ a {
     bottom: 0;
 }
 
-.jog-center-button {
-    position: relative;
-    display: block;
+.jog-btn {
     border-radius: 50%;
-    width: 82px;
-    height: 82px;
-    top: 50px;
-    left: 61px;
+    position: absolute;
+    display: block;
+    width: 57px;
+    height: 57px;
 }
 
-    .jog-center-button:hover {
+    .jog-btn.center {
+        width: 82px;
+        height: 82px;
+        bottom: 50px;
+        right: 61px;
+    }
+
+    .jog-btn:hover {
         filter: brightness(120%)
     }
 
-
-
-
-
-    #nav-block {
-        display: block;
-        margin-top: 3px;
-        position: relative;
-        overflow: hidden;
+    .jog-btn.upper {
+        bottom: 100px;
     }
+
+    .jog-btn.left {
+        right: 140px;
+    }
+
+    .jog-btn.right {
+        right: 6px;
+    }
+
+    .jog-btn.upper.left {
+        background: url('../Resources/ui/jog/HeroNormal.png') no-repeat;
+    }
+
+    .jog-btn.upper.right {
+        background: url('../Resources/ui/jog/GuildNormal.png') no-repeat;
+        bottom: 100px;
+    }
+
+    .jog-btn.upper.left:active {
+        background: url('../Resources/ui/jog/HeroPushed.png') no-repeat;
+    }
+
+    .jog-btn.upper.left#grayed-out {
+        background: url('../Resources/ui/jog/HeroDisabled.png') no-repeat;
+    }
+
+    .jog-btn.upper.right:active {
+        background: url('../Resources/ui/jog/GuildPushed.png') no-repeat;
+    }
+
+    .jog-btn.upper.right#grayed-out {
+        background: url('../Resources/ui/jog/GuildDisabled.png') no-repeat;
+    }
+
+    .jog-btn.lower {
+        bottom: 23px;
+    }
+
+        .jog-btn.lower.left {
+            background: url('../Resources/ui/jog/BattleNormal.png') no-repeat;
+        }
+
+        .jog-btn.lower.left:active {
+            background: url('../Resources/ui/jog/BattlePushed.png') no-repeat;
+        }
+
+            .jog-btn.lower.left#grayed-out {
+                background: url('../Resources/ui/jog/BattleDisabled.png') no-repeat;
+            }
+
+        .jog-btn.lower.right {
+            background: url('../Resources/ui/jog/CogsNormal.png') no-repeat;
+        }
+
+            .jog-btn.lower.right:active {
+                background: url('../Resources/ui/jog/CogsPushed.png') no-repeat;
+            }
+
+            .jog-btn.lower.right#grayed-out {
+                background: url('../Resources/ui/jog/CogsDisabled.png') no-repeat;
+            }
+
+
+
+#nav-block {
+    display: block;
+    margin-top: 3px;
+    position: relative;
+    overflow: hidden;
+}
 
 
 .btn.btn-block {
@@ -123,7 +218,6 @@ a {
     height: 48px;
     background: url('../Resources/ui/PanelBlock.png') no-repeat;
     width: 202px;
-    height: 48px;
     margin-bottom: 2px;
     padding-top: 12px;
     color: #b1aa90;
@@ -183,7 +277,7 @@ a {
     height: 75px;
     background: url('../Resources/rbot2.jpg') top left no-repeat;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     z-index: 2;
 }
 
@@ -270,7 +364,7 @@ textarea {
     width: 122px;
     height: 34px;
     font-family: Tahoma, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     color: goldenrod;
     background: url(../Resources/ui/Button.png);
@@ -310,15 +404,17 @@ input[type]:not([type=text]) {
 
 input[type='checkbox'] {
     -webkit-appearance: none;
-    width: 25px;
+    -moz-appearance: none;
+    width: 28px;
     height: 25px;
     background: url(../Resources/ui/Checkbox.png) no-repeat;
+    display: block;
+    position: relative;
+    top: 4px;
 }
 
     input[type='checkbox']:checked {
         background-image: url(../Resources/ui/Checked.png);
-        background-position: right center;
-        background-repeat: no-repeat;
     }
 
 
@@ -333,7 +429,7 @@ select {
     top: 5px;
     padding-left: 6px;
     padding-right: 32px;
-    padding-top: 2px;
+    margin-top: -1px;
     border: none;
 }
 
@@ -352,17 +448,17 @@ select {
 
 
 input.form-control.text-box,
+input.form-control[type=text],
 input.form-control[type=password] {
     background: url('../Resources/ui/TextForm.png') no-repeat;
-    border-radius: 11px;
+    border-radius: 8px;
     border: none;
-    background-size: 256px 28px;
     width: 256px;
-    height: 28px;
+    height: 25px;
     color: #fef2e4;
     font-size: 16px;
     padding-left: 8px;
     padding-right: 8px;
     position: relative;
-    margin-top: 5px;
+    top: 8px;
 }

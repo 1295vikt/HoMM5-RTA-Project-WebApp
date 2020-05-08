@@ -1,0 +1,62 @@
+﻿@using Microsoft.AspNet.Identity
+
+
+@{
+    int day = (int)DateTime.Now.DayOfWeek;
+    string imgDoorNormal = $"/Resources/ui/jog/DoorNormal_{day}.png";
+    string imgDoorPushed = $"/Resources/ui/jog/DoorPushed_{day}.png";
+}
+
+
+<style>
+    .jog-btn.center {
+        background: url('@imgDoorNormal')
+    }
+
+    .jog-btn.center:active {
+        background: url('@imgDoorPushed')
+    }
+</style>
+
+
+
+
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <label id="greetings-panel">@User.Identity.GetUserName()</label>
+
+        <div class="jog-5">
+
+            <a class="jog-btn upper left" href="#"></a>
+            <a class="jog-btn upper right" id="grayed-out"></a>
+            <a class="jog-btn center" href="javascript:document.getElementById('logoutForm').submit()"></a>
+            <a class="jog-btn lower left" href="#"></a>
+            <a class="jog-btn lower right" href="@Url.Action("Index","Manage", routeValues: null)"></a>
+
+        </div>
+
+    }
+}
+
+else
+{
+
+    <label id="greetings-panel">Гость</label>
+
+    <div class="jog-5">
+
+        <a class="jog-btn upper left" id="grayed-out"></a>
+        <a class="jog-btn upper right" href="@Url.Action("Register","Account")"></a>
+        <a class="jog-btn center" href="@Url.Action("LogIn","Account")"></a>
+        <a class="jog-btn lower left" id="grayed-out"></a>
+        <a class="jog-btn lower right" id="grayed-out"></a>
+
+
+    </div>
+
+}
+
