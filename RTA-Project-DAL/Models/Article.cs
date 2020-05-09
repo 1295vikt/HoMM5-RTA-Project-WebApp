@@ -10,12 +10,8 @@ namespace RTA_Project_DAL.Models
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public string ShortDescription { get; set; }
         public string Content { get; set; }
-
         public string Author { get; set; }
         public DateTime Date { get; set; }
-
-        public bool IsGuideMaterial { get; set; }
     }
 }

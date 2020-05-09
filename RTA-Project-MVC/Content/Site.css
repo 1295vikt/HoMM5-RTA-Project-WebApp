@@ -202,6 +202,21 @@ h2 {
             }
 
 
+#plus-btn {
+    position: absolute;
+    background: url('../Resources/ui/jog/Plus.png') no-repeat;
+    background-size: 32px 32px;
+    width: 33px;
+    height: 33px;
+    left: 228px;
+    bottom: -4px;
+}
+
+    #plus-btn:active {
+        background: url('../Resources/ui/jog/Plus_pushed.png') no-repeat;
+        background-size: 33px 33px;
+    }
+
 
 #nav-block {
     display: block;
@@ -283,6 +298,7 @@ h2 {
 
 
 
+
 #ltcorn {
     position: absolute;
     top: -5px;
@@ -347,7 +363,6 @@ select,
 textarea {
     max-width: 280px;
 }
-
 
 
 
@@ -462,3 +477,5 @@ input.form-control[type=password] {
     position: relative;
     top: 8px;
 }
+
+

@@ -28,10 +28,12 @@ namespace RTA_Project_MVC.Models
         public bool IsSeasonal { get; set; }
         public bool IsPrivate { get; set; }
 
-        public List<TournamentHostModel> Hosts { get; set; }
+        public List<int> HostsId { get; set; }
 
         [Required]
         public string Description { get; set; }
+
+        public List<SelectListItem> HostPlayerList { get; set; }
 
         public IEnumerable<SelectListItem> Formats
         {

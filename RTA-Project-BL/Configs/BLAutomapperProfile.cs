@@ -13,8 +13,17 @@ namespace RTA_Project_BL.Configs
     {
         public BLAutomapperProfile()
         {
+
             CreateMap<TournamentBL, Tournament>().ReverseMap();
+            CreateMap<TournamentGroupBL, TournamentGroup>().ReverseMap();
+            CreateMap<TournamentDescriptionBL, TournamentDescription>().ReverseMap();
+            CreateMap<TournamentPlayerBL, TournamentPlayer>().ReverseMap();
+            CreateMap<TournamentBracketBL, TournamentBracket>().ReverseMap();
+            CreateMap<MatchBL, Match>().ReverseMap();
+            CreateMap<GameBL, Game>().ReverseMap();
+            CreateMap<HeroBL, Hero>().ReverseMap();
             CreateMap<PlayerBL, Player>().ReverseMap();
+            CreateMap<PlayerStatsBL, PlayerStats>().ReverseMap();
 
         }
 

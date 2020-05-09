@@ -14,10 +14,12 @@ namespace RTA_Project_DAL.Models
         public int Id { get; set; }
         public Guid GuidKey { get; set; }
         [DefaultValue(null)]
-        public int? AccountId { get; set; }
+        public string AccountId { get; set; }
         public string Name { get; set; }
 
         public virtual PlayerStats Stats { get; set; }
+
+        public virtual List<Tournament> HostedTournaments { get; set; }
     }
 
 }

@@ -14,11 +14,15 @@ namespace RTA_Project_MVC.Controllers
 
         private readonly ITournamentService _tournamentService;
         private readonly ITournamentGroupService _tournamentGroupService;
+        private readonly IPlayerService _playerService;
+
         private readonly IMapper _mapper;
-        public TournamentController(ITournamentService tournamentService, ITournamentGroupService tournamentGroupService, IMapper mapper)
+
+        public TournamentController(ITournamentService tournamentService, ITournamentGroupService tournamentGroupService, IPlayerService playerService, IMapper mapper)
         {
             _tournamentService = tournamentService;
             _tournamentGroupService = tournamentGroupService;
+            _playerService = playerService;
             _mapper = mapper;
         }
 
@@ -37,16 +41,21 @@ namespace RTA_Project_MVC.Controllers
         // GET: Tournament/Create
         public ActionResult Create()
         {
-            var crap = _tournamentService.GetAll();
-            var model = new TournamentCreateModel() { Year = DateTime.Now.Year};
+            var players = _playerService.QueryAll().Select(x => new SelectListItem
+            {
+                Value = x.Id.ToString(),
+                Text = x.Name
+            });
+            var model = new TournamentCreateModel() { Year = DateTime.Now.Year, HostPlayerList = players.ToList()};
             return View(model);
         }
 
         // POST: Tournament/Create
         [HttpPost]
-        public ActionResult Create(TournamentCreateModel modlel)
+        public ActionResult Create(TournamentCreateModel model)
         {
-                return View();
+            var m = model;
+            return View();
         }
 
         // GET: Tournament/Edit/5
