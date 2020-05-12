@@ -13,36 +13,12 @@ namespace RTA_Project_BL.Services
 
     public class ArticleService : GenericService<ArticleBL, Article>, IArticleService
     {
-        private readonly IMapper _mapper;
-        public ArticleService(IGenericRepository<Article> repository, IMapper mapper) : base(repository)
+
+        public ArticleService(IGenericRepository<Article> repository, IMapper mapper) : base(repository, mapper)
         {
-            _mapper = mapper;
+
         }
 
-        public override ArticleBL Map(Article model)
-        {
-            return _mapper.Map<ArticleBL>(model);
-        }
-
-        public override Article Map(ArticleBL model)
-        {
-            return _mapper.Map<Article>(model);
-        }
-
-        public override IEnumerable<ArticleBL> Map(IEnumerable<Article> entitiesList)
-        {
-            return _mapper.Map<IEnumerable<ArticleBL>>(entitiesList);
-        }
-
-        public override IEnumerable<Article> Map(IEnumerable<ArticleBL> entitiesList)
-        {
-            return _mapper.Map<IEnumerable<Article>>(entitiesList);
-        }
-
-        public override IQueryable<ArticleBL> Project(IQueryable<Article> entitiesList)
-        {
-            return _mapper.ProjectTo<ArticleBL>(entitiesList);
-        }
 
     }
 }

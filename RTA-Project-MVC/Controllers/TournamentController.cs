@@ -29,6 +29,7 @@ namespace RTA_Project_MVC.Controllers
         // GET: Tournament
         public ActionResult Index()
         {
+            var s = User.Identity;
             return View();
         }
 

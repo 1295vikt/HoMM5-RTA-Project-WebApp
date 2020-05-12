@@ -91,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DbInitializer.cs" />
+    <Compile Include="enums\Lang.cs" />
     <Compile Include="enums\Faction.cs" />
     <Compile Include="enums\Season.cs" />
     <Compile Include="enums\TournamentGroupFormat.cs" />

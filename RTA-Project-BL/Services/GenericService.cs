@@ -1,4 +1,5 @@
-﻿using RTA_Project_DAL.Repositories;
+﻿using AutoMapper;
+using RTA_Project_DAL.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,13 +21,16 @@ namespace RTA_Project_BL.Services
         void Edit(BLModel modelBL);
     }
 
-    public abstract class GenericService<BLModel, DModel> : IGenereicService<BLModel>
+    public class GenericService<BLModel, DModel> : IGenereicService<BLModel>
         where BLModel : class
         where DModel : class
     {
         private readonly IGenericRepository<DModel> _repositroy;
-        public GenericService(IGenericRepository<DModel> repository)
+        private readonly IMapper _mapper;
+
+        public GenericService(IGenericRepository<DModel> repository, IMapper mapper)
         {
+            _mapper = mapper;
             _repositroy = repository;
         }
 
@@ -65,11 +69,33 @@ namespace RTA_Project_BL.Services
             _repositroy.Update(entity);
         }
 
-        public abstract BLModel Map(DModel entity);
-        public abstract DModel Map(BLModel modelBL);
 
-        public abstract IEnumerable<BLModel> Map(IEnumerable<DModel> modelBL);
-        public abstract IEnumerable<DModel> Map(IEnumerable<BLModel> modelBL);
-        public abstract IQueryable<BLModel> Project(IQueryable<DModel> entity);
+
+        public BLModel Map(DModel model)
+        {
+            return _mapper.Map<BLModel>(model);
+        }
+
+        public DModel Map(BLModel model)
+        {
+            return _mapper.Map<DModel>(model);
+        }
+
+        public IEnumerable<BLModel> Map(IEnumerable<DModel> entitiesList)
+        {
+            return _mapper.Map<IEnumerable<BLModel>>(entitiesList);
+        }
+
+        public IEnumerable<DModel> Map(IEnumerable<BLModel> entitiesList)
+        {
+            return _mapper.Map<IEnumerable<DModel>>(entitiesList);
+        }
+
+        public IQueryable<BLModel> Project(IQueryable<DModel> entitiesList)
+        {
+            return _mapper.ProjectTo<BLModel>(entitiesList);
+        }
+
+
     }
 }

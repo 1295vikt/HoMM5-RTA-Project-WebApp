@@ -24,6 +24,8 @@ namespace RTA_Project_MVC.Controllers
         // GET: News
         public ActionResult Index()
         {
+
+            
             var articles = _articleService.GetAll();
 
             return View();

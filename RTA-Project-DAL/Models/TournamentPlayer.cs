@@ -11,7 +11,6 @@ namespace RTA_Project_DAL.Models
     public class TournamentPlayer
     {
         public int Id { get; set; }
-        [ForeignKey("Player")]
         public int PlayerId { get; set; }
         [DefaultValue(false)]
         public bool Disqualified { get; set; }

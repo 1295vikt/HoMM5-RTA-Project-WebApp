@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace RTA_Project_BL.Models
 {
@@ -15,6 +11,8 @@ namespace RTA_Project_BL.Models
         public int Year { get; set; }
         public byte Season { get; set; }
 
+        public bool IsActive { get; set; }
+        public bool IsInSecondStage { get; set; }
         public bool IsOfficial { get; set; }
         public bool IsSeasonal { get; set; }
         public bool IsPrivate { get; set; }
