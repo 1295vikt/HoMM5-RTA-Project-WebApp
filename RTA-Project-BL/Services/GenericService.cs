@@ -1,10 +1,7 @@
 ﻿using AutoMapper;
 using RTA_Project_DAL.Repositories;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RTA_Project_BL.Services
 {
@@ -25,48 +22,49 @@ namespace RTA_Project_BL.Services
         where BLModel : class
         where DModel : class
     {
-        private readonly IGenericRepository<DModel> _repositroy;
-        private readonly IMapper _mapper;
+        protected readonly IGenericRepository<DModel> _repository;
+        protected readonly IMapper _mapper;
 
         public GenericService(IGenericRepository<DModel> repository, IMapper mapper)
         {
             _mapper = mapper;
-            _repositroy = repository;
+            _repository = repository;
         }
 
         public virtual BLModel FindById(int id)
         {
-            var entity = _repositroy.FindById(id);
+            var entity = _repository.FindById(id);
             return Map(entity);
         }
 
         public IEnumerable<BLModel> GetAll()
         {
-            var listEntity = _repositroy.GetAll();
+            var listEntity = _repository.GetAll();
             return Map(listEntity);
         }
 
         public IQueryable<BLModel> QueryAll()
         {
-            var listEntity = _repositroy.QueryAll();
+            var listEntity = _repository.QueryAll();
             return Project(listEntity);
         }
+
 
         public void Create(BLModel modelBL)
         {
             var entity = Map(modelBL);
-            _repositroy.Create(entity);
+            _repository.Create(entity);
         }
 
         public void Delete(int id)
         {
-            _repositroy.RemoveById(id);
+            _repository.RemoveById(id);
         }
 
         public void Edit(BLModel modelBL)
         {
             var entity = Map(modelBL);
-            _repositroy.Update(entity);
+            _repository.Update(entity);
         }
 
 

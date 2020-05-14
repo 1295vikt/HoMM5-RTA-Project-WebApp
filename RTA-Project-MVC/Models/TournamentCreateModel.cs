@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RTA_Project_DAL.enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -21,8 +22,8 @@ namespace RTA_Project_MVC.Models
 
         public bool Is2Stage { get; set; }
 
-        public byte Stage1Format { get; set; }
-        public byte Stage2Format { get; set; }
+        public TournamentGroupFormat Stage1Format { get; set; }
+        public TournamentGroupFormat Stage2Format { get; set; }
 
         public bool IsOfficial { get; set; }
         public bool IsSeasonal { get; set; }

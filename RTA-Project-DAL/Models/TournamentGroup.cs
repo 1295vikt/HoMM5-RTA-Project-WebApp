@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RTA_Project_DAL.enums;
 
 namespace RTA_Project_DAL.Models
 {
@@ -14,7 +9,7 @@ namespace RTA_Project_DAL.Models
         public int Id { get; set; }
 
         public int TournamentId { get; set; }
-        public TournamentGroupFormat GroupFormatId { get; set; }
+        public byte GroupFormatId { get; set; }
         public string NameRus { get; set; }
         public string NameEng { get; set; }
         [DefaultValue(false)]

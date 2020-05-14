@@ -1,5 +1,8 @@
 ﻿using AutoMapper;
+using PagedList;
 using RTA_Project_BL.Services;
+using RTA_Project_DAL.enums;
+using RTA_Project_MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,13 +25,19 @@ namespace RTA_Project_MVC.Controllers
         }
 
         // GET: News
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
 
-            
-            var articles = _articleService.GetAll();
+            int pageSize = 4;
+            int pageNumber = (page ?? 1);
 
-            return View();
+            var articlesBL = _articleService.QueryArticles((byte)Lang.Rus);
+            var articlesPageBL = articlesBL.ToPagedList(pageNumber, pageSize);
+
+            var mappedList = _mapper.Map<IEnumerable<ArticleViewModel>>(articlesPageBL);
+            var pagedResult = new StaticPagedList<ArticleViewModel>(mappedList, articlesPageBL.GetMetaData());
+
+            return View(pagedResult);
         }
 
         // GET: News/Details/5

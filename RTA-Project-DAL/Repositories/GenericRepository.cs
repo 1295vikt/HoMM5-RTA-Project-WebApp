@@ -10,7 +10,7 @@ namespace RTA_Project_DAL.Repositories
 {
     public interface IGenericRepository<TEntity> where TEntity : class
     {
-        void Create(TEntity item);
+
         TEntity FindById(int id);
 
         IEnumerable<TEntity> GetAll();
@@ -26,6 +26,7 @@ namespace RTA_Project_DAL.Repositories
 
         IQueryable<TEntity> Query(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null);
 
+        void Create(TEntity item);
         void RemoveById(int id);
         void Remove(TEntity item);
         void Update(TEntity item);
@@ -56,7 +57,7 @@ namespace RTA_Project_DAL.Repositories
         Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
         params Expression<Func<TEntity, object>>[] includes)
         {
-            IQueryable<TEntity> query = _dbSet;
+            IQueryable<TEntity> query = _dbSet.AsNoTracking();
 
             foreach (Expression<Func<TEntity, object>> include in includes)
                 query = query.Include(include);
@@ -73,7 +74,7 @@ namespace RTA_Project_DAL.Repositories
         public TEntity GetFirstOrDefault(Expression<Func<TEntity, bool>> filter = null,
         params Expression<Func<TEntity, object>>[] includes)
         {
-            IQueryable<TEntity> query = _dbSet;
+            IQueryable<TEntity> query = _dbSet.AsNoTracking();
 
             foreach (Expression<Func<TEntity, object>> include in includes)
                 query = query.Include(include);
@@ -83,7 +84,7 @@ namespace RTA_Project_DAL.Repositories
 
         public IQueryable<TEntity> Query(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null)
         {
-            IQueryable<TEntity> query = _dbSet;
+            IQueryable<TEntity> query = _dbSet.AsNoTracking();
 
             if (filter != null)
                 query = query.Where(filter);

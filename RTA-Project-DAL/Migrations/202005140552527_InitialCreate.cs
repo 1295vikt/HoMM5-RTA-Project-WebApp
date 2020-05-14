@@ -12,8 +12,8 @@ namespace RTA_Project_DAL.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
+                        LangId = c.Byte(nullable: false),
                         Title = c.String(),
-                        ShortDescription = c.String(),
                         Content = c.String(),
                         Author = c.String(),
                         Date = c.DateTime(nullable: false),
@@ -116,7 +116,7 @@ namespace RTA_Project_DAL.Migrations
                         Year = c.Int(nullable: false),
                         Season = c.Byte(nullable: false),
                         IsActive = c.Boolean(nullable: false),
-                        IsInPlayoffStage = c.Boolean(nullable: false),
+                        IsInSecondStage = c.Boolean(nullable: false),
                         IsFinished = c.Boolean(nullable: false),
                         IsOfficial = c.Boolean(nullable: false),
                         IsSeasonal = c.Boolean(nullable: false),
@@ -200,7 +200,7 @@ namespace RTA_Project_DAL.Migrations
                 .Index(t => t.Id);
             
             CreateTable(
-                "dbo.TournamentHosts",
+                "dbo.TournamentPlayer1",
                 c => new
                     {
                         Tournament_Id = c.Int(nullable: false),

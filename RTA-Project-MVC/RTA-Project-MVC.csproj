@@ -190,11 +190,15 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\TournamentController.cs" />
+    <Compile Include="enums\Faction.cs" />
+    <Compile Include="enums\Lang.cs" />
+    <Compile Include="enums\Season.cs" />
+    <Compile Include="enums\TournamentGroupFormat.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\ArticlePreviewModel.cs" />
+    <Compile Include="Models\ArticleViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\TournamentCreateModel.cs" />
@@ -758,10 +762,10 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_AccountJogPartial.cshtml" />
     <Content Include="Views\Tournament\Create.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\News\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

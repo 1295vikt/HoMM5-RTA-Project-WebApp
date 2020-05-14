@@ -1,12 +1,6 @@
-﻿using RTA_Project_DAL.enums;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RTA_Project_DAL.Models
 {
@@ -18,7 +12,7 @@ namespace RTA_Project_DAL.Models
         [ForeignKey("Map")]
         public string MapVersionId { get; set; }
         public int Year { get; set; }
-        public Season Season { get; set; }        
+        public byte Season { get; set; }
 
         [DefaultValue(false)]
         public bool IsActive { get; set; }

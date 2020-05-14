@@ -3,13 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RTA_Project_DAL
 {
-    class DbInitializer : DropCreateDatabaseAlways<RTADatabaseContext>
+    class DbInitializer : CreateDatabaseIfNotExists<RTADatabaseContext>
     {
         protected override void Seed(RTADatabaseContext context)
         {
@@ -18,7 +15,7 @@ namespace RTA_Project_DAL
 
             string[] lines = File.ReadAllLines("C:/GithubProjects/1295vikt/HoMM5-RTA-Project-WebApp/RTA-Project-DAL/SeedFiles/Players.txt");
 
-            for (int i=0; i<lines.Length; i++)
+            for (int i = 0; i < lines.Length; i++)
             {
                 string[] playerData = lines[i].Split('\t');
                 var player = new Player()
@@ -39,12 +36,39 @@ namespace RTA_Project_DAL
                 };
 
                 players.Add(player);
-            } 
-            
-            foreach(var player in players)
+            }
+
+            foreach (var player in players)
             {
                 context.Players.Add(player);
             }
+
+
+            var articles = new List<Article>
+            {
+                new Article
+                {
+                    Title = "RTA 2.0.2",
+                    LangId = 1,
+                    Content = "Доступна новая версия RTA 2.0.2, хвала Рехейвену! Lorem ipsum dolor sit amet!",
+                    Author = "Mosol",
+                    Date = new DateTime(2020,5, 12, 15, 25, 30)
+                },
+                new Article
+                {
+                    Title = "Открыта регистрация на Командный Тактический Турнир 2020",
+                    LangId = 1,
+                    Content = "Командный Тактический Турнир - 2020 - круговой командный турнир, в котором может принять участие любой желающий.",
+                    Author = "Imladris",
+                    Date = new DateTime(2020,5, 12, 16, 25, 30)
+                },
+            };
+
+            foreach (var article in articles)
+            {
+                context.Articles.Add(article);
+            }
+
 
             context.SaveChanges();
         }

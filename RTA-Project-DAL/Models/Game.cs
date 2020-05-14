@@ -1,12 +1,6 @@
-﻿using RTA_Project_DAL.enums;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RTA_Project_DAL.Models
 {
@@ -22,8 +16,8 @@ namespace RTA_Project_DAL.Models
         [DefaultValue(false)]
         public bool IsTechnicalWin { get; set; }
 
-        public Faction Faction1Id { get; set; }
-        public Faction Faction2Id { get; set; }        
+        public byte Faction1Id { get; set; }
+        public byte Faction2Id { get; set; }
 
         [ForeignKey("Hero1")]
         public int Hero1Id { get; set; }

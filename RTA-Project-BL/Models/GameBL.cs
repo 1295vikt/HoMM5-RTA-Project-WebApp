@@ -1,9 +1,4 @@
-﻿using RTA_Project_DAL.enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
 namespace RTA_Project_BL.Models
 {

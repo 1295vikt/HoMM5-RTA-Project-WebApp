@@ -91,17 +91,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DbInitializer.cs" />
-    <Compile Include="enums\Lang.cs" />
-    <Compile Include="enums\Faction.cs" />
-    <Compile Include="enums\Season.cs" />
-    <Compile Include="enums\TournamentGroupFormat.cs" />
-    <Compile Include="Migrations\202005091000408_InitialCreate.cs" />
-    <Compile Include="Migrations\202005091000408_InitialCreate.Designer.cs">
-      <DependentUpon>202005091000408_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202005091517443_InitialCreate1.cs" />
-    <Compile Include="Migrations\202005091517443_InitialCreate1.Designer.cs">
-      <DependentUpon>202005091517443_InitialCreate1.cs</DependentUpon>
+    <Compile Include="Migrations\202005140552527_InitialCreate.cs" />
+    <Compile Include="Migrations\202005140552527_InitialCreate.Designer.cs">
+      <DependentUpon>202005140552527_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Article.cs" />
@@ -128,11 +120,8 @@
     <Content Include="SeedFiles\Players.txt" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202005091000408_InitialCreate.resx">
-      <DependentUpon>202005091000408_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202005091517443_InitialCreate1.resx">
-      <DependentUpon>202005091517443_InitialCreate1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202005140552527_InitialCreate.resx">
+      <DependentUpon>202005140552527_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

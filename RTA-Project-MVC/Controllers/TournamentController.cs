@@ -42,6 +42,7 @@ namespace RTA_Project_MVC.Controllers
         // GET: Tournament/Create
         public ActionResult Create()
         {
+
             var players = _playerService.QueryAll().Select(x => new SelectListItem
             {
                 Value = x.Id.ToString(),
