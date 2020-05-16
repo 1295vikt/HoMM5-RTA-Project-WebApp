@@ -40,6 +40,7 @@ namespace RTA_Project_MVC.Controllers
         }
 
         // GET: Tournament/Create
+        [Authorize(Roles = "Host")]
         public ActionResult Create()
         {
 

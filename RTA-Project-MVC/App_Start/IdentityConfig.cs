@@ -23,12 +23,17 @@ namespace RTA_Project_MVC
         }
     }
 
-    public class SmsService : IIdentityMessageService
+    // Configure the RoleManager used in the application. RoleManager is defined in the ASP.NET Identity core assembly
+    public class ApplicationRoleManager : RoleManager<ApplicationRole>
     {
-        public Task SendAsync(IdentityMessage message)
+        public ApplicationRoleManager(IRoleStore<ApplicationRole, string> roleStore)
+            : base(roleStore)
         {
-            // Plug in your SMS service here to send a text message.
-            return Task.FromResult(0);
+        }
+
+        public static ApplicationRoleManager Create(IdentityFactoryOptions<ApplicationRoleManager> options, IOwinContext context)
+        {
+            return new ApplicationRoleManager(new RoleStore<ApplicationRole>(context.Get<ApplicationDbContext>()));
         }
     }
 
@@ -77,7 +82,6 @@ namespace RTA_Project_MVC
                 BodyFormat = "Your security code is {0}"
             });
             manager.EmailService = new EmailService();
-            manager.SmsService = new SmsService();
             var dataProtectionProvider = options.DataProtectionProvider;
             if (dataProtectionProvider != null)
             {
@@ -85,6 +89,49 @@ namespace RTA_Project_MVC
                     new DataProtectorTokenProvider<ApplicationUser>(dataProtectionProvider.Create("ASP.NET Identity"));
             }
             return manager;
+        }
+    }
+
+
+    public class ApplicationDbInitializer : DropCreateDatabaseIfModelChanges<ApplicationDbContext>
+    {
+        protected override void Seed(ApplicationDbContext context)
+        {
+            InitializeIdentityForEF(context);
+            base.Seed(context);
+        }
+
+     
+        public static void InitializeIdentityForEF(ApplicationDbContext db)
+        {
+            var userManager = HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>();
+            var roleManager = HttpContext.Current.GetOwinContext().Get<ApplicationRoleManager>();
+            const string name = "Admin";
+            const string password = "Admin";
+            string[] roles = { "Admin", "Host" };
+
+
+            var user = userManager.FindByName(name);
+            if (user == null)
+            {
+                user = new ApplicationUser { UserName = name };
+                var result = userManager.Create(user, password);
+                result = userManager.SetLockoutEnabled(user.Id, false);
+            }
+
+            var rolesForUser = userManager.GetRoles(user.Id);
+
+            foreach(var role in roles)
+            {
+                //Create Role if it does not exist
+                if (roleManager.FindByName(role) == null)
+                    roleManager.Create(new ApplicationRole(role));
+
+                // Add user admin to Role if not already added
+                if (!rolesForUser.Contains(role))
+                    userManager.AddToRole(user.Id, role);
+            }
+
         }
     }
 
@@ -106,4 +153,6 @@ namespace RTA_Project_MVC
             return new ApplicationSignInManager(context.GetUserManager<ApplicationUserManager>(), context.Authentication);
         }
     }
+
+
 }
