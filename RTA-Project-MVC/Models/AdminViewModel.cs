@@ -26,6 +26,6 @@ namespace RTA_Project_MVC.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
 
-        public Dictionary<string, bool> RolesList { get; set; }
+        public IEnumerable<SelectListItem> RolesList { get; set; }
     }
 }

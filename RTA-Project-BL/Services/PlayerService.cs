@@ -17,7 +17,7 @@ namespace RTA_Project_BL.Services
 
     public class PlayerService : GenericService<PlayerBL, Player>, IPlayerService
     {
-        private readonly IMapper _mapper;
+
         public PlayerService(IGenericRepository<Player> repository, IMapper mapper) : base(repository, mapper)
         {
             

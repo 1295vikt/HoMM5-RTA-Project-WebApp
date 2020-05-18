@@ -1,9 +1,5 @@
 ﻿@model RTA_Project_MVC.Models.TournamentCreateModel
 
-@{
-    ViewBag.Title = "Create";
-}
-
 <script src="~/Plugins/ckeditor/ckeditor.js"></script>
 
 <h2>Создание турнира</h2>
@@ -13,118 +9,164 @@
 {
     @Html.AntiForgeryToken()
 
-<div class="form-horizontal">
-    <hr />
-    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-    <div class="form-group">
-        <label class="control-label col-md-3">Название турнира</label>
-        <div class="col-md-9">
-            @Html.EditorFor(model => model.NameRus, new { htmlAttributes = new { @class = "form-control", autocomplete = "off" } })
-            @Html.ValidationMessageFor(model => model.NameRus, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-3">Название турнира</label>
+            <div class="col-md-9">
+                @Html.EditorFor(model => model.NameRus, new { htmlAttributes = new { @class = "form-control", autocomplete = "off" } })
+                @Html.ValidationMessageFor(model => model.NameRus, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-3">Версия карты</label>
+            <div class="col-md-9">
+                @Html.EditorFor(model => model.MapVersion, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MapVersion, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-3">Официальный турнир</label>
+            <div class="col-md-9">
+                @Html.CheckBoxFor(model => model.IsOfficial, new { @id = "checkboxofficial" })
+            </div>
+        </div>
+
+        <div class="form-group" id="yeardiv" style="display:none">
+            <label class="control-label col-md-3">Год</label>
+            <div class="col-md-9">
+                @Html.EditorFor(model => model.Year, new { htmlAttributes = new { @class = "form-control", min = 2020, max = 2050 } })
+                @Html.ValidationMessageFor(model => model.Year, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-3">Сезонный турнир</label>
+            <div class="col-md-9">
+                @Html.CheckBoxFor(model => model.IsSeasonal, new { id = "checkboxseasonal" })
+            </div>
+        </div>
+
+        <div class="form-group" id="seasondiv" style="display:none">
+            <label class="control-label col-md-3">Сезон</label>
+            <div class="col-md-9">
+                @Html.DropDownListFor(model => model.Season, Model.Seasons)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-3">Двухэтапный турнир</label>
+            <div class="col-md-9">
+                @Html.CheckBoxFor(model => model.Is2Stage, new { id = "checkbox2stage" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-3" id="stage1desc">Формат турнира</label>
+            <div class="col-md-9">
+                @Html.DropDownListFor(model => model.Stage1Format, Model.Formats)
+            </div>
+        </div>
+
+        <div class="form-group" id="stage2div" style="display:none">
+            <label class="control-label col-md-3" id="stage1desc">Формат 2го этапа</label>
+            <div class="col-md-9">
+                @Html.DropDownListFor(model => model.Stage2Format, Model.Formats)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-3">Закрытый турнир</label>
+            <div class="col-md-9">
+                @Html.CheckBoxFor(model => model.IsPrivate)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-3">Добавить организаторов</label>
+            <div class="col-md-9">
+                @Html.DropDownList("Host", Model.HostsAvailable, "Выбрать", new { id = "hosts-dropdown" })
+                <div class="btn jog-btn" id="plus-btn" style="display:none"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-3">Организаторы</label>
+            @foreach (var host in Model.HostsAvailable)
+            {
+                if (Model.HostsIdList.Contains(host.Value))
+                {
+                    <div class="col-md-9">
+                        <label class="control-label" id="current-host">@host.Text</label>
+                        @if (host.Value != Model.HostsIdList[0])
+                        {<div class="btn jog-btn" id="minus-btn" data-id="@host.Value"></div>}
+                    </div>
+                }
+            }
+
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-3">Описание турнира</label>
+            <div class="col-md-12" style="margin-top: 10px">
+                @Html.TextAreaFor(model => model.Description, new { @id = "TournamentDescription", @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                <script>
+                    CKEDITOR.replace("TournamentDescription", { htmlEncodeOutput: true });
+                </script>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-9">
+                <input type="submit" value="Создать" class="btn btn-default" />
+            </div>
         </div>
     </div>
-
-    <div class="form-group">
-        <label class="control-label col-md-3">Версия карты</label>
-        <div class="col-md-9">
-            @Html.EditorFor(model => model.MapVersion, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.MapVersion, "", new { @class = "text-danger" })
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label col-md-3">Официальный турнир</label>
-        <div class="col-md-9">
-            @Html.CheckBoxFor(model => model.IsOfficial, new { @id = "checkboxofficial" })
-        </div>
-    </div>
-
-    <div class="form-group" id="yeardiv" style="display:none">
-        <label class="control-label col-md-3">Год</label>
-        <div class="col-md-9">
-            @Html.EditorFor(model => model.Year, new { htmlAttributes = new { @class = "form-control", min = 2020, max = 2050 } })
-            @Html.ValidationMessageFor(model => model.Year, "", new { @class = "text-danger" })
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label col-md-3">Сезонный турнир</label>
-        <div class="col-md-9">
-            @Html.CheckBoxFor(model => model.IsSeasonal, new { id = "checkboxseasonal" })
-        </div>
-    </div>
-
-    <div class="form-group" id="seasondiv" style="display:none">
-        <label class="control-label col-md-3">Сезон</label>
-        <div class="col-md-9">
-            @Html.DropDownListFor(model => model.Season, Model.Seasons)
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label col-md-3">Двухэтапный турнир</label>
-        <div class="col-md-9">
-            @Html.CheckBoxFor(model => model.Is2Stage, new { id = "checkbox2stage" })
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label col-md-3" id="stage1desc">Формат турнира</label>
-        <div class="col-md-9">
-            @Html.DropDownListFor(model => model.Stage1Format, Model.Formats)
-        </div>
-    </div>
-
-    <div class="form-group" id="stage2div" style="display:none">
-        <label class="control-label col-md-3" id="stage1desc">Формат 2го этапа</label>
-        <div class="col-md-9">
-            @Html.DropDownListFor(model => model.Stage2Format, Model.Formats)
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label col-md-3">Закрытый турнир</label>
-        <div class="col-md-9">
-            @Html.CheckBoxFor(model => model.IsPrivate)
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="control-label col-md-3">Добавить организаторов</label>
-        <div class="col-md-9">
-            @Html.DropDownList("Host", Model.HostPlayerList)
-            <div class="btn jog-btn" id="plus-btn"></div>
-        </div>
-    </div>
-
-
-
-    <div class="form-group">
-        <label class="control-label col-md-3">Описание турнира</label>
-        <div class="col-md-9" style="margin-top: 10px">
-            @Html.TextAreaFor(model => model.Description, new { @id = "TournamentDescription", @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
-            <script>
-                CKEDITOR.replace("TournamentDescription", { htmlEncodeOutput: true });
-            </script>
-        </div>
-    </div>
-
-
-    <div class="form-group">
-        <div class="col-md-offset-3 col-md-9">
-            <input type="submit" value="Создать" class="btn btn-default" />
-        </div>
-    </div>
-</div>
 
 }
 
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
-
     @Scripts.Render("~/Scripts/tournament-create.js")
+
+    <script>
+        $(document).ready(function () {
+
+            $("#plus-btn").click(function () {
+
+
+
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $("#hosts-dropdown").change(function () {
+
+
+                var plusBtn = $("#plus-btn");
+                var hostId = $(this).val();
+
+                if (hostId != "") {
+                    plusBtn.show();
+                    plusBtn.attr({ 'data-id': hostId });
+                }
+                else {
+                    plusBtn.hide();
+                }
+
+            });
+        });
+    </script>
 
 }

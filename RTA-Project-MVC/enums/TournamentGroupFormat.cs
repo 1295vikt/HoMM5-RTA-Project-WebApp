@@ -4,7 +4,8 @@
     {
         RoundRobin = 1,
         Swiss = 2,
-        PlayoffSingle = 3,
-        PlayoffDouble = 4
+        PlayoffSingleElim = 3,
+        PlayoffDoubleElim = 4,
+        Custom = 5
     }
 }

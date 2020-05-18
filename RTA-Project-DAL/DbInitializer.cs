@@ -51,7 +51,7 @@ namespace RTA_Project_DAL
                     Title = "RTA 2.0.2",
                     LangId = 1,
                     Content = "Доступна новая версия RTA 2.0.2, хвала Рехейвену! Lorem ipsum dolor sit amet!",
-                    Author = "Mosol",
+                    AuthorId = "bbab0a2e-7e19-46e7-9abe-bd80e5462d69",
                     Date = new DateTime(2020,5, 12, 15, 25, 30)
                 },
                 new Article
@@ -59,7 +59,7 @@ namespace RTA_Project_DAL
                     Title = "Открыта регистрация на Командный Тактический Турнир 2020",
                     LangId = 1,
                     Content = "Командный Тактический Турнир - 2020 - круговой командный турнир, в котором может принять участие любой желающий.",
-                    Author = "Imladris",
+                    AuthorId = "bbab0a2e-7e19-46e7-9abe-bd80e5462d69",
                     Date = new DateTime(2020,5, 12, 16, 25, 30)
                 },
             };

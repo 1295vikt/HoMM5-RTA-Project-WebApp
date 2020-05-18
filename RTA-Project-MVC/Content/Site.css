@@ -217,6 +217,20 @@ h2 {
         background-size: 33px 33px;
     }
 
+#minus-btn {
+    position: absolute;
+    background: url('../Resources/ui/jog/Minus.png') no-repeat;
+    background-size: 32px 32px;
+    width: 33px;
+    height: 33px;
+    left: 228px;
+    bottom: -4px;
+}
+
+    #minus-btn:active {
+        background: url('../Resources/ui/jog/Minus_pushed.png') no-repeat;
+        background-size: 33px 33px;
+    }
 
 #nav-block {
     display: block;
@@ -349,10 +363,11 @@ h2 {
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 26px;
-    padding-right: 44px;
+    padding-left: 34px;
+    padding-right: 60px;
     position: relative;
-    margin-top: -74px;
+    margin-top: -64px;
+    padding-bottom: 18px;
     z-index: 3;
 }
 
@@ -462,9 +477,9 @@ select {
     }
 
 
-input.form-control.text-box,
-input.form-control[type=text],
-input.form-control[type=password] {
+form-control.text-box,
+form-control[type=text],
+form-control[type=password] {
     background: url('../Resources/ui/TextForm.png') no-repeat;
     border-radius: 8px;
     border: none;

@@ -21,10 +21,7 @@
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Content)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Author)
+                @Html.Raw(WebUtility.HtmlDecode(item.Content))
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Date)
@@ -32,7 +29,7 @@
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Ajax.ActionLink("Delete", "Delete", new { id = item.Id }, new AjaxOptions { HttpMethod = "DELETE", OnSuccess = "" })
             </td>
         </tr>
     }
@@ -43,3 +40,7 @@
 Страница @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) из @Model.PageCount
 
 @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+
+@section Scripts {
+    @Scripts.Render("~/Scripts/jquery.unobtrusive-ajax.js")
+}

@@ -29,12 +29,13 @@ namespace RTA_Project_MVC.Models
         public bool IsSeasonal { get; set; }
         public bool IsPrivate { get; set; }
 
-        public List<int> HostsId { get; set; }
-
         [Required]
+        [MaxLength(8000)]
         public string Description { get; set; }
 
-        public List<SelectListItem> HostPlayerList { get; set; }
+        public IList<string> HostsIdList { get; set; }
+
+        public IList<SelectListItem> HostsAvailable { get; set; }
 
         public IEnumerable<SelectListItem> Formats
         {
@@ -46,6 +47,7 @@ namespace RTA_Project_MVC.Models
                     new SelectListItem() {Text = "Swiss", Value = "2"},
                     new SelectListItem() {Text = "Playoff SE", Value = "3"},
                     new SelectListItem() {Text = "Playoff DE", Value = "4"},
+                    new SelectListItem() {Text = "Custom", Value = "5"},
                 };
             }
         }

@@ -8,7 +8,7 @@ namespace RTA_Project_DAL.Models
         public byte LangId { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
-        public string Author { get; set; }
+        public string AuthorId { get; set; }
         public DateTime Date { get; set; }
     }
 }

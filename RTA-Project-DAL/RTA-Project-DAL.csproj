@@ -95,6 +95,10 @@
     <Compile Include="Migrations\202005140552527_InitialCreate.Designer.cs">
       <DependentUpon>202005140552527_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005180810404_InitialCreate1.cs" />
+    <Compile Include="Migrations\202005180810404_InitialCreate1.Designer.cs">
+      <DependentUpon>202005180810404_InitialCreate1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Article.cs" />
     <Compile Include="Models\Game.cs" />
@@ -122,6 +126,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202005140552527_InitialCreate.resx">
       <DependentUpon>202005140552527_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005180810404_InitialCreate1.resx">
+      <DependentUpon>202005180810404_InitialCreate1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

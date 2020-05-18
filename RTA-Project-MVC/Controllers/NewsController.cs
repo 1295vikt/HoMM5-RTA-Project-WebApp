@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
+using Microsoft.AspNet.Identity;
 using PagedList;
+using RTA_Project_BL.Models;
 using RTA_Project_BL.Services;
 using RTA_Project_DAL.enums;
 using RTA_Project_MVC.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace RTA_Project_MVC.Controllers
@@ -31,10 +31,11 @@ namespace RTA_Project_MVC.Controllers
             int pageSize = 4;
             int pageNumber = (page ?? 1);
 
-            var articlesBL = _articleService.QueryArticles((byte)Lang.Rus);
+            var articlesBL = _articleService.QueryArticles(0);
             var articlesPageBL = articlesBL.ToPagedList(pageNumber, pageSize);
 
             var mappedList = _mapper.Map<IEnumerable<ArticleViewModel>>(articlesPageBL);
+
             var pagedResult = new StaticPagedList<ArticleViewModel>(mappedList, articlesPageBL.GetMetaData());
 
             return View(pagedResult);
@@ -47,6 +48,7 @@ namespace RTA_Project_MVC.Controllers
         }
 
         // GET: News/Create
+        [Authorize(Roles = "Host")]
         public ActionResult Create()
         {
             return View();
@@ -54,18 +56,25 @@ namespace RTA_Project_MVC.Controllers
 
         // POST: News/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        [Authorize(Roles = "Host")]
+        public ActionResult Create(ArticleViewModel article)
         {
-            try
-            {
-                // TODO: Add insert logic here
 
-                return RedirectToAction("Index");
-            }
-            catch
+            if (!ModelState.IsValid)
             {
-                return View();
+                return View(article);
             }
+
+            article.LangId = Lang.Rus;
+
+            var articleBL = _mapper.Map<ArticleBL>(article);
+
+            articleBL.AuthorId = User.Identity.GetUserId();
+            articleBL.Date = DateTime.Now;
+
+            _articleService.Create(articleBL);
+
+            return RedirectToAction("Index");
         }
 
         // GET: News/Edit/5
@@ -90,26 +99,21 @@ namespace RTA_Project_MVC.Controllers
             }
         }
 
-        // GET: News/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
 
         // POST: News/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        [HttpDelete]
+        [Authorize]
+        public ActionResult Delete(int id)
         {
-            try
-            {
-                // TODO: Add delete logic here
 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            var userId = User.Identity.GetUserId();
+
+            var authorId = _articleService.FindById(id).AuthorId;
+
+            if (authorId == userId)
+                _articleService.Delete(id);
+
+            return View();
         }
     }
 }

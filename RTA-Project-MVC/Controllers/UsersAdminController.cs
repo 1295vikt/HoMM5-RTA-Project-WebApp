@@ -141,9 +141,15 @@ namespace RTA_Project_MVC.Controllers
             return View(new EditUserViewModel()
             {
                 Id = user.Id,
+                UserName = user.UserName,
                 Email = user.Email,
 
-                RolesList = RoleManager.Roles.ToDictionary(x=>x.Name, x => userRoles.Contains(x.Name))
+                RolesList = RoleManager.Roles.ToList().Select(x => new SelectListItem()
+                {
+                    Selected = userRoles.Contains(x.Name),
+                    Text = x.Name,
+                    Value = x.Name
+                })
             });
         }
 
@@ -151,7 +157,7 @@ namespace RTA_Project_MVC.Controllers
         // POST: /Users/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit(EditUserViewModel editUser)
+        public async Task<ActionResult> Edit([Bind(Include = "UserName,Email,Id")] EditUserViewModel editUser, params string[] selectedRole)
         {
             if (ModelState.IsValid)
             {
@@ -166,22 +172,22 @@ namespace RTA_Project_MVC.Controllers
 
                 var userRoles = await UserManager.GetRolesAsync(user.Id);
 
-                //selectedRole = editUser.RolesList.Select(new ) ?? new string[] { };
+                selectedRole = selectedRole ?? new string[] { };
 
-                //var result = await UserManager.AddToRolesAsync(user.Id, selectedRole.Except(userRoles).ToArray<string>());
+                var result = await UserManager.AddToRolesAsync(user.Id, selectedRole.Except(userRoles).ToArray<string>());
 
-                //if (!result.Succeeded)
-                //{
-                //    ModelState.AddModelError("", result.Errors.First());
-                //    return View();
-                //}
-                //result = await UserManager.RemoveFromRolesAsync(user.Id, userRoles.Except(selectedRole).ToArray<string>());
+                if (!result.Succeeded)
+                {
+                    ModelState.AddModelError("", result.Errors.First());
+                    return View();
+                }
+                result = await UserManager.RemoveFromRolesAsync(user.Id, userRoles.Except(selectedRole).ToArray<string>());
 
-                //if (!result.Succeeded)
-                //{
-                //    ModelState.AddModelError("", result.Errors.First());
-                //    return View();
-                //}
+                if (!result.Succeeded)
+                {
+                    ModelState.AddModelError("", result.Errors.First());
+                    return View();
+                }
                 return RedirectToAction("Index");
             }
             ModelState.AddModelError("", "Something failed.");
