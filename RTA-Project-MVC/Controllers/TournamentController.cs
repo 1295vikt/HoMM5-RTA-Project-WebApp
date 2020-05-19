@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
+using RTA_Project_BL.Models;
 using RTA_Project_BL.Services;
 using RTA_Project_MVC.Models;
 using System;
@@ -49,7 +50,6 @@ namespace RTA_Project_MVC.Controllers
         public ActionResult Create()
         {
 
-
             var userManager = Request.GetOwinContext().GetUserManager<ApplicationUserManager>();
             var roleManager = Request.GetOwinContext().Get<ApplicationRoleManager>();
 
@@ -61,19 +61,23 @@ namespace RTA_Project_MVC.Controllers
                 Value = x.Id
             }).ToList();
 
-            var userId = User.Identity.GetUserId();
+            hosts.Remove(hosts.First(x => x.Value == User.Identity.GetUserId()));
 
-            var model = new TournamentCreateModel() { Year = DateTime.Now.Year, HostsIdList = new List<string> { userId }, HostsAvailable = hosts };
+            var model = new TournamentCreateModel() { Year = DateTime.Now.Year, HostsAvailable = hosts };
             return View(model);
         }
 
         // POST: Tournament/Create
         [HttpPost]
         [Authorize(Roles = "Host")]
-        public ActionResult Create(TournamentCreateModel model)
+        public ActionResult Create(TournamentCreateModel model, params string[] selectedHost)
         {
-            var m = model;
-            return View();
+
+            var modelBL = _mapper.Map<TournamentBL>(model);
+            selectedHost.Prepend(User.Identity.GetUserId());
+            modelBL.HostsId = selectedHost;
+
+            return RedirectToAction("Index");
         }
 
         // GET: Tournament/Edit/5

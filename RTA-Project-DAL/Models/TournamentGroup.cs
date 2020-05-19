@@ -15,8 +15,8 @@ namespace RTA_Project_DAL.Models
         [DefaultValue(false)]
         public bool IsFinished { get; set; }
 
-        public virtual List<TournamentPlayer> TournamentPlayers { get; set; }
-        public virtual List<Match> Matches { get; set; }
+        public virtual ICollection<TournamentPlayer> TournamentPlayers { get; set; }
+        public virtual ICollection<Match> Matches { get; set; }
     }
 
 }

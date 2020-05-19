@@ -27,10 +27,10 @@ namespace RTA_Project_DAL.Models
         [DefaultValue(false)]
         public bool IsPrivate { get; set; }
 
-        public virtual List<Player> Hosts { get; set; }
+        public string HostsId { get; set; }
 
-        public virtual List<TournamentGroup> TournamentGroups { get; set; }
-        public virtual List<TournamentPlayer> TournamentPlayers { get; set; }
+        public virtual ICollection<TournamentGroup> TournamentGroups { get; set; }
+        public virtual ICollection<TournamentPlayer> TournamentPlayers { get; set; }
 
         public virtual Map Map { get; set; }
         public virtual TournamentDescription Description { get; set; }

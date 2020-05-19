@@ -21,7 +21,7 @@ body {
 
 
 
-#placeholder{
+#placeholder {
     height: 250px;
 }
 
@@ -181,9 +181,9 @@ h2 {
             background: url('../Resources/ui/jog/BattleNormal.png') no-repeat;
         }
 
-        .jog-btn.lower.left:active {
-            background: url('../Resources/ui/jog/BattlePushed.png') no-repeat;
-        }
+            .jog-btn.lower.left:active {
+                background: url('../Resources/ui/jog/BattlePushed.png') no-repeat;
+            }
 
             .jog-btn.lower.left#grayed-out {
                 background: url('../Resources/ui/jog/BattleDisabled.png') no-repeat;
@@ -202,35 +202,43 @@ h2 {
             }
 
 
-#plus-btn {
-    position: absolute;
-    background: url('../Resources/ui/jog/Plus.png') no-repeat;
-    background-size: 32px 32px;
-    width: 33px;
-    height: 33px;
-    left: 228px;
-    bottom: -4px;
-}
-
-    #plus-btn:active {
-        background: url('../Resources/ui/jog/Plus_pushed.png') no-repeat;
-        background-size: 33px 33px;
+    .jog-btn.plus-btn {
+        position: relative;
+        display: inline-block;
+        background: url('../Resources/ui/jog/Plus.png') no-repeat;
+        background-size: 28px 28px;
+        width: 29px;
+        height: 29px;
+        top: 4px;
     }
 
-#minus-btn {
-    position: absolute;
-    background: url('../Resources/ui/jog/Minus.png') no-repeat;
-    background-size: 32px 32px;
-    width: 33px;
-    height: 33px;
-    left: 228px;
-    bottom: -4px;
+        .jog-btn.plus-btn:active {
+            background: url('../Resources/ui/jog/Plus_pushed.png') no-repeat;
+            background-size: 28px 28px;
+        }
+
+    .jog-btn.minus-btn {
+        position: relative;
+        display: inline-block;
+        background: url('../Resources/ui/jog/Minus.png') no-repeat;
+        background-size: 28px 28px;
+        width: 29px;
+        height: 29px;
+        left: 204px;
+        top: 6px;
+    }
+        .jog-btn.minus-btn:active {
+            background: url('../Resources/ui/jog/Minus_pushed.png') no-repeat;
+            background-size: 28px 28px;
+        }
+
+.host-name {
+    position: relative;
+    display: inline-block;
+    left: -24px;
+    top: 7px;
 }
 
-    #minus-btn:active {
-        background: url('../Resources/ui/jog/Minus_pushed.png') no-repeat;
-        background-size: 33px 33px;
-    }
 
 #nav-block {
     display: block;
@@ -372,18 +380,6 @@ h2 {
 }
 
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
-
-
-
-
-
-
 
 .form-group {
     font-size: 18px;
@@ -432,7 +428,7 @@ input[type]:not([type=text]) {
 }
 
 
-input[type='checkbox'] {
+input:not(.cke_dialog_ui_checkbox_input)[type='checkbox'] {
     -webkit-appearance: none;
     -moz-appearance: none;
     width: 28px;
@@ -443,9 +439,9 @@ input[type='checkbox'] {
     top: 4px;
 }
 
-    input[type='checkbox']:checked {
-        background-image: url(../Resources/ui/Checked.png);
-    }
+input[type='checkbox']:checked {
+    background-image: url(../Resources/ui/Checked.png);
+}
 
 
 select {
@@ -478,8 +474,8 @@ select {
 
 
 form-control.text-box,
-form-control[type=text],
-form-control[type=password] {
+input.form-control[type=text],
+input.form-control[type=password] {
     background: url('../Resources/ui/TextForm.png') no-repeat;
     border-radius: 8px;
     border: none;
@@ -492,5 +488,3 @@ form-control[type=password] {
     position: relative;
     top: 8px;
 }
-
-

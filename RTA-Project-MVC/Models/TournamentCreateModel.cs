@@ -1,9 +1,6 @@
 ﻿using RTA_Project_DAL.enums;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace RTA_Project_MVC.Models
@@ -31,9 +28,7 @@ namespace RTA_Project_MVC.Models
 
         [Required]
         [MaxLength(8000)]
-        public string Description { get; set; }
-
-        public IList<string> HostsIdList { get; set; }
+        public string ContentRus { get; set; }
 
         public IList<SelectListItem> HostsAvailable { get; set; }
 
@@ -66,6 +61,7 @@ namespace RTA_Project_MVC.Models
             }
         }
 
-
     }
+
+
 }

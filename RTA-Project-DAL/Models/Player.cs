@@ -18,8 +18,6 @@ namespace RTA_Project_DAL.Models
         public string Name { get; set; }
 
         public virtual PlayerStats Stats { get; set; }
-
-        public virtual List<Tournament> HostedTournaments { get; set; }
     }
 
 }

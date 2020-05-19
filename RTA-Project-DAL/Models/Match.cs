@@ -22,6 +22,8 @@ namespace RTA_Project_DAL.Models
         public bool IsCancelled { get; set; }
         [DefaultValue(false)]
         public bool IsTechnicalResult { get; set; }
+        [DefaultValue(false)]
+        public bool IsSpecialMatch { get; set; }
         public DateTime DateFinished { get; set; }
 
         [ForeignKey("Player1")]
@@ -29,11 +31,14 @@ namespace RTA_Project_DAL.Models
         [ForeignKey("Player2")]
         public int Player2ID { get; set; }
 
+        public int Player1Score { get; set; }
+        public int Player2Score { get; set; }
+
         public virtual Player Player1 { get; set; }
         public virtual Player Player2 { get; set; }
 
         public virtual TournamentBracket Bracket { get; set; }
 
-        public virtual List<Game> Games { get; set; }
+        public virtual ICollection<Game> Games { get; set; }
     }
 }

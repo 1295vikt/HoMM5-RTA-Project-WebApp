@@ -1,11 +1,7 @@
 ﻿using AutoMapper;
 using RTA_Project_BL.Models;
 using RTA_Project_DAL.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RTA_Project_BL.Configs
 {
@@ -15,7 +11,8 @@ namespace RTA_Project_BL.Configs
         {
 
             CreateMap<ArticleBL, Article>().ReverseMap();
-            CreateMap<TournamentBL, Tournament>().ReverseMap();
+            CreateMap<TournamentBL, Tournament>().ForMember(dest => dest.HostsId, opt => opt.MapFrom(src => string.Join(";", src.HostsId)));
+            CreateMap<Tournament, TournamentBL>().ForMember(dest => dest.HostsId, opt => opt.MapFrom(src => src.HostsId.Split(';')));
             CreateMap<TournamentGroupBL, TournamentGroup>().ReverseMap();
             CreateMap<TournamentDescriptionBL, TournamentDescription>().ReverseMap();
             CreateMap<TournamentPlayerBL, TournamentPlayer>().ReverseMap();

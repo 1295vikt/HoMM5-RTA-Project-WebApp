@@ -17,10 +17,10 @@ namespace RTA_Project_BL.Models
         public bool IsSeasonal { get; set; }
         public bool IsPrivate { get; set; }
 
+        public string[] HostsId { get; set; }
 
-        public List<TournamentGroupBL> TournamentGroups { get; set; }
-        public List<TournamentPlayerBL> TournamentPlayers { get; set; }
-        public List<PlayerBL> Hosts { get; set; }
+        public ICollection<TournamentGroupBL> TournamentGroups { get; set; }
+        public ICollection<TournamentPlayerBL> TournamentPlayers { get; set; }
 
 
         public TournamentDescriptionBL Description { get; set; }

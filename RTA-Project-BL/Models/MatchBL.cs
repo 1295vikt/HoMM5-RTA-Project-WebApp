@@ -11,7 +11,10 @@ namespace RTA_Project_BL.Models
         public int Id { get; set; }
         public int TournamentGroupId { get; set; }
         public int NumberOfGames { get; set; }
+
         public bool IsBestOfFormat { get; set; }
+        public bool IsTechnicalResult { get; set; }
+        public bool IsSpecialMatch { get; set; }
 
         public string Player1Id { get; set; }
         public string Player2Id { get; set; }
@@ -21,6 +24,6 @@ namespace RTA_Project_BL.Models
 
         public DateTime DateFinished { get; set; }
 
-        public List<GameBL> Games { get; set; }
+        public ICollection<GameBL> Games { get; set; }
     }
 }

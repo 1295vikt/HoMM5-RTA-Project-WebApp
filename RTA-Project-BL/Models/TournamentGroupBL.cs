@@ -15,7 +15,7 @@ namespace RTA_Project_BL.Models
 
         public int GroupNum { get; set; }
 
-        public List<TournamentPlayerBL> TournamentPlayers { get; set; }
-        public List<MatchBL> Matches { get; set; }
+        public ICollection<TournamentPlayerBL> TournamentPlayers { get; set; }
+        public ICollection<MatchBL> Matches { get; set; }
     }
 }

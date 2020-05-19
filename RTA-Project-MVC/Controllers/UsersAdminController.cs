@@ -174,14 +174,14 @@ namespace RTA_Project_MVC.Controllers
 
                 selectedRole = selectedRole ?? new string[] { };
 
-                var result = await UserManager.AddToRolesAsync(user.Id, selectedRole.Except(userRoles).ToArray<string>());
+                var result = await UserManager.AddToRolesAsync(user.Id, selectedRole.Except(userRoles).ToArray());
 
                 if (!result.Succeeded)
                 {
                     ModelState.AddModelError("", result.Errors.First());
                     return View();
                 }
-                result = await UserManager.RemoveFromRolesAsync(user.Id, userRoles.Except(selectedRole).ToArray<string>());
+                result = await UserManager.RemoveFromRolesAsync(user.Id, userRoles.Except(selectedRole).ToArray());
 
                 if (!result.Succeeded)
                 {

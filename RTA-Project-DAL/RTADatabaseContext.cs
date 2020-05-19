@@ -20,6 +20,8 @@ namespace RTA_Project_DAL
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+
+
         }
 
         public DbSet<Hero> Heroes { get; set; }
