@@ -51,7 +51,7 @@ $(document).ready(function () {
 
             $(hiddenInput).appendTo(nameLabel);
             $(nameLabel).appendTo(hostWrapper);
-            $(minusBtn).appendTo(hostWrapper);
+            $(minusBtn).prependTo(hostWrapper);
 
             $(hostWrapper).appendTo("#hosts-container");
 

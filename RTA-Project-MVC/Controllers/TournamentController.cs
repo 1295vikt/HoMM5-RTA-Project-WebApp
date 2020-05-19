@@ -5,8 +5,6 @@ using RTA_Project_BL.Models;
 using RTA_Project_BL.Services;
 using RTA_Project_MVC.Models;
 using System;
-using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -53,7 +51,7 @@ namespace RTA_Project_MVC.Controllers
             var userManager = Request.GetOwinContext().GetUserManager<ApplicationUserManager>();
             var roleManager = Request.GetOwinContext().Get<ApplicationRoleManager>();
 
-            var role =  roleManager.Roles.Single(r => r.Name == "Host");
+            var role = roleManager.Roles.Single(r => r.Name == "Host");
 
             var hosts = userManager.Users.Where(u => u.Roles.Any(r => r.RoleId == role.Id)).Select(x => new SelectListItem
             {
@@ -76,6 +74,8 @@ namespace RTA_Project_MVC.Controllers
             var modelBL = _mapper.Map<TournamentBL>(model);
             selectedHost.Prepend(User.Identity.GetUserId());
             modelBL.HostsId = selectedHost;
+
+            _tournamentService.Create(modelBL);
 
             return RedirectToAction("Index");
         }

@@ -8,26 +8,35 @@ namespace RTA_Project_MVC.Models
     public class TournamentCreateModel
     {
         [Required]
+        [Display(Name = "Название турнира")]
         [MaxLength(40, ErrorMessage = "Название не должно содержать более 40 символов")]
         public string NameRus { get; set; }
         [MaxLength(40, ErrorMessage = "Название не должно содержать более 40 символов")]
         public string NameEng { get; set; }
         [Required]
+        [Display(Name = "Версия карты")]
         public string MapVersion { get; set; }
+        [Display(Name = "Год")]
         public int Year { get; set; }
+        [Display(Name = "Сезон")]
         public byte Season { get; set; }
 
+        [Display(Name = "Двухэтапный турнир")]
         public bool Is2Stage { get; set; }
 
         public TournamentGroupFormat Stage1Format { get; set; }
         public TournamentGroupFormat Stage2Format { get; set; }
 
+        [Display(Name = "Официальный турнир")]
         public bool IsOfficial { get; set; }
+        [Display(Name = "Сезонный турнир")]
         public bool IsSeasonal { get; set; }
+        [Display(Name = "Закрытый турнир")]
         public bool IsPrivate { get; set; }
 
         [Required]
         [MaxLength(8000)]
+        [Display(Name = "Описание турнира")]
         public string ContentRus { get; set; }
 
         public IList<SelectListItem> HostsAvailable { get; set; }

@@ -2,17 +2,12 @@
 using RTA_Project_BL.Models;
 using RTA_Project_DAL.Models;
 using RTA_Project_DAL.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RTA_Project_BL.Services
 {
     public interface IPlayerService : IGenereicService<PlayerBL>
     {
-
+        PlayerBL GetPlayer(string userId);
     }
 
     public class PlayerService : GenericService<PlayerBL, Player>, IPlayerService
@@ -20,10 +15,13 @@ namespace RTA_Project_BL.Services
 
         public PlayerService(IGenericRepository<Player> repository, IMapper mapper) : base(repository, mapper)
         {
-            
+
         }
 
-
-
+        public PlayerBL GetPlayer(string userId)
+        {
+            var player = _repository.GetFirstOrDefault(p => p.AccountId == userId);
+            return Map(player);
+        }
     }
 }

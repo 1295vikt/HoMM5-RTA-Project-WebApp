@@ -435,7 +435,7 @@ input:not(.cke_dialog_ui_checkbox_input)[type='checkbox'] {
     height: 25px;
     background: url(../Resources/ui/Checkbox.png) no-repeat;
     display: inline-block;
-    position: relative;
+    position: absolute;
     top: 4px;
 }
 
@@ -473,9 +473,7 @@ select {
     }
 
 
-form-control.text-box,
-input.form-control[type=text],
-input.form-control[type=password] {
+input.form-control {
     background: url('../Resources/ui/TextForm.png') no-repeat;
     border-radius: 8px;
     border: none;
