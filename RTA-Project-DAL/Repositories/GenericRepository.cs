@@ -53,7 +53,7 @@ namespace RTA_Project_DAL.Repositories
             return _dbSet.AsNoTracking();
         }
 
-        public IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> filter = null,
+        public virtual IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> filter = null,
         Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
         params Expression<Func<TEntity, object>>[] includes)
         {
@@ -71,7 +71,7 @@ namespace RTA_Project_DAL.Repositories
             return query.ToList();
         }
 
-        public TEntity GetFirstOrDefault(Expression<Func<TEntity, bool>> filter = null,
+        public virtual TEntity GetFirstOrDefault(Expression<Func<TEntity, bool>> filter = null,
         params Expression<Func<TEntity, object>>[] includes)
         {
             IQueryable<TEntity> query = _dbSet.AsNoTracking();
@@ -82,7 +82,7 @@ namespace RTA_Project_DAL.Repositories
             return query.FirstOrDefault(filter);
         }
 
-        public IQueryable<TEntity> Query(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null)
+        public virtual IQueryable<TEntity> Query(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null)
         {
             IQueryable<TEntity> query = _dbSet.AsNoTracking();
 
@@ -95,27 +95,27 @@ namespace RTA_Project_DAL.Repositories
             return query;
         }
 
-        public TEntity FindById(int id)
+        public virtual TEntity FindById(int id)
         {
             return _dbSet.Find(id);
         }
 
-        public void Create(TEntity item)
+        public virtual void Create(TEntity item)
         {
             _dbSet.Add(item);
             _context.SaveChanges();
         }
-        public void Update(TEntity item)
+        public virtual void Update(TEntity item)
         {
             _context.Entry(item).State = EntityState.Modified;
             _context.SaveChanges();
         }
-        public void Remove(TEntity item)
+        public virtual void Remove(TEntity item)
         {
             _dbSet.Remove(item);
             _context.SaveChanges();
         }
-        public void RemoveById(int id)
+        public virtual void RemoveById(int id)
         {
             _dbSet.Remove(_dbSet.Find(id));
             _context.SaveChanges();

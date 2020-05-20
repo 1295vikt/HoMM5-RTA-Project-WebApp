@@ -22,7 +22,7 @@ namespace RTA_Project_DAL
                 {
                     Name = playerData[0],
                     AccountId = null,
-                    GuidKey = Guid.NewGuid(),
+                    GuidKey = Guid.NewGuid().ToString(),
                     Stats = new PlayerStats
                     {
                         RatingClass = playerData[1],

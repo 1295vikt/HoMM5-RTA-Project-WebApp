@@ -16,6 +16,5 @@ namespace RTA_Project_BL.Models
         public int SilverMedals { get; set; }
         public int BronzeMedals { get; set; }
         public int TournamentExperience { get; set; }
-
     }
 }

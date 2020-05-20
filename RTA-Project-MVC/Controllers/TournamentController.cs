@@ -52,14 +52,14 @@ namespace RTA_Project_MVC.Controllers
             var roleManager = Request.GetOwinContext().Get<ApplicationRoleManager>();
 
             var role = roleManager.Roles.Single(r => r.Name == "Host");
-
             var hosts = userManager.Users.Where(u => u.Roles.Any(r => r.RoleId == role.Id)).Select(x => new SelectListItem
             {
                 Text = x.UserName,
                 Value = x.Id
             }).ToList();
 
-            hosts.Remove(hosts.First(x => x.Value == User.Identity.GetUserId()));
+            var userId = User.Identity.GetUserId();
+            hosts.Remove(hosts.First(x => x.Value == userId));
 
             var model = new TournamentCreateModel() { Year = DateTime.Now.Year, HostsAvailable = hosts };
             return View(model);
@@ -70,12 +70,14 @@ namespace RTA_Project_MVC.Controllers
         [Authorize(Roles = "Host")]
         public ActionResult Create(TournamentCreateModel model, params string[] selectedHost)
         {
+            if (ModelState.IsValid)
+            {
+                var modelBL = _mapper.Map<TournamentBL>(model);
+                selectedHost.Prepend(User.Identity.GetUserId());
+                modelBL.HostsId = selectedHost;
 
-            var modelBL = _mapper.Map<TournamentBL>(model);
-            selectedHost.Prepend(User.Identity.GetUserId());
-            modelBL.HostsId = selectedHost;
-
-            _tournamentService.Create(modelBL);
+                _tournamentService.Create(modelBL);
+            }
 
             return RedirectToAction("Index");
         }

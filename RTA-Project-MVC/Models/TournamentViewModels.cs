@@ -9,17 +9,21 @@ namespace RTA_Project_MVC.Models
     {
         [Required]
         [Display(Name = "Название турнира")]
-        [MaxLength(40, ErrorMessage = "Название не должно содержать более 40 символов")]
+        [StringLength(40, ErrorMessage = "{0} должно содержать от {2} до {1} символов", MinimumLength = 8)]
         public string NameRus { get; set; }
-        [MaxLength(40, ErrorMessage = "Название не должно содержать более 40 символов")]
+
         public string NameEng { get; set; }
+
         [Required]
         [Display(Name = "Версия карты")]
         public string MapVersion { get; set; }
+
         [Display(Name = "Год")]
         public int Year { get; set; }
+
         [Display(Name = "Сезон")]
         public byte Season { get; set; }
+
 
         [Display(Name = "Двухэтапный турнир")]
         public bool Is2Stage { get; set; }
@@ -27,12 +31,16 @@ namespace RTA_Project_MVC.Models
         public TournamentGroupFormat Stage1Format { get; set; }
         public TournamentGroupFormat Stage2Format { get; set; }
 
+
         [Display(Name = "Официальный турнир")]
         public bool IsOfficial { get; set; }
+
         [Display(Name = "Сезонный турнир")]
         public bool IsSeasonal { get; set; }
+
         [Display(Name = "Закрытый турнир")]
         public bool IsPrivate { get; set; }
+
 
         [Required]
         [MaxLength(8000)]

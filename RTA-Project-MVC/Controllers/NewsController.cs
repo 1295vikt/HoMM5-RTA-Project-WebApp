@@ -31,7 +31,7 @@ namespace RTA_Project_MVC.Controllers
             int pageSize = 4;
             int pageNumber = (page ?? 1);
 
-            var articlesBL = _articleService.QueryArticles(0);
+            var articlesBL = _articleService.QueryArticles((byte)Lang.Rus);
             var articlesPageBL = articlesBL.ToPagedList(pageNumber, pageSize);
 
             var mappedList = _mapper.Map<IEnumerable<ArticleViewModel>>(articlesPageBL);

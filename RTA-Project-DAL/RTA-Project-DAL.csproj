@@ -103,6 +103,10 @@
     <Compile Include="Migrations\202005190404169_InitialCreate2.Designer.cs">
       <DependentUpon>202005190404169_InitialCreate2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005201001420_InitialCreate3.cs" />
+    <Compile Include="Migrations\202005201001420_InitialCreate3.Designer.cs">
+      <DependentUpon>202005201001420_InitialCreate3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Article.cs" />
     <Compile Include="Models\Game.cs" />
@@ -136,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005190404169_InitialCreate2.resx">
       <DependentUpon>202005190404169_InitialCreate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005201001420_InitialCreate3.resx">
+      <DependentUpon>202005201001420_InitialCreate3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

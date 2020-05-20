@@ -1,7 +1,10 @@
 ﻿using AutoMapper;
 using Microsoft.AspNet.Identity;
+using RTA_Project_BL.Models;
 using RTA_Project_BL.Services;
 using RTA_Project_MVC.Models;
+using System;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace RTA_Project_MVC.Controllers
@@ -26,7 +29,7 @@ namespace RTA_Project_MVC.Controllers
         {
             var userId = User.Identity.GetUserId();
 
-            return RedirectToAction("Details", userId);
+            return RedirectToAction("Details", "Profile", userId);
         }
 
         // GET: Profile/Details/5
@@ -37,7 +40,7 @@ namespace RTA_Project_MVC.Controllers
 
             if (playerProfileBL == null)
             {
-                return RedirectToAction("Create");
+                return RedirectToAction("Register");
             }
 
             var playerProfile = _mapper.Map<PlayerProfileViewModel>(playerProfileBL);
@@ -45,8 +48,9 @@ namespace RTA_Project_MVC.Controllers
             return View(playerProfile);
         }
 
-        // GET: Profile/Create
-        public ActionResult Create()
+
+        // GET: Profile/Register
+        public ActionResult Register()
         {
             return View();
         }
@@ -55,9 +59,17 @@ namespace RTA_Project_MVC.Controllers
         [HttpPost]
         public ActionResult Create(PlayerProfileCreateModel model)
         {
+            if (ModelState.IsValid)
+            {
+                var userId = User.Identity.GetUserId();
+                if (!_playerService.QueryAll().Any(p=>p.AccountId==userId))
+                {
+                    var key = Guid.NewGuid().ToString();
+                    var player = new PlayerBL { Name = model.Nickname, AccountId = userId, GuidKey = key };
 
-
-
+                    _playerService.Create(player);
+                }
+            }
 
             return RedirectToAction("Index");
 
@@ -65,12 +77,15 @@ namespace RTA_Project_MVC.Controllers
 
         // POST: Profile/Link
         [HttpPost]
-        public ActionResult Link(PlayerProfileCreateModel model)
+        public ActionResult Link(PlayerProfileLinkModel model)
         {
-
+            if (ModelState.IsValid)
+            {
+                var accountId = User.Identity.GetUserId();
+                _playerService.LinkAccountToPlayer(accountId, model.GuidKey);
+            }
 
             return RedirectToAction("Index");
-
         }
 
         // GET: Profile/Edit/5
@@ -116,5 +131,16 @@ namespace RTA_Project_MVC.Controllers
                 return View();
             }
         }
+
+        public JsonResult CheckIfNameExists(string Nickname)
+        {
+            return Json(!_playerService.QueryAll().Any(p => p.Name == Nickname), JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult CheckIfKeyExists(string GuidKey)
+        {
+            return Json(_playerService.QueryAll().Any(p => p.GuidKey == GuidKey), JsonRequestBehavior.AllowGet);
+        }
+
     }
 }

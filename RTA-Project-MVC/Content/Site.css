@@ -34,6 +34,7 @@ h2 {
     font-weight: bold;
 }
 
+
 /* Main styles */
 #maincontainer {
     width: 1200px;
@@ -483,6 +484,13 @@ input.form-control {
     font-size: 16px;
     padding-left: 8px;
     padding-right: 8px;
+    position: relative;
+    top: 8px;
+}
+
+.text-danger {
+    font-family: sans-serif, Times, Serif;
+    font-size: 14px;
     position: relative;
     top: 8px;
 }

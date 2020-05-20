@@ -650,7 +650,9 @@
     <Content Include="Views\News\Create.cshtml" />
     <Content Include="Views\News\Details.cshtml" />
     <Content Include="Views\Tournament\Index.cshtml" />
-    <Content Include="Views\Profile\Create.cshtml" />
+    <Content Include="Views\Profile\Register.cshtml" />
+    <Content Include="Views\Profile\_PlayerCreatePartial.cshtml" />
+    <Content Include="Views\Profile\_PlayerLinkPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
