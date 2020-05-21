@@ -11,7 +11,7 @@ namespace RTA_Project_MVC.Models
     {
         public string Id { get; set; }
         [Required(AllowEmptyStrings = false)]
-        [Display(Name = "Role Name")]
+        [Display(Name = "Роль")]
         public string Name { get; set; }
         public string Description { get; set; }
     }
@@ -21,7 +21,7 @@ namespace RTA_Project_MVC.Models
         public string Id { get; set; }
 
         [Required(AllowEmptyStrings = false)]
-        [Display(Name = "User Name")]
+        [Display(Name = "Имя пользователя")]
         public string UserName { get; set; }
         [Display(Name = "Email")]
         public string Email { get; set; }

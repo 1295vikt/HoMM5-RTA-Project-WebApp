@@ -24,28 +24,35 @@ namespace RTA_Project_MVC.Controllers
             _mapper = mapper;
         }
 
-        // GET: Profile
-        public ActionResult Index()
+        // GET: Profile/?id=name
+        [AllowAnonymous]
+        public ActionResult Index(string name)
         {
-            var userId = User.Identity.GetUserId();
-
-            return RedirectToAction("Details", "Profile", userId);
-        }
-
-        // GET: Profile/Details/5
-        public ActionResult Details(string userId)
-        {
-
-            var playerProfileBL = _playerService.GetPlayer(userId);
-
-            if (playerProfileBL == null)
+            PlayerBL playerBL;
+            if (name == null)
             {
-                return RedirectToAction("Register");
+                if (User.Identity.IsAuthenticated)
+                {
+                    var userId = User.Identity.GetUserId();
+                    playerBL = _playerService.GetByAccountId(userId);
+                }
+                else
+                {
+                    return RedirectToAction("LogIn", "Account");
+                }
+            }
+            else
+            {
+                playerBL = _playerService.GetByName(name);
             }
 
-            var playerProfile = _mapper.Map<PlayerProfileViewModel>(playerProfileBL);
+            if (playerBL != null)
+            {
+                var model = _mapper.Map<PlayerProfileViewModel>(playerBL);
+                return View(model);
+            }
 
-            return View(playerProfile);
+            return RedirectToAction("Register");
         }
 
 

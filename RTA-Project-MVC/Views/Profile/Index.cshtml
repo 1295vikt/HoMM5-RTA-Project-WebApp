@@ -1,0 +1,100 @@
+﻿@model RTA_Project_MVC.Models.PlayerProfileViewModel
+
+<h2>Профиль игрока @Html.DisplayFor(model => model.Name)</h2>
+
+<div id="profile-div">
+
+    <h3>Рейтинг</h3>
+    <dl class="row">
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RatingClass):
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RatingClass)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RatingPointsCurrent):
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RatingPointsCurrent)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RatingPointsMax):
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RatingPointsMax)
+        </dd>
+
+    </dl>
+
+    <h3>Награды</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        @Html.DisplayNameFor(model => model.GoldMedals)
+                    </th>
+                    <th scope="col">
+                        @Html.DisplayNameFor(model => model.SilverMedals)
+                    </th>
+                    <th scope="col">
+                        @Html.DisplayNameFor(model => model.BronzeMedals)
+                    </th>
+                    <th scope="col">
+                        @Html.DisplayNameFor(model => model.TournamentExperience)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="awards">
+                    <td><img src="/Resources/icons/1st.png" id="1st-place" /> : @Html.DisplayFor(model => model.GoldMedals)</td>
+                    <td><img src="/Resources/icons/2nd.png" /> : @Html.DisplayFor(model => model.SilverMedals)</td>
+                    <td><img src="/Resources/icons/3rd.png" /> : @Html.DisplayFor(model => model.BronzeMedals)</td>
+                    <td><img src="/Resources/icons/ExpPic.png" /> :@Html.DisplayFor(model => model.TournamentExperience)</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <h3>Статистика</h3>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GamesPlayed):
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GamesPlayed)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GamesWon):
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GamesWon)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GamesLost):
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GamesLost)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Winrate):
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Winrate)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FavouriteFaction):
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FavouriteFaction)
+        </dd>
+    </dl>
+
+
+</div>

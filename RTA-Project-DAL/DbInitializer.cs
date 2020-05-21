@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.IO;
+using System.Web;
 
 namespace RTA_Project_DAL
 {
@@ -10,14 +11,34 @@ namespace RTA_Project_DAL
     {
         protected override void Seed(RTADatabaseContext context)
         {
+            string currentPath = AppDomain.CurrentDomain.BaseDirectory;
+
+            var heroes = new List<Hero>();
+            string[] lines = File.ReadAllLines(currentPath + "/SeedFiles/Heroes.txt");
+            foreach (var line in lines)
+            {
+                string[] heroData = line.Split('\t');
+                var hero = new Hero
+                {
+                    FactionId = byte.Parse(heroData[0]),
+                    NameEng = heroData[1],
+                    NameRus = heroData[2]
+                };
+
+                heroes.Add(hero);
+            }
+
+            foreach (var hero in heroes)
+            {
+                context.Heroes.Add(hero);
+            }
 
             var players = new List<Player>();
+            lines = File.ReadAllLines(currentPath + "/SeedFiles/Players.txt");
 
-            string[] lines = File.ReadAllLines("C:/GithubProjects/1295vikt/HoMM5-RTA-Project-WebApp/RTA-Project-DAL/SeedFiles/Players.txt");
-
-            for (int i = 0; i < lines.Length; i++)
+            foreach (var line in lines)
             {
-                string[] playerData = lines[i].Split('\t');
+                string[] playerData = line.Split('\t');
                 var player = new Player()
                 {
                     Name = playerData[0],

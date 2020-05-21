@@ -7,7 +7,7 @@ namespace RTA_Project_MVC.Models
 {
     public class TournamentCreateModel
     {
-        [Required]
+        [Required(ErrorMessage="Поле является обязательным для заполнения")]
         [Display(Name = "Название турнира")]
         [StringLength(40, ErrorMessage = "{0} должно содержать от {2} до {1} символов", MinimumLength = 8)]
         public string NameRus { get; set; }
@@ -42,7 +42,7 @@ namespace RTA_Project_MVC.Models
         public bool IsPrivate { get; set; }
 
 
-        [Required]
+        [Required(AllowEmptyStrings=false, ErrorMessage = "{0} не должно быть пустым")]
         [MaxLength(8000)]
         [Display(Name = "Описание турнира")]
         public string ContentRus { get; set; }

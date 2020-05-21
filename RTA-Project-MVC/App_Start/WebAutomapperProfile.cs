@@ -12,8 +12,10 @@ namespace RTA_Project_MVC.App_Start
     {
         public WebAutomapperProfile()
         {
+            CreateMap<PlayerBL, PlayerProfileViewModel>().AfterMap((src, dest, context) => context.Mapper.Map(src.Stats, dest));
+            CreateMap<PlayerStatsBL, PlayerProfileViewModel>();
+
             CreateMap<ArticleViewModel, ArticleBL>().ReverseMap();
-            CreateMap<PlayerProfileViewModel, PlayerBL>();
             CreateMap<TournamentCreateModel, TournamentBL>().ReverseMap();
         }
 

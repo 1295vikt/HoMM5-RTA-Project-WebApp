@@ -3,7 +3,7 @@
     public enum Faction : byte
     {
         Academy = 1,
-        Dngeon = 2,
+        Dungeon = 2,
         Fortress = 3,
         Haven = 4,
         Inferno = 5,

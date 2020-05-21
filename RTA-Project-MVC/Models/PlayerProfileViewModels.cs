@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
 namespace RTA_Project_MVC.Models
@@ -10,7 +6,46 @@ namespace RTA_Project_MVC.Models
     public class PlayerProfileViewModel
     {
         public string Name { get; set; }
-        public PlayerStatsViewModel Stats { get; set; }
+
+        //from Stats
+        [Display(Name = "Класс")]
+        public string RatingClass { get; set; }
+
+        [Display(Name = "Текущий рейтинг")]
+        public int RatingPointsCurrent { get; set; }
+
+        [Display(Name = "Макс. рейтинг")]
+        public int RatingPointsMax { get; set; }
+
+        [Display(Name = "Золото")]
+        public int GoldMedals { get; set; }
+
+        [Display(Name = "Серебро")]
+        public int SilverMedals { get; set; }
+
+        [Display(Name = "Бронза")]
+        public int BronzeMedals { get; set; }
+
+        [Display(Name = "Опыт")]
+        public int TournamentExperience { get; set; }
+
+        //TODO: show list of tournaments, link awards to tournaments
+
+        //from Games
+        [Display(Name = "Количество игр")]
+        public int GamesPlayed { get; set; }
+
+        [Display(Name = "Побед")]
+        public int GamesWon { get; set; }
+
+        [Display(Name = "Поражений")]
+        public int GamesLost { get; set; }
+
+        [Display(Name = "Процент побед")]
+        public double Winrate { get; set; }
+
+        [Display(Name = "Любимая фракция")]
+        public string FavouriteFaction { get; set; }
     }
 
     public class PlayerProfileCreateModel
@@ -32,28 +67,4 @@ namespace RTA_Project_MVC.Models
         public string GuidKey { get; set; }
     }
 
-    public class PlayerStatsViewModel
-    {
-        [Display(Name = "Класс")]
-        public string RatingClass { get; set; }
-
-        [Display(Name = "Текущий рейтинг")]
-        public int RatingPointsCurrent { get; set; }
-
-        [Display(Name = "Максимальный рейтинг")]
-        public int RatingPointsMax { get; set; }
-
-        [Display(Name = "Золотые медали")]
-        public int GoldMedals { get; set; }
-
-        [Display(Name = "Серебрянные медали")]
-        public int SilverMedals { get; set; }
-
-        [Display(Name = "Бронзовые медали")]
-        public int BronzeMedals { get; set; }
-
-        [Display(Name = "Сыграно турниров")]
-        public int TournamentExperience { get; set; }
-
-    }
 }

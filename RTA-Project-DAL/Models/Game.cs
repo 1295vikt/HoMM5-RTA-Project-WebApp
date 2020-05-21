@@ -27,7 +27,7 @@ namespace RTA_Project_DAL.Models
         public virtual Hero Hero1 { get; set; }
         public virtual Hero Hero2 { get; set; }
 
-        public string Comment { get; set; }
-        public string MediaLink { get; set; }
+        public string Player1Comment { get; set; }
+        public string Player2Comment { get; set; }
     }
 }

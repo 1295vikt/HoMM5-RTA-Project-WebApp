@@ -7,7 +7,8 @@ namespace RTA_Project_BL.Services
 {
     public interface IPlayerService : IGenereicService<PlayerBL>
     {
-        PlayerBL GetPlayer(string userId);
+        PlayerBL GetByName(string name);
+        PlayerBL GetByAccountId(string userId);
         void LinkAccountToPlayer(string userId, string playerKey);
     }
 
@@ -19,15 +20,21 @@ namespace RTA_Project_BL.Services
 
         }
 
-        public PlayerBL GetPlayer(string userId)
+        public PlayerBL GetByName(string name)
         {
-            var player = _repository.GetFirstOrDefault(p => p.AccountId != null && p.AccountId==userId);
+            var player = _repository.GetFirstOrDefault(p => p.Name == name);
+            return Map(player);
+        }
+
+        public PlayerBL GetByAccountId(string userId)
+        {
+            var player = _repository.GetFirstOrDefault(p => p.AccountId != null && p.AccountId == userId);
             return Map(player);
         }
 
         public void LinkAccountToPlayer(string userId, string playerKey)
         {
-            var player = _repository.GetFirstOrDefault(p=>p.GuidKey==playerKey);
+            var player = _repository.GetFirstOrDefault(p => p.GuidKey == playerKey);
             if (player != null)
             {
                 player.AccountId = userId;

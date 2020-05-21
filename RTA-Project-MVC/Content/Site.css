@@ -70,6 +70,7 @@ h2 {
     flex-grow: 1;
 }
 
+
 /* Left column styles */
 #ltop {
     width: 265px;
@@ -79,167 +80,6 @@ h2 {
     top: -18px;
     float: left;
 }
-
-
-
-
-#jog-area {
-    width: 204px;
-    height: 220px;
-    margin-left: auto;
-    margin-right: 13px;
-    position: relative;
-}
-
-
-#greetings-panel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    background: url('../Resources/ui/UsernamePlate.png') no-repeat;
-    width: 160px;
-    height: 32px;
-    color: azure;
-    position: relative;
-    top: -12px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-.jog-5 {
-    position: absolute;
-    background: url('../Resources/ui/jog/Back_5Buttons.png') no-repeat;
-    width: 204px;
-    height: 182px;
-    display: block;
-    bottom: 0;
-}
-
-.jog-btn {
-    border-radius: 50%;
-    position: absolute;
-    display: block;
-    width: 57px;
-    height: 57px;
-}
-
-    .jog-btn.center {
-        width: 82px;
-        height: 82px;
-        bottom: 50px;
-        right: 61px;
-    }
-
-    .jog-btn:hover {
-        filter: brightness(120%)
-    }
-
-    .jog-btn.upper {
-        bottom: 100px;
-    }
-
-    .jog-btn.left {
-        right: 140px;
-    }
-
-    .jog-btn.right {
-        right: 6px;
-    }
-
-    .jog-btn.upper.left {
-        background: url('../Resources/ui/jog/HeroNormal.png') no-repeat;
-    }
-
-    .jog-btn.upper.right {
-        background: url('../Resources/ui/jog/GuildNormal.png') no-repeat;
-        bottom: 100px;
-    }
-
-    .jog-btn.upper.left:active {
-        background: url('../Resources/ui/jog/HeroPushed.png') no-repeat;
-    }
-
-    .jog-btn.upper.left#grayed-out {
-        background: url('../Resources/ui/jog/HeroDisabled.png') no-repeat;
-    }
-
-    .jog-btn.upper.right:active {
-        background: url('../Resources/ui/jog/GuildPushed.png') no-repeat;
-    }
-
-    .jog-btn.upper.right#grayed-out {
-        background: url('../Resources/ui/jog/GuildDisabled.png') no-repeat;
-    }
-
-    .jog-btn.lower {
-        bottom: 23px;
-    }
-
-        .jog-btn.lower.left {
-            background: url('../Resources/ui/jog/BattleNormal.png') no-repeat;
-        }
-
-            .jog-btn.lower.left:active {
-                background: url('../Resources/ui/jog/BattlePushed.png') no-repeat;
-            }
-
-            .jog-btn.lower.left#grayed-out {
-                background: url('../Resources/ui/jog/BattleDisabled.png') no-repeat;
-            }
-
-        .jog-btn.lower.right {
-            background: url('../Resources/ui/jog/CogsNormal.png') no-repeat;
-        }
-
-            .jog-btn.lower.right:active {
-                background: url('../Resources/ui/jog/CogsPushed.png') no-repeat;
-            }
-
-            .jog-btn.lower.right#grayed-out {
-                background: url('../Resources/ui/jog/CogsDisabled.png') no-repeat;
-            }
-
-
-    .jog-btn.plus-btn {
-        position: relative;
-        display: inline-block;
-        background: url('../Resources/ui/jog/Plus.png') no-repeat;
-        background-size: 28px 28px;
-        width: 29px;
-        height: 29px;
-        top: 4px;
-    }
-
-        .jog-btn.plus-btn:active {
-            background: url('../Resources/ui/jog/Plus_pushed.png') no-repeat;
-            background-size: 28px 28px;
-        }
-
-    .jog-btn.minus-btn {
-        position: relative;
-        display: inline-block;
-        background: url('../Resources/ui/jog/Minus.png') no-repeat;
-        background-size: 28px 28px;
-        width: 29px;
-        height: 29px;
-        left: 204px;
-        top: 6px;
-    }
-        .jog-btn.minus-btn:active {
-            background: url('../Resources/ui/jog/Minus_pushed.png') no-repeat;
-            background-size: 28px 28px;
-        }
-
-.host-name {
-    position: relative;
-    display: inline-block;
-    left: -24px;
-    top: 7px;
-}
-
 
 #nav-block {
     display: block;
@@ -369,8 +209,170 @@ h2 {
 }
 
 
+/* Account jog */
 
-/* Set padding to keep content from hitting the edges */
+#jog-area {
+    width: 204px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: 13px;
+    position: relative;
+}
+
+
+#greetings-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: url('../Resources/ui/UsernamePlate.png') no-repeat;
+    width: 160px;
+    height: 32px;
+    color: azure;
+    position: relative;
+    top: -12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jog-5 {
+    position: absolute;
+    background: url('../Resources/ui/jog/Back_5Buttons.png') no-repeat;
+    width: 204px;
+    height: 182px;
+    display: block;
+    bottom: 0;
+}
+
+.jog-btn {
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    width: 57px;
+    height: 57px;
+}
+
+    .jog-btn.center {
+        width: 82px;
+        height: 82px;
+        bottom: 50px;
+        right: 61px;
+    }
+
+    .jog-btn:hover {
+        filter: brightness(120%)
+    }
+
+    .jog-btn.upper {
+        bottom: 100px;
+    }
+
+    .jog-btn.left {
+        right: 140px;
+    }
+
+    .jog-btn.right {
+        right: 6px;
+    }
+
+    .jog-btn.upper.left {
+        background: url('../Resources/ui/jog/HeroNormal.png') no-repeat;
+    }
+
+    .jog-btn.upper.right {
+        background: url('../Resources/ui/jog/GuildNormal.png') no-repeat;
+        bottom: 100px;
+    }
+
+    .jog-btn.upper.left:active {
+        background: url('../Resources/ui/jog/HeroPushed.png') no-repeat;
+    }
+
+    .jog-btn.upper.left#grayed-out {
+        background: url('../Resources/ui/jog/HeroDisabled.png') no-repeat;
+    }
+
+    .jog-btn.upper.right:active {
+        background: url('../Resources/ui/jog/GuildPushed.png') no-repeat;
+    }
+
+    .jog-btn.upper.right#grayed-out {
+        background: url('../Resources/ui/jog/GuildDisabled.png') no-repeat;
+    }
+
+    .jog-btn.lower {
+        bottom: 23px;
+    }
+
+        .jog-btn.lower.left {
+            background: url('../Resources/ui/jog/BattleNormal.png') no-repeat;
+        }
+
+            .jog-btn.lower.left:active {
+                background: url('../Resources/ui/jog/BattlePushed.png') no-repeat;
+            }
+
+            .jog-btn.lower.left#grayed-out {
+                background: url('../Resources/ui/jog/BattleDisabled.png') no-repeat;
+            }
+
+        .jog-btn.lower.right {
+            background: url('../Resources/ui/jog/CogsNormal.png') no-repeat;
+        }
+
+            .jog-btn.lower.right:active {
+                background: url('../Resources/ui/jog/CogsPushed.png') no-repeat;
+            }
+
+            .jog-btn.lower.right#grayed-out {
+                background: url('../Resources/ui/jog/CogsDisabled.png') no-repeat;
+            }
+
+
+
+    /* Tournament hosts */
+
+    .jog-btn.plus-btn {
+        position: relative;
+        display: inline-block;
+        background: url('../Resources/ui/jog/Plus.png') no-repeat;
+        background-size: 28px 28px;
+        width: 29px;
+        height: 29px;
+        top: 4px;
+    }
+
+        .jog-btn.plus-btn:active {
+            background: url('../Resources/ui/jog/Plus_pushed.png') no-repeat;
+            background-size: 28px 28px;
+        }
+
+    .jog-btn.minus-btn {
+        position: relative;
+        display: inline-block;
+        background: url('../Resources/ui/jog/Minus.png') no-repeat;
+        background-size: 28px 28px;
+        width: 29px;
+        height: 29px;
+        left: 204px;
+        top: 6px;
+    }
+
+        .jog-btn.minus-btn:active {
+            background: url('../Resources/ui/jog/Minus_pushed.png') no-repeat;
+            background-size: 28px 28px;
+        }
+
+
+.host-name {
+    position: relative;
+    display: inline-block;
+    left: -24px;
+    top: 7px;
+}
+
+
+/* body */
 .body-content {
     padding-left: 34px;
     padding-right: 60px;
@@ -379,8 +381,6 @@ h2 {
     padding-bottom: 18px;
     z-index: 3;
 }
-
-
 
 .form-group {
     font-size: 18px;
@@ -436,7 +436,8 @@ input:not(.cke_dialog_ui_checkbox_input)[type='checkbox'] {
     height: 25px;
     background: url(../Resources/ui/Checkbox.png) no-repeat;
     display: inline-block;
-    position: absolute;
+    position: relative;
+    margin-top: 0;
     top: 4px;
 }
 
@@ -493,4 +494,26 @@ input.form-control {
     font-size: 14px;
     position: relative;
     top: 8px;
+}
+
+/* Profile */
+
+#profile-div{
+    font-size: 15px;
+}
+
+#rewards [class*="col-"] {
+    background-color: antiquewhite;
+    background-clip: content-box;
+    border-color: saddlebrown;
+}
+
+#awards img {
+    width: 25px;
+    height: 25px;
+    background-size: 25px, 25px;
+}
+
+img #1st-place {
+    src: '../Resources/icons/1st.png';
 }
