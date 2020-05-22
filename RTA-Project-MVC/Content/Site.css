@@ -502,18 +502,14 @@ input.form-control {
     font-size: 15px;
 }
 
-#rewards [class*="col-"] {
+/*#rewards [class*="col-"] {
     background-color: antiquewhite;
     background-clip: content-box;
     border-color: saddlebrown;
-}
+}*/
 
 #awards img {
     width: 25px;
     height: 25px;
     background-size: 25px, 25px;
-}
-
-img #1st-place {
-    src: '../Resources/icons/1st.png';
 }

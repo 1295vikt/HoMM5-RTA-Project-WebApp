@@ -618,6 +618,7 @@
     <Content Include="SeedFiles\Players.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="SeedFiles\Masters2019.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

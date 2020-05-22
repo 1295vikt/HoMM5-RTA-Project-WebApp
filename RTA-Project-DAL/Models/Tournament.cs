@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -13,6 +14,8 @@ namespace RTA_Project_DAL.Models
         public string MapVersionId { get; set; }
         public int Year { get; set; }
         public byte Season { get; set; }
+
+        public DateTime DateCreated { get; set; }
 
         [DefaultValue(false)]
         public bool IsActive { get; set; }

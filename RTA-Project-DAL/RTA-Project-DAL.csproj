@@ -91,10 +91,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DbInitializer.cs" />
-    <Compile Include="Migrations\202005211238038_InitialCreate.cs" />
-    <Compile Include="Migrations\202005211238038_InitialCreate.Designer.cs">
-      <DependentUpon>202005211238038_InitialCreate.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Article.cs" />
     <Compile Include="Models\Game.cs" />
@@ -107,6 +103,7 @@
     <Compile Include="Models\TournamentBracket.cs" />
     <Compile Include="Models\TournamentDescription.cs" />
     <Compile Include="Models\TournamentGroup.cs" />
+    <Compile Include="Models\TournamentGroupPlayer.cs" />
     <Compile Include="Models\TournamentPlayer.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
     <Compile Include="RTADatabaseContext.cs" />
@@ -115,11 +112,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202005211238038_InitialCreate.resx">
-      <DependentUpon>202005211238038_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

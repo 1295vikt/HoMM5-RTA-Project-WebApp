@@ -74,7 +74,8 @@ namespace RTA_Project_MVC.Controllers
             {
                 var modelBL = _mapper.Map<TournamentBL>(model);
                 selectedHost.Prepend(User.Identity.GetUserId());
-                modelBL.HostsId = selectedHost;
+                modelBL.HostsId = string.Join(";", selectedHost);
+                modelBL.DateCreated = DateTime.Now;
 
                 _tournamentService.Create(modelBL);
             }

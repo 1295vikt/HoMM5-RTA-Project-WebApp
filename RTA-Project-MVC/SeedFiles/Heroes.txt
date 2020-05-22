@@ -1,13 +1,14 @@
-﻿1	Cyrys	Сайрус
-1	Faiz	Фаиз
-1	Galib	Джалиб
-1	Havez	Хафиз
-1	Narxes	Нархиз
+﻿1	Galib	Джалиб
+1	Zehir	Зехир
+1	Maahir	Маахир
 1	Nathir	Назир
+1	Narxes	Нархиз
 1	Nur	Нура
 1	Razzak	Раззак
+1	Cyrys	Сайрус
 1	Temkhan	Тимхан
-1	Zehir	Зехир
+1	Faiz	Фаиз
+1	Havez	Хафиз
 2	Eruina	Эрин
 2	Kythra	Кифра
 2	Lethos	Летос
@@ -36,7 +37,7 @@
 4	Ellaine	Эллайна
 4	Irina	Айрис
 4	Klaus	Аксель
-4	Laszlo	Лаcло
+4	Laszlo	Ласло
 4	Maeve	Мив
 4	Rutger	Рутгер
 4	Vittorio	Витторио
@@ -57,6 +58,7 @@
 5	Sovereign	Властелин
 6	Arantir	Арантир
 6	Arthas	Артас
+6	Vladimir	Влад
 6	Deirdre	Дейдра
 6	Kaspar	Каспар
 6	Lucretia	Лукреция
@@ -81,6 +83,7 @@
 8	Dirael	Дираэль
 8	Gilraen	Гильраэн
 8	Ossir	Оссир
+8	Ossir	Призрак
 8	Talanar	Таланар
 8	Vinrael	Винраэль
 8	Wyngaal	Вингаэль

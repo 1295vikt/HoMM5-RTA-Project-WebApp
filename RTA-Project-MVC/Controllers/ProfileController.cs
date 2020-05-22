@@ -14,12 +14,14 @@ namespace RTA_Project_MVC.Controllers
     {
 
         private readonly IPlayerService _playerService;
+        private readonly ITournamentService _tournamentService;
 
         private readonly IMapper _mapper;
 
-        public ProfileController(IPlayerService playerService, IMapper mapper)
+        public ProfileController(IPlayerService playerService, ITournamentService tournamentService, IMapper mapper)
         {
             _playerService = playerService;
+            _tournamentService = tournamentService;
 
             _mapper = mapper;
         }
@@ -48,7 +50,11 @@ namespace RTA_Project_MVC.Controllers
 
             if (playerBL != null)
             {
+
+
                 var model = _mapper.Map<PlayerProfileViewModel>(playerBL);
+                
+
                 return View(model);
             }
 

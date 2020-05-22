@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace RTA_Project_BL.Models
 {
@@ -11,11 +7,7 @@ namespace RTA_Project_BL.Models
         public int Id { get; set; }
         public int PlayerId { get; set; }
 
-        public bool IsDisqualified { get; set; }
-
-        public int GroupScore { get; set; }
-        public float? Coefficient { get; set; }
-
         public PlayerBL Player { get; set; }
+        public virtual ICollection<TournamentGroupPlayerBL> RelatedGroupPlayers { get; set; }
     }
 }

@@ -7,7 +7,8 @@ namespace RTA_Project_BL.Models
         public int Id { get; set; }
         public int MatchId { get; set; }
         public int ReportingPlayerId { get; set; }
-        public DateTime DateSubmitted { get; set; }
+
+        public DateTime? DateSubmitted { get; set; }
         public bool ReportingPlayerWon { get; set; }
         public bool IsTechnicalWin { get; set; }
 

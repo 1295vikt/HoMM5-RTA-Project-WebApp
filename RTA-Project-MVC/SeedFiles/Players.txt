@@ -5,7 +5,7 @@ Sithis 	S	1349	1396	2	5	2	15
 contrique	S	1349	1359	2	0	1	9
 Strider HL	S	1339	1373	3	3	2	21
 Moonitouch 	A+	1333	1333	1	0	2	4
-Armadill0  	S	1330	1390	3	2	0	13
+Armadill0	S	1330	1390	3	2	0	13
 Ftor	A+	1320	1320	1	0	0	1
 Dexterwar	A+	1318	1318	5	1	5	18
 Mind 	S	1315	1377	0	2	3	17

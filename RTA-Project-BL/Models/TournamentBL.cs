@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace RTA_Project_BL.Models
 {
@@ -17,7 +18,9 @@ namespace RTA_Project_BL.Models
         public bool IsSeasonal { get; set; }
         public bool IsPrivate { get; set; }
 
-        public string[] HostsId { get; set; }
+        public DateTime DateCreated { get; set; }
+
+        public string HostsId { get; set; }
 
         public ICollection<TournamentGroupBL> TournamentGroups { get; set; }
         public ICollection<TournamentPlayerBL> TournamentPlayers { get; set; }

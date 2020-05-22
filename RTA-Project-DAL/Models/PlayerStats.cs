@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RTA_Project_DAL.Models
 {
@@ -22,6 +17,6 @@ namespace RTA_Project_DAL.Models
         public int TournamentExperience { get; set; }
         //TODO more stats
 
-        public virtual Player Player { get; set; }
+        public Player Player { get; set; }
     }
 }

@@ -1,0 +1,232 @@
+﻿Mosol	NirvanaWiz	Strider HL	Mind	Miff	kArtorFun	Arantir	Dio	Alex_nv	Armadill0	RomaGl@
+Dio
+Miff
+5
+3
+2
+w13
+w22
+l13
+05.09.2019 21:56:45	Dio	>	Miff	Некроманты	Маркел	Демоны	Властелин
+05.09.2019 21:58:26	Miff	>	Dio	Орки	Курак	Лига	Кифра
+05.09.2019 21:59:33	Dio	>	Miff	Маги	Маахир	Гномы	Бранд
+05.09.2019 22:00:13	Miff	>	Dio	Эльфы	Винраэль	Некроманты	Арантир
+05.09.2019 22:00:49	Dio	>	Miff	Маги	Хафиз	Эльфы	Призрак
+;
+Armadill0
+Arantir
+5
+3
+1
+w23
+w32
+l21
+07.09.2019 14:10:21	Armadill0	>	Arantir	Демоны	Орландо	Гномы	Карли
+07.09.2019 14:22:42	Arantir	>	Armadill0	Лига	Ирбет	Люди	Мив
+07.09.2019 14:23:25	Armadill0	>	Arantir	Лига	Тралсай	Лига	Летос
+07.09.2019 14:24:02	Armadill0	>	Arantir	Люди	Николас	Люди	Мив
+;
+Mosol
+Dio
+5
+3
+1
+w13
+w22
+l13
+07.09.2019 20:17:50	Mosol	>	Dio	Некроманты	Лукреция	Люди	Валерия
+07.09.2019 20:20:02	Mosol	>	Dio	Эльфы	Винраэль	Маги	Маахир
+07.09.2019 20:20:30	Dio	>	Mosol	Демоны	Аластор	Демоны	Нимус
+07.09.2019 20:20:58	Mosol	>	Dio	Маги	Зехир	Лига	Кифра
+;
+Arantir
+Dio
+3
+0
+0
+l13
+l22
+out
+;
+Mind
+kArtorFun
+5
+3
+1
+w11
+w21
+l11
+07.09.2019 23:18:56	Mind	>	kArtorFun	Люди	Ласло	Люди	Годрик
+07.09.2019 23:19:43	kArtorFun	>	Mind	Эльфы	Ильфина	Орки	Краг
+07.09.2019 23:20:24	kArtorFun	>	Mind	Некроманты	Каспар	Эльфы	Призрак
+07.09.2019 23:21:27	kArtorFun	>	Mind	Некроманты	Арантир	Эльфы	Винраэль
+;
+Armadill0
+Miff
+3
+2
+0
+l12
+l21
+out
+09.09.2019 21:37:47	Armadill0	>	Miff	Некроманты	Маркел	Лига	Кифра
+09.09.2019 21:38:24	Armadill0	>	Miff	Лига	Эрин	Орки	Шак'Карукат
+;
+RomaGl
+Armadill0
+5
+3
+1
+w23
+w32
+l12
+14.09.2019 19:03:25	Armadill0	>	RomaGl	Люди	Дугал	Орки	Хаггеш
+14.09.2019 19:04:29	RomaGl	>	Armadill0	Некроманты	Влад	Люди	Ласло
+14.09.2019 19:08:26	RomaGl	>	Armadill0	Гномы	Инга	Орки	Краг
+14.09.2019 19:09:17	RomaGl	>	Armadill0	Орки	Хаггеш	Эльфы	Оссир
+;
+Alex_nv
+Strider HL
+5
+2
+2
+w24
+w32
+l11
+14.09.2019 23:42:38	Alex_nv	>	Strider HL	Гномы	Карли	Демоны	Грол
+14.09.2019 23:43:18	Strider HL	>	Alex_nv	Эльфы	Аларон	Эльфы	Винраэль
+14.09.2019 23:43:57	Strider HL	>	Alex_nv	Эльфы	Анвэн	Эльфы	Вингаэль
+14.09.2019 23:44:29	Alex_nv	>	Strider HL	Гномы	Рольф	Демоны	Грок
+;
+Mind
+Alex_nv
+3
+0
+0
+l11
+l21
+out
+;
+Strider HL
+RomaGl
+5
+3
+0
+w32
+fin
+l32
+14.09.2019 23:46:26	Strider HL	>	RomaGl	Гномы	Ибба	Орки	Краг
+14.09.2019 23:47:02	Strider HL	>	RomaGl	Гномы	Хельмар	Орки	Краг
+21.09.2019 09:58:46	Strider HL	>	RomaGl	Эльфы	Оссир	Орки	Краг
+;
+kArtorFun
+NirvanaWiz
+5
+3
+1
+w21
+w31
+l22
+15.09.2019 03:04:45	kArtorFun	>	NirvanaWiz	Лига	Летос	Демоны	Джезебет
+15.09.2019 03:05:27	kArtorFun	>	NirvanaWiz	Люди	Мив	Лига	Шадия
+15.09.2019 03:06:04	NirvanaWiz	>	kArtorFun	Лига	Тралсай	Люди	Эллайна
+15.09.2019 03:06:31	kArtorFun	>	NirvanaWiz	Демоны	Орландо	Маги	Сайрус
+;
+kArtorFun
+Mosol
+5
+3
+0
+w31
+wf
+l31
+21.09.2019 08:30:40	kArtorFun	>	Mosol	Демоны	Нимус	Маги	Нархиз
+21.09.2019 08:31:17	kArtorFun	>	Mosol	Гномы	Ингвар	Маги	Хафиз
+21.09.2019 08:31:45	kArtorFun	>	Mosol	Демоны	Аластор	Эльфы	Ильфина
+;
+NirvanaWiz
+Arantir
+3
+2
+1
+l22
+l32
+out
+22.09.2019 12:38:27	Arantir	>	NirvanaWiz	Гномы	Хельмар	Орки	Куджин
+22.09.2019 12:40:29	NirvanaWiz	>	Arantir	Эльфы	Файдаэн	Орки	Куджин
+22.09.2019 12:41:06	NirvanaWiz	>	Arantir	Гномы	Эрлинг	Орки	Гаруна
+;
+Mosol
+Armadill0
+3
+2
+1
+l31
+l41
+out
+26.09.2019 00:18:16	Mosol	>	Armadill0	Гномы	Ибба	Люди	Мив
+26.09.2019 00:18:43	Armadill0	>	Mosol	Демоны	Нимус	Гномы	Инга
+26.09.2019 00:19:11	Mosol	>	Armadill0	Люди	Эллайна	Лига	Кифра
+;
+RomaGl
+NirvanaWiz
+3
+2
+1
+l32
+l41
+out
+26.09.2019 05:28:10	RomaGl	>	NirvanaWiz	Орки	Гаруна	Лига	Шадия
+26.09.2019 05:28:58	NirvanaWiz	>	RomaGl	Люди	Ласло	Орки	Краг
+26.09.2019 05:29:38	RomaGl	>	NirvanaWiz	Лига	Тралсай	Демоны	Марбас
+;
+Strider HL
+kArtorFun
+5
+3
+2
+wf
+gf
+l41
+26.09.2019 23:16:31	Strider HL	>	kArtorFun	Лига	Кифра	Люди	Ласло
+26.09.2019 23:17:00	Strider HL	>	kArtorFun	Демоны	Нимус	Демоны	Орландо
+26.09.2019 23:17:47	kArtorFun	>	Strider HL	Демоны	Аграил	Маги	Маахир
+26.09.2019 23:18:46	kArtorFun	>	Strider HL	Люди	Эллайна	Лига	Синитар
+26.09.2019 23:19:25	kArtorFun	>	Strider HL	Люди	Рутгер	Люди	Назир
+;
+Mosol
+RomaGl
+3
+2
+1
+l41
+lf
+out
+29.09.2019 17:06:27	Mosol	>	RomaGl	Орки	Курак	Гномы	Карли
+29.09.2019 17:06:56	RomaGl	>	Mosol	Некроманты	Орнелла	Некроманты	Орсон
+29.09.2019 17:07:20	Mosol	>	RomaGl	Люди	Эллайна	Некроманты	Арантир
+;
+Mosol
+Strider HL
+5
+3
+0
+lf
+gf
+out
+06.10.2019 22:42:59	Mosol	>	Strider HL	Эльфы	Ильфина	Эльфы	Анвэн
+06.10.2019 22:43:23	Mosol	>	Strider HL	Некроманты	Влад	Люди	Годрик
+06.10.2019 22:43:54	Mosol	>	Strider HL	Маги	Маахир	Маги	Тимхан
+;
+kArtorFun
+Mosol
+7
+4
+1
+gf
+win
+out
+20.10.2019 23:59:46	Mosol	>	kArtorFun	Маги	Сайрус	Демоны	Аластор
+21.10.2019 00:00:18	kArtorFun	>	Mosol	Люди	Годрик	Некроманты	Равэнна
+21.10.2019 00:00:52	kArtorFun	>	Mosol	Орки	Киган	Гномы	Эрлинг
+21.10.2019 00:01:17	kArtorFun	>	Mosol	Маги	Раззак	Демоны	Орландо

@@ -78,6 +78,7 @@
     <Compile Include="Models\TournamentBracketBL.cs" />
     <Compile Include="Models\TournamentDescriptionBL.cs" />
     <Compile Include="Models\TournamentGroupBL.cs" />
+    <Compile Include="Models\TournamentGroupPlayerBL.cs" />
     <Compile Include="Models\TournamentPlayerBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ArticleService.cs" />

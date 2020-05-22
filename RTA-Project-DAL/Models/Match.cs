@@ -24,12 +24,12 @@ namespace RTA_Project_DAL.Models
         public bool IsTechnicalResult { get; set; }
         [DefaultValue(false)]
         public bool IsSpecialMatch { get; set; }
-        public DateTime DateFinished { get; set; }
+        public DateTime? DateFinished { get; set; }
 
         [ForeignKey("Player1")]
-        public int Player1ID { get; set; }
+        public int Player1Id { get; set; }
         [ForeignKey("Player2")]
-        public int Player2ID { get; set; }
+        public int Player2Id { get; set; }
 
         public int Player1Score { get; set; }
         public int Player2Score { get; set; }
