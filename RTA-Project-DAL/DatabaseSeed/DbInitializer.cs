@@ -116,21 +116,140 @@ namespace RTA_Project_DAL
                     var gameData = matchData[i].Split('\t');
                     var hero1Name = gameData[5];
                     var hero2Name = gameData[7];
+
+                    bool player1Won = gameData[2] == ">";
+
+                    var faction1Id = factionDictRus[gameData[4]];
+                    var faction2Id = factionDictRus[gameData[6]];
+
+                    var hero1 = context.Heroes.FirstOrDefault(h => h.NameRus == hero1Name).Id;
+                    var hero2 = context.Heroes.FirstOrDefault(h => h.NameRus == hero2Name).Id;
+
                     var game = new Game
                     {
                         DateSubmitted = DateTime.ParseExact(gameData[0], "dd.MM.yyyy HH:mm:ss", null),
 
-                        ReportingPlayerId = player1.Id,
-                        ReportingPlayerWon = gameData[2] == ">" ? true : false,
+                        Player1Won = player1Won,
 
-                        Faction1Id = factionDictRus[gameData[4]],
-                        Hero1Id = context.Heroes.FirstOrDefault(h => h.NameRus == hero1Name).Id,
+                        Faction1Id = faction1Id,
+                        Hero1Id = hero1,
 
-                        Faction2Id = factionDictRus[gameData[6]],
-                        Hero2Id = context.Heroes.FirstOrDefault(h => h.NameRus == hero2Name).Id,
+                        Faction2Id = faction2Id,
+                        Hero2Id = hero2,
 
                         IsConfirmed = true
                     };
+
+                    //Retrospectively adding player stats           
+                    player1.Stats.GamesPlayed++;
+                    player2.Stats.GamesPlayed++;
+                    if (player1Won)
+                        player1.Stats.GamesWon++;
+                    else
+                        player2.Stats.GamesWon++;
+
+                    switch(faction1Id)
+                    {
+                        case 1:
+                            player1.Stats.GamesAsAcademy++;
+                            if (player1Won)
+                                player1.Stats.WinsAsAcademy++;
+                            break;
+
+                        case 2:
+                            player1.Stats.GamesAsDungeon++;
+                            if (player1Won)
+                                player1.Stats.WinsAsDungeon++;
+                            break;
+
+                        case 3:
+                            player1.Stats.GamesAsFortress++;
+                            if (player1Won)
+                                player1.Stats.WinsAsFortress++;
+                            break;
+
+                        case 4:
+                            player1.Stats.GamesAsHaven++;
+                            if (player1Won)
+                                player1.Stats.WinsAsHaven++;
+                            break;
+
+                        case 5:
+                            player1.Stats.GamesAsInferno++;
+                            if (player1Won)
+                                player1.Stats.WinsAsInferno++;
+                            break;
+
+                        case 6:
+                            player1.Stats.GamesAsNecropolis++;
+                            if (player1Won)
+                                player1.Stats.WinsAsNecropolis++;
+                            break;
+
+                        case 7:
+                            player1.Stats.GamesAsStronghold++;
+                            if (player1Won)
+                                player1.Stats.WinsAsStronghold++;
+                            break;
+
+                        case 8:
+                            player1.Stats.GamesAsSylvan++;
+                            if (player1Won)
+                                player1.Stats.WinsAsSylvan++;
+                            break;
+                    }
+
+                    switch (faction2Id)
+                    {
+                        case 1:
+                            player2.Stats.GamesAsAcademy++;
+                            if (!player1Won)
+                                player2.Stats.WinsAsAcademy++;
+                            break;
+
+                        case 2:
+                            player2.Stats.GamesAsDungeon++;
+                            if (!player1Won)
+                                player2.Stats.WinsAsDungeon++;
+                            break;
+
+                        case 3:
+                            player2.Stats.GamesAsFortress++;
+                            if (!player1Won)
+                                player2.Stats.WinsAsFortress++;
+                            break;
+
+                        case 4:
+                            player2.Stats.GamesAsHaven++;
+                            if (!player1Won)
+                                player2.Stats.WinsAsHaven++;
+                            break;
+
+                        case 5:
+                            player2.Stats.GamesAsInferno++;
+                            if (!player1Won)
+                                player2.Stats.WinsAsInferno++;
+                            break;
+
+                        case 6:
+                            player2.Stats.GamesAsNecropolis++;
+                            if (!player1Won)
+                                player2.Stats.WinsAsNecropolis++;
+                            break;
+
+                        case 7:
+                            player2.Stats.GamesAsStronghold++;
+                            if (!player1Won)
+                                player2.Stats.WinsAsStronghold++;
+                            break;
+
+                        case 8:
+                            player2.Stats.GamesAsSylvan++;
+                            if (!player1Won)
+                                player2.Stats.WinsAsSylvan++;
+                            break;
+                    }
+
                     games.Add(game);
 
                 }
@@ -343,7 +462,7 @@ namespace RTA_Project_DAL
                                             Faction1Id = factionDictEng[items[0]],
                                             Hero1Id = context.Heroes.FirstOrDefault(h => h.NameEng == hero1).Id,
 
-                                            ReportingPlayerWon = items[2] == ">",
+                                            Player1Won = items[2] == ">",
 
                                             Faction2Id = factionDictEng[items[3]],
                                             Hero2Id = context.Heroes.FirstOrDefault(h => h.NameEng == hero2).Id,

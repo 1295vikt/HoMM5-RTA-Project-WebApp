@@ -22,13 +22,13 @@ namespace RTA_Project_BL.Services
 
         public PlayerBL GetByName(string name)
         {
-            var player = _repository.GetFirstOrDefault(p => p.Name == name);
+            var player = _repository.GetFirstOrDefault(p => p.Name == name, p => p.Stats);
             return Map(player);
         }
 
         public PlayerBL GetByAccountId(string userId)
         {
-            var player = _repository.GetFirstOrDefault(p => p.AccountId != null && p.AccountId == userId);
+            var player = _repository.GetFirstOrDefault(p => p.AccountId != null && p.AccountId == userId, p => p.Stats);
             return Map(player);
         }
 

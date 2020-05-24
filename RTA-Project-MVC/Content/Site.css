@@ -85,6 +85,15 @@ h2 {
     float: left;
 }
 
+#lbot {
+    width: 265px;
+    height: 19px;
+    background: url('../Resources/lbot.gif') top left no-repeat;
+    position: relative;
+    bottom: -28px;
+    float: left;
+}
+
 #nav-block {
     display: block;
     margin-top: 3px;
@@ -381,7 +390,7 @@ h2 {
     padding-left: 34px;
     padding-right: 60px;
     position: relative;
-    margin-top: -64px;
+    margin-top: -56px;
     padding-bottom: 18px;
     z-index: 3;
 }
@@ -532,3 +541,12 @@ input.form-control {
         padding-top: 5px;
         padding-bottom: 5px;
     }
+
+#pf-griffin {
+    background: url('../Resources/icons/Griffin.png') no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 310px;
+    right: 66px;
+    top: -10px;
+}

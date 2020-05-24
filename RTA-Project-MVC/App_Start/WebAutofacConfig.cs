@@ -22,7 +22,7 @@ namespace RTA_Project_MVC.App_Start
 
             builder.RegisterType<PlayerService>().As<IPlayerService>();
             builder.RegisterType<TournamentService>().As<ITournamentService>();
-            builder.RegisterType<TournamentGroupService>().As<ITournamentGroupService>();
+            builder.RegisterType<MapService>().As<IMapService>();
             builder.RegisterType<ArticleService>().As<IArticleService>();
 
             builder.RegisterModule<BLAutofacConfig>();

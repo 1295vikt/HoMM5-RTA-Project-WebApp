@@ -47,7 +47,7 @@ $(document).ready(function () {
             var hostWrapper = $(document.createElement('div')).attr('id', hostId);
             var hiddenInput = $(document.createElement('input')).attr({ 'type': 'hidden', 'name': 'selectedHost', 'value': hostId });
             var nameLabel = $(document.createElement('label')).attr('class', 'host-name').append(hostName);
-            var minusBtn = $(document.createElement('div')).attr('class', 'btn jog-btn minus-btn');
+            var minusBtn = $(document.createElement('a')).attr('class', 'btn jog-btn minus-btn');
 
             $(hiddenInput).appendTo(nameLabel);
             $(nameLabel).appendTo(hostWrapper);

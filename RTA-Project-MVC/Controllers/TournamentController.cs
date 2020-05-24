@@ -15,16 +15,13 @@ namespace RTA_Project_MVC.Controllers
     {
 
         private readonly ITournamentService _tournamentService;
-        private readonly ITournamentGroupService _tournamentGroupService;
         private readonly IPlayerService _playerService;
 
         private readonly IMapper _mapper;
 
-        public TournamentController(ITournamentService tournamentService, ITournamentGroupService tournamentGroupService,
-            IPlayerService playerService, IMapper mapper)
+        public TournamentController(ITournamentService tournamentService, IPlayerService playerService, IMapper mapper)
         {
             _tournamentService = tournamentService;
-            _tournamentGroupService = tournamentGroupService;
             _playerService = playerService;
             _mapper = mapper;
         }

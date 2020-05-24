@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
 namespace RTA_Project_MVC.Models
@@ -38,14 +39,9 @@ namespace RTA_Project_MVC.Models
         [Display(Name = "Побед")]
         public int GamesWon { get; set; }
 
-        [Display(Name = "Поражений")]
-        public int GamesLost { get; set; }
-
         [Display(Name = "Процент побед")]
-        public double Winrate { get; set; }
+        public string Winrate => GamesPlayed == 0 ? "0%" : $"{Math.Round((double)(GamesWon * 100) / GamesPlayed, 2).ToString()}%";
 
-        [Display(Name = "Любимая фракция")]
-        public string FavouriteFaction { get; set; }
     }
 
     public class PlayerProfileCreateModel

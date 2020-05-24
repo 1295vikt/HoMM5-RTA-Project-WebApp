@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using RTA_Project_BL.Models;
-using RTA_Project_BL.Statistics;
 using RTA_Project_DAL.Models;
 using RTA_Project_DAL.Repositories;
 using System;
@@ -18,8 +17,6 @@ namespace RTA_Project_BL.Services
 
         IQueryable<GameBL> QueryTournamentGames(int? playerId = null, Expression<Func<GameBL, bool>> filterForGame = null,
             Expression<Func<MatchBL, bool>> filterForMatch = null, Expression<Func<TournamentBL, bool>> filterForTournament = null);
-
-        void GetPlayerStats(int playerId);
     }
 
 
@@ -56,9 +53,9 @@ namespace RTA_Project_BL.Services
             if (playerId != null)
             {
                 matchesBL = tournamentsBL.SelectMany(t => t.TournamentGroups.
-                    Where(tg =>  tg.TournamentGroupPlayers.Any(tgp=>tgp.TournamentPlayerId ==
-                    t.TournamentPlayers.FirstOrDefault(tp=>tp.PlayerId==playerId).Id) )).SelectMany(gr => gr.Matches.
-                    Where(m => m.Player1Id == playerId || m.Player2Id == playerId));
+                    Where(tg => tg.TournamentGroupPlayers.Any(tgp => tgp.TournamentPlayerId ==
+                   t.TournamentPlayers.FirstOrDefault(tp => tp.PlayerId == playerId).Id))).SelectMany(gr => gr.Matches.
+                      Where(m => m.Player1Id == playerId || m.Player2Id == playerId));
             }
             else
             {
@@ -84,18 +81,6 @@ namespace RTA_Project_BL.Services
             return gamesBL;
         }
 
-        public void GetPlayerStats(int playerId)
-        {
-            var games = QueryTournamentGames(playerId);
-
-            var playerGamesStats = new PlayerGamesStats();
-
-            playerGamesStats.GamesPlayed = games.Count();
-            playerGamesStats.GamesWon = games.Where(g => (g.ReportingPlayerId==playerId && g.ReportingPlayerWon) || !g.ReportingPlayerWon).Count();
-            playerGamesStats.GamesLost = playerGamesStats.GamesPlayed - playerGamesStats.GamesWon;
-            playerGamesStats.Winrate = playerGamesStats.GamesWon ;
-
-        }
     }
 
 }

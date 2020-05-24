@@ -8,7 +8,6 @@ namespace RTA_Project_BL.Models
         public int Id { get; set; }
         public string NameRus { get; set; }
         public string NameEng { get; set; }
-        public string MapVersion { get; set; }
         public int Year { get; set; }
         public byte Season { get; set; }
 
@@ -25,6 +24,7 @@ namespace RTA_Project_BL.Models
         public ICollection<TournamentGroupBL> TournamentGroups { get; set; }
         public ICollection<TournamentPlayerBL> TournamentPlayers { get; set; }
 
+        public MapBL Map { get; set; }
 
         public TournamentDescriptionBL Description { get; set; }
     }

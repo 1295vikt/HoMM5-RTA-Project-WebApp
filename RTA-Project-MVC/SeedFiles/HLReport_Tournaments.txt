@@ -3,7 +3,7 @@
 Autum Tactics Tournament 2018
 2018
 true
-2
+4
 false
 2018.09.24
 Half-RTA 1.15.11

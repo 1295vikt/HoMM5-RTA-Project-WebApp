@@ -10,7 +10,6 @@
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
         <div class="form-group">
@@ -91,7 +90,7 @@
             <div class="col-md-9">
                 <div>
                     @Html.DropDownList("Host", Model.HostsAvailable, "Выбрать", new { id = "hosts-dropdown" })
-                    <div class="btn jog-btn plus-btn" style="display:none"></div>
+                    <a class="btn jog-btn plus-btn" style="display:none"></a>
                 </div>
 
                 <div id="hosts-container">
@@ -104,9 +103,9 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.ContentRus, htmlAttributes: new { @class = "control-label col-md-3" })
+            @Html.ValidationMessageFor(model => model.ContentRus, "", new { @class = "text-danger col-md-9" })
             <div class="col-md-12" style="margin-top: 10px">
                 @Html.TextAreaFor(model => model.ContentRus, new { @id = "TournamentDescription", @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.ContentRus, "", new { @class = "text-danger" })
                 <script>
                     CKEDITOR.replace("TournamentDescription", { htmlEncodeOutput: true });
                 </script>

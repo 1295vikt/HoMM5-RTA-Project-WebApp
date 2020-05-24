@@ -14,8 +14,9 @@ namespace RTA_Project_MVC.Models
 
         public string NameEng { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Поле является обязательным для заполнения")]
         [Display(Name = "Версия карты")]
+        [Remote("CheckIfVersionExists", "RTA", ErrorMessage = "Указонной версии карты не существует")]
         public string MapVersion { get; set; }
 
         [Display(Name = "Год")]
@@ -59,7 +60,7 @@ namespace RTA_Project_MVC.Models
                     new SelectListItem() {Text = "Swiss", Value = "2"},
                     new SelectListItem() {Text = "Playoff SE", Value = "3"},
                     new SelectListItem() {Text = "Playoff DE", Value = "4"},
-                    new SelectListItem() {Text = "Custom", Value = "5"},
+                    new SelectListItem() {Text = "Особый", Value = "5"},
                 };
             }
         }

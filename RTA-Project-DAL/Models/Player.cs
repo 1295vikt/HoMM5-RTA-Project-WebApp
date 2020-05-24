@@ -10,7 +10,7 @@ namespace RTA_Project_DAL.Models
         public string AccountId { get; set; }
         public string Name { get; set; }
 
-        public virtual PlayerStats Stats { get; set; }
+        public PlayerStats Stats { get; set; }
     }
 
 }

@@ -32,6 +32,8 @@ namespace RTA_Project_BL.Configs
             CreateMap<PlayerBL, Player>().ReverseMap();
             CreateMap<PlayerStatsBL, PlayerStats>().ReverseMap();
 
+            CreateMap<MapBL, Map>().ReverseMap();
+
         }
 
     }
