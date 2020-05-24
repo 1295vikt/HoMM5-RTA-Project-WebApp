@@ -1,0 +1,345 @@
+﻿@tourn@
+Осенний Тактический Турнир 2018
+Autum Tactics Tournament 2018
+2018
+true
+2
+false
+2018.09.24
+Half-RTA 1.15.11
+@group@
+-
+-
+2
+#
+[confirmed]Mind vs Xokkeistik; Ranger, Gilrean > Barbarian, Kujin (Half-RTA 1.15.11); Necromancer, Arantir > Knight, Ellaine (Half-RTA 1.15.11); Barbarian, Haggash > Necromancer, Markal (Half-RTA 1.15.11);3 - 0;2018.10.07[/confirmed]
+[confirmed]alex_nv vs Veles201; Barbarian, Gotai > Wizard, Razzak (Half-RTA 1.15.11); Knight, Lazlo < Barbarian, Gotai (Half-RTA 1.15.11); Warlock, Kragh > Warlock, Sorgal (Half-RTA 1.15.11); Warlock, Shadya > Warlock, Sinitar (Half-RTA 1.15.11);3 - 1;2018.10.08[/confirmed]
+[confirmed]Kauzal vs dwarve; Knight, Ellaine > Warlock, Shadya (Half-RTA 1.15.11); Knight, Valeria > Barbarian, Kujin (Half-RTA 1.15.11); Knight, Vittorio > Necromancer, Raven (Half-RTA 1.15.11);3 - 0;2018.10.08[/confirmed]
+[confirmed]bezumnuixleb vs HRISTOS; Inferno, Nebiros > Inferno, Grok (Half-RTA 1.15.11); Wizard, ? > Necromancer, Arantir (Half-RTA 1.15.11); Runemage, Rolf > Knight, Vittorio (Half-RTA 1.15.11);3 - 0;2018.10.08[/confirmed]
+[confirmed]HRISTOS vs bezumnuixleb; Inferno, Grok < Inferno, Nebiros (Half-RTA 1.15.11); Necromancer, Arantir < Wizard, ? (Half-RTA 1.15.11); Knight, Vittorio < Runemage, Rolf (Half-RTA 1.15.11);0 - 3;2018.10.08[/confirmed]
+[open]dexterwar vs Nargott; Necromancer, Ornella > Necromancer, Lucretia (Half-RTA 1.15.11); Runemage, Helmar > Barbarian, Kujin (Half-RTA 1.15.11); Runemage, Ingvar > Knight, Maeve (Half-RTA 1.15.11);3 - 0;2018.10.09[/open]
+[confirmed]Mosol vs NirvanaWiz; Knight, Irina > Barbarian, Kujin (Half-RTA 1.15.11); Wizard, Nathir < Wizard, Narxez (Half-RTA 1.15.11); Barbarian, Kujin > Runemage, Erling (Half-RTA 1.15.11); Barbarian, Quroq < Inferno, Nymus (Half-RTA 1.15.11); Inferno, Orlando > Warlock, Lethos (Half-RTA 1.15.11);3 - 2;2018.10.09[/confirmed]
+[confirmed]Doge vs anduBrutus; Knight, Ellaine > Barbarian, Shak'Karukat (Half-RTA 1.15.11); Barbarian, Kilghan > Wizard, Jhora (Half-RTA 1.15.11); Barbarian, Gorshak < Warlock, Shadwyn (Half-RTA 1.15.11); Necromancer, Vlad < Inferno, Deleb (Half-RTA 1.15.11); Ranger, Alaron > Wizard, ? (Half-RTA 1.15.11);3 - 2;2018.10.10[/confirmed]
+[confirmed]Strider_HL vs MoloX; Necromancer, Kaspar < Necromancer, Ornella (Half-RTA 1.15.11); Ranger, Anwen > Knight, Maeve (Half-RTA 1.15.11); Ranger, Findan > Knight, Maeve (Half-RTA 1.15.11); Necromancer, Garuna > Necromancer, Markal (Half-RTA 1.15.11);3 - 1;2018.10.10[/confirmed]
+[confirmed]zub vs sigurt900; Runemage, Brand < Necromancer, Naadir (Half-RTA 1.15.11); Necromancer, Orson > Runemage, Brand (Half-RTA 1.15.11); Ranger, Anwen < Inferno, Orlando (Half-RTA 1.15.11); Barbarian, Haggash > Ranger, Ghost (Half-RTA 1.15.11); Necromancer, Deirdre > Knight, Vittorio (Half-RTA 1.15.11);3 - 2;2018.10.11[/confirmed]
+[confirmed]Miff vs Gerodot; Inferno, Deleb > Runemage, Ebba (Half-RTA 1.15.11); Barbarian, Kilghan > Ranger, Dirael (Half-RTA 1.15.11); Warlock, Raelag > Inferno, Sovereign (Half-RTA 1.15.11);3 - 0;2018.10.11[/confirmed]
+[open]HerAc_ vs C0rpse; Knight, Vittorio > Necromancer, Ornella (Half-RTA 1.15.11); Necromancer, Arantir > Necromancer, Orson (Half-RTA 1.15.11); Necromancer, Lucretia < Knight, Godric (Half-RTA 1.15.11); Ranger, Vinrael > Necromancer, Lucretia (Half-RTA 1.15.11);3 - 1;2018.10.12[/open]
+[confirmed]vadolazo vs Yung_Yarik; Warlock, Thralsai < Runemage, Karli (Half-RTA 1.15.11); Necromancer, Zoltan > Warlock, Thralsai (Half-RTA 1.15.11); Knight, Godric > Warlock, Lethos (Half-RTA 1.15.11); Inferno, Grok > Warlock, Yrbeth (Half-RTA 1.15.11);3 - 1;2018.10.12[/confirmed]
+[confirmed]SpaceCowboy vs Disheppard; Ranger, Alaron > Necromancer, Raven (Half-RTA 1.15.11); Wizard, Narxez < Necromancer, Zoltan (Half-RTA 1.15.11); Inferno, Marbas > Warlock, Eruina (Half-RTA 1.15.11); Warlock, Thralsai > Warlock, Sinitar (Half-RTA 1.15.11);3 - 1;2018.10.12[/confirmed]
+[confirmed]Arantur vs Imladris1; Necromancer, Vlad < Necromancer, Markal (Half-RTA 1.15.11); Inferno, Marbas < Ranger, Alaron (Half-RTA 1.15.11); Inferno, Grawl > Warlock, Shadwyn (Half-RTA 1.15.11); Knight, Irina > Barbarian, Telsek (Half-RTA 1.15.11); Wizard, Cyrus > Runemage, Karli (Half-RTA 1.15.11);3 - 2;2018.10.13[/confirmed]
+[open]Levis vs WINgaeLL; Warlock, Shadya > Knight, Vittorio (Half-RTA 1.15.11); Knight, Godric < Warlock, Sinitar (Half-RTA 1.15.11); Warlock, Yrbeth > Knight, Godric (Half-RTA 1.15.11); Runemage, Wulfstan < Runemage, Tolghar (Half-RTA 1.15.11); Ranger, Findan > Knight, Lazlo (Half-RTA 1.15.11);3 - 2;2018.10.14[/open]
+[open]Sithis vs FedotovN; Runemage, Inga > Runemage, Wulfstan (Half-RTA 1.15.11); Wizard, Vittorio > Runemage, Helmar (Half-RTA 1.15.11); Warlock, Yrbeth < Necromancer, Orson (Half-RTA 1.15.11); Inferno, Grok > Knight, Isabel (Half-RTA 1.15.11);3 - 1;2018.10.14[/open]
+[confirmed]mizargurus vs Azaryph; Inferno, Orlando > Necromancer, Deirdre (Half-RTA 1.15.11); Necromancer, Vlad > Wizard, Havez (Half-RTA 1.15.11); Warlock, Vayshan > Necromancer, ? (Half-RTA 1.15.11);3 - 0;2018.10.14[/confirmed]
+[confirmed]kArtorFun vs aliemin; Inferno, Nymus > Necromancer, Orson (Half-RTA 1.15.11); Inferno, Orlando > Wizard, ? (Half-RTA 1.15.11); Ranger, Wyngaal < Knight, Valeria (Half-RTA 1.15.11); Wizard, Zehir < Runemage, Rolf (Half-RTA 1.15.11); Ranger, Ossir > Wizard, Havez (Half-RTA 1.15.11);3 - 2;2018.10.14[/confirmed]
+[confirmed]WhiteSwan vs dipper; Necromancer, Raven < Barbarian, Kujin (Half-RTA 1.15.11); Inferno, Alastor > Ranger, Ghost (Half-RTA 1.15.11); Warlock, Thralsai > Knight, Maeve (Half-RTA 1.15.11); Warlock, Kythra < Inferno, Alastor (Half-RTA 1.15.11); Knight, Valeria > Necromancer, Zoltan (Half-RTA 1.15.11);3 - 2;2018.10.15[/confirmed]
+[confirmed]NirvanaWiz vs JuDaR; Warlock, Thralsai > Runemage, Erling (Half-RTA 1.15.11); Warlock, Raelag < Inferno, Marbas (Half-RTA 1.15.11); Warlock, Yrwanna > Barbarian, Haggash (Half-RTA 1.15.11); Inferno, Jezebeth > Ranger, Dirael (Half-RTA 1.15.11);3 - 1;2018.10.16[/confirmed]
+[confirmed]Doge vs zub; Wizard, ? > Warlock, Thralsai (Half-RTA 1.15.11); Ranger, Ylthin > Inferno, Orlando (Half-RTA 1.15.11); Necromancer, ? > Necromancer, Lucretia (Half-RTA 1.15.11);3 - 0;2018.10.16[/confirmed]
+[confirmed]vadolazo vs bezumnuixleb; Wizard, Nur > Inferno, Marbas (Half-RTA 1.15.11); Wizard, ? > Ranger, Wyngaal (Half-RTA 1.15.11); Barbarian, Haggash > Runemage, Inga (Half-RTA 1.15.11);3 - 0;2018.10.17[/confirmed]
+[confirmed]Arantur vs SpaceCowboy; Knight, Valeria > Knight, Irina (Half-RTA 1.15.11); Wizard, Narxez > Inferno, Jezebeth (Half-RTA 1.15.11); Knight, Vittorio < Necromancer, Lucretia (Half-RTA 1.15.11); Knight, Rutger < Necromancer, Raven (Half-RTA 1.15.11); Wizard, Nur > Knight, Valeria (Half-RTA 1.15.11);3 - 2;2018.10.18[/confirmed]
+[confirmed]Mithrandir vs Yung_Yarik; Wizard, Jhora > Knight, Isabel (Half-RTA 1.15.11); Ranger, Wyngaal > Inferno, Grawl (Half-RTA 1.15.11); Barbarian, Urghat > Warlock, Thralsai (Half-RTA 1.15.11);3 - 0;2018.10.20[/confirmed]
+[confirmed]Imladris1 vs MoloX; Ranger, Anwen > Knight, Dougal (Half-RTA 1.15.11); Knight, Rutger > Knight, Isabel (Half-RTA 1.15.11); Runemage, Rolf > Wizard, Alastor (Half-RTA 1.15.11);3 - 0;2018.10.19[/confirmed]
+[confirmed]Mind vs Kauzal; Barbarian, Telsek > Wizard, Havez (Half-RTA 1.15.11); Necromancer, Markal < Runemage, Rolf (Half-RTA 1.15.11); Ranger, Anwen > Barbarian, Urghat (Half-RTA 1.15.11); Knight, Valeria < Warlock, Kythra (Half-RTA 1.15.11); Necromancer, Ornella > Knight, Valeria (Half-RTA 1.15.11);3 - 2;2018.10.20[/confirmed]
+[open]Sithis vs EeOneGuy; Ranger, Ghost > Necromancer, Naadir (Half-RTA 1.15.11); Wizard, Zehir > Wizard, Havez (Half-RTA 1.15.11); Necromancer, Arantir > Knight, Ellaine (Half-RTA 1.15.11);3 - 0;2018.10.20[/open]
+[open]Xokkeistik vs WINgaeLL; Knight, Godric > Knight, Dougal (Half-RTA 1.15.11); Wizard, Nathir > Barbarian, Quroq (Half-RTA 1.15.11); Ranger, Vinrael > Knight, Ellaine (Half-RTA 1.15.11);3 - 0;2018.10.20[/open]
+[open]Strider_HL vs RomaGl; Knight, Klaus < Barbarian, Kujin (Half-RTA 1.15.11); Runemage, Ingvar > Runemage, Ebba (Half-RTA 1.15.11); Wizard, Zehir > Warlock, Yrwanna (Half-RTA 1.15.11); Runemage, Ebba > Warlock, Sorgal (Half-RTA 1.15.11);3 - 1;2018.10.20[/open]
+[confirmed]aliemin vs Veles201; Inferno, Alastor > Ranger, Gilrean (Half-RTA 1.15.11); Inferno, Grok > Ranger, Wyngaal (Half-RTA 1.15.11); Barbarian, Quroq < Knight, Ellaine (Half-RTA 1.15.11); Wizard, Havez > Ranger, Ylthin (Half-RTA 1.15.11);3 - 1;2018.10.20[/confirmed]
+[confirmed]Levis vs mizargurus; Wizard, Galib > Necromancer, Ornella (Half-RTA 1.15.11); Warlock, Lethos > Barbarian, Kujin (Half-RTA 1.15.11); Necromancer, Naadir < Wizard, Havez (Half-RTA 1.15.11); Wizard, Maahir > Ranger, Talanar (Half-RTA 1.15.11);3 - 1;2018.10.20[/confirmed]
+[open]Mosol vs HerAc_; Warlock, Shadya < Ranger, Anwen (Half-RTA 1.15.11); Necromancer, ? < Necromancer, Markal (Half-RTA 1.15.11); Barbarian, Gorshak > Barbarian, Kragh (Half-RTA 1.15.11); Wizard, Razzak > Barbarian, Quroq (Half-RTA 1.15.11); Knight, Rutger > Wizard, Galib (Half-RTA 1.15.11);3 - 2;2018.10.20[/open]
+[confirmed]dexterwar vs kArtorFun; Warlock, Yrwanna < Knight, Maeve (Half-RTA 1.15.11); Runemage, Helmar > Necromancer, Lucretia (Half-RTA 1.15.11); Necromancer, Ornella < Knight, Godric (Half-RTA 1.15.11); Inferno, Marbas > Wizard, Zehir (Half-RTA 1.15.11); Runemage, Brand > Inferno, Grawl (Half-RTA 1.15.11);3 - 2;2018.10.21[/confirmed]
+[confirmed]Gerodot vs dwarve; Necromancer, Orson < Necromancer, Markal (Half-RTA 1.15.11); Warlock, Sorgal < Inferno, Marbas (Half-RTA 1.15.11); Runemage, Helmar > Knight, Irina (Half-RTA 1.15.11); Runemage, Tolghar > Barbarian, Telsek (Half-RTA 1.15.11); Knight, Valeria > Knight, Nicolai (Half-RTA 1.15.11);3 - 2;2018.10.21[/confirmed]
+[confirmed]sigurt900 vs dipper; Warlock, Shadwyn > Necromancer, Raven (Half-RTA 1.15.11); Knight, Godric < Necromancer, Lucretia (Half-RTA 1.15.11); Ranger, Vinrael < Barbarian, Quroq (Half-RTA 1.15.11); Wizard, Narxez > Barbarian, Haggash (Half-RTA 1.15.11); Knight, Dougal > Knight, Lazlo (Half-RTA 1.15.11);3 - 2;2018.10.22[/confirmed]
+[confirmed]Miff vs WhiteSwan; Knight, Dougal > Wizard, Maahir (Half-RTA 1.15.11); Warlock, Eruina > Inferno, Jezebeth (Half-RTA 1.15.11); Knight, Godric > Ranger, Talanar (Half-RTA 1.15.11);3 - 0;2018.10.22[/confirmed]
+[confirmed]Azaryph vs anduBrutus; Wizard, Nathir > Inferno, Nebiros (Half-RTA 1.15.11); Inferno, Nymus > Necromancer, Naadir (Half-RTA 1.15.11); Necromancer, ? > Necromancer, Naadir (Half-RTA 1.15.11);3 - 0;2018.10.22[/confirmed]
+[confirmed]Moonitouch vs alex_nv; Runemage, Karli > Ranger, Alaron (Half-RTA 1.15.11); Warlock, Thralsai < Knight, Klaus (Half-RTA 1.15.11); Barbarian, Shak'Karukat < Necromancer, Arantir (Half-RTA 1.15.11); Inferno, Nebiros > Ranger, Findan (Half-RTA 1.15.11); Wizard, Faiz > Necromancer, Ornella (Half-RTA 1.15.11);3 - 2;2018.10.23[/confirmed]
+[confirmed]NirvanaWiz vs Gerodot; Barbarian, Kilghan > Ranger, Talanar (Half-RTA 1.15.11); Warlock, Raelag > Warlock, Kythra (Half-RTA 1.15.11); Runemage, Inga > Wizard, Nur (Half-RTA 1.15.11);3 - 0;2018.10.23[/confirmed]
+[confirmed]mizargurus vs zub; Wizard, Nur < Runemage, Wulfstan (Half-RTA 1.15.11); Barbarian, Quroq > Barbarian, Kujin (Half-RTA 1.15.11); Runemage, Ingvar > Warlock, Lethos (Half-RTA 1.15.11); Knight, Dougal < Necromancer, Raven (Half-RTA 1.15.11); Runemage, Wulfstan > Barbarian, Haggash (Half-RTA 1.15.11);3 - 2;2018.10.24[/confirmed]
+[open]dipper vs WINgaeLL; Knight, Valeria > Knight, Irina (Half-RTA 1.15.11); Necromancer, Orson > Necromancer, Arantir (Half-RTA 1.15.11); Knight, Nicolai > Wizard, Nathir (Half-RTA 1.15.11);3 - 0;2018.10.25[/open]
+[confirmed]Mithrandir vs SpaceCowboy; Necromancer, Markal > Necromancer, Ornella (Half-RTA 1.15.11); Warlock, Yrbeth > Knight, Lazlo (Half-RTA 1.15.11); Barbarian, Haggash > Barbarian, Garuna (Half-RTA 1.15.11);3 - 0;2018.10.25[/confirmed]
+[open]Disheppard vs HRISTOS; Ranger, Anwen > Knight, Klaus (Half-RTA 1.15.11); Inferno, Grok > Knight, Valeria (Half-RTA 1.15.11); Warlock, ? > Wizard, ? (Half-RTA 1.15.11);3 - 0;2018.10.25[/open]
+[confirmed]alex_nv vs aliemin; Knight, Godric > Ranger, Nathir (Half-RTA 1.15.11); Ranger, Ghost > Knight, Isabel (Half-RTA 1.15.11); Knight, Dougal > Ranger, Ylthin (Half-RTA 1.15.11);3 - 0;2018.10.25[/confirmed]
+[confirmed]JuDaR vs Veles201; Inferno, Jezebeth > Ranger, Talanar (Half-RTA 1.15.11); Barbarian, Kujin > Warlock, Shadya (Half-RTA 1.15.11); Runemage, Inga > Necromancer, Deirdre (Half-RTA 1.15.11);3 - 0;2018.10.25[/confirmed]
+[confirmed]anduBrutus vs dwarve; Inferno, Sovereign > Barbarian, Telsek (Half-RTA 1.15.11); Necromancer, Kaspar > Inferno, Nebiros (Half-RTA 1.15.11); Wizard, Razzak < Barbarian, Kilghan (Half-RTA 1.15.11); Necromancer, Markal > Warlock, Sinitar (Half-RTA 1.15.11);3 - 1;2018.10.26[/confirmed]
+[confirmed]Kauzal vs Arantur; Ranger, Ylthin < Runemage, Inga (Half-RTA 1.15.11); Wizard, Havez > Barbarian, Gotai (Half-RTA 1.15.11); Inferno, Grok > Necromancer, Raven (Half-RTA 1.15.11); Warlock, Raelag < Barbarian, Garuna (Half-RTA 1.15.11); Wizard, Nur > Inferno, Orlando (Half-RTA 1.15.11);3 - 2;2018.10.26[/confirmed]
+[confirmed]Yung_Yarik vs MoloX; Necromancer, Lucretia > Wizard, Garuna (Half-RTA 1.15.11); Inferno, Agrael > Warlock, Shadwyn (Half-RTA 1.15.11); Warlock, Raelag > Necromancer, Tolghar (Half-RTA 1.15.11);3 - 0;2018.10.26[/confirmed]
+[confirmed]Doge vs Miff; Inferno, Marbas > Warlock, Shadwyn (Half-RTA 1.15.11); Wizard, Nathir > Knight, Dougal (Half-RTA 1.15.11); Runemage, Helmar < Ranger, Findan (Half-RTA 1.15.11); Ranger, Gilrean > Barbarian, Kragh (Half-RTA 1.15.11);3 - 1;2018.10.26[/confirmed]
+[confirmed]dexterwar vs Mind; Ranger, Wyngaal < Inferno, Agrael (Half-RTA 1.15.11); Barbarian, Kujin > Inferno, Nebiros (Half-RTA 1.15.11); Runemage, Karli > Necromancer, Zoltan (Half-RTA 1.15.11); Knight, Irina < Knight, Godric (Half-RTA 1.15.11); Inferno, Marbas > Ranger, Alaron (Half-RTA 1.15.11);3 - 2;2018.10.27[/confirmed]
+[confirmed]Xokkeistik vs Imladris1; Necromancer, Markal < Inferno, Orlando (Half-RTA 1.15.11); Barbarian, Urghat > Barbarian, Kragh (Half-RTA 1.15.11); Runemage, Ingvar > Barbarian, Kujin (Half-RTA 1.15.11); Inferno, Marbas < Barbarian, Garuna (Half-RTA 1.15.11); Ranger, Wyngaal > Inferno, Nymus (Half-RTA 1.15.11);3 - 2;2018.10.27[/confirmed]
+[denied]sigurt900 vs bezumnuixleb; Barbarian, Quroq > Barbarian, Haggash (Half-RTA 1.15.11); Necromancer, Arantir > Ranger, Urghat (Half-RTA 1.15.11); Necromancer, Lucretia > Runemage, Rolf (Half-RTA 1.15.11);3 - 0;2018.10.28[/denied]
+[confirmed]Moonitouch vs Levis; Wizard, Cyrus > Warlock, Vayshan (Half-RTA 1.15.11); Necromancer, Orson > Necromancer, Naadir (Half-RTA 1.15.11); Knight, Maeve > Knight, Nicolai (Half-RTA 1.15.11);3 - 0;2018.10.28[/confirmed]
+[confirmed]vadolazo vs Strider_HL; Runemage, Wulfstan > Ranger, Ylthin (Half-RTA 1.15.11); Barbarian, Haggash < Runemage, Raven (Half-RTA 1.15.11); Ranger, Gilrean < Runemage, Tolghar (Half-RTA 1.15.11); Barbarian, Kilghan > Knight, Maeve (Half-RTA 1.15.11); Runemage, Ingvar > Ranger, Ossir (Half-RTA 1.15.11);3 - 2;2018.10.28[/confirmed]
+[confirmed]Sithis vs Mosol; Inferno, Nebiros < Runemage, Wulfstan (Half-RTA 1.15.11); Wizard, Narxez > Knight, Valeria (Half-RTA 1.15.11); Necromancer, Markal > Warlock, Sorgal (Half-RTA 1.15.11); Ranger, Talanar > Necromancer, Vlad (Half-RTA 1.15.11);3 - 1;2018.10.28[/confirmed]
+[confirmed]dwarve vs anduBrutus; Barbarian, Telsek < Inferno, Sovereign (Half-RTA 1.15.11); Inferno, Nebiros < Necromancer, Kaspar (Half-RTA 1.15.11); Barbarian, Kilghan > Wizard, Razzak (Half-RTA 1.15.11); Warlock, Sinitar < Necromancer, Markal (Half-RTA 1.15.11);1 - 3;2018.10.28[/confirmed]
+[confirmed]aliemin vs anduBrutus; Necromancer, Naadir > Ranger, Wyngaal (Half-RTA 1.15.11); Knight, Irina < Inferno, Nymus (Half-RTA 1.15.11); Warlock, Yrwanna > Knight, Rutger (Half-RTA 1.15.11); Ranger, Ghost > Wizard, Jhora (Half-RTA 1.15.11);3 - 1;2018.10.30[/confirmed]
+[confirmed]dwarve vs MoloX; Necromancer, Kragh > Warlock, Sinitar (Half-RTA 1.15.11); Ranger, Gilrean > Warlock, Yrwanna (Half-RTA 1.15.11); Inferno, Nymus > Warlock, Shadwyn (Half-RTA 1.15.11);3 - 0;2018.10.30[/confirmed]
+[confirmed]dexterwar vs Sithis; Necromancer, Lucretia < Wizard, Nathir (Half-RTA 1.15.11); Ranger, Alaron > Knight, Maeve (Half-RTA 1.15.11); Wizard, Jhora > Wizard, Nur (Half-RTA 1.15.11); Necromancer, Lucretia < Inferno, Jezebeth (Half-RTA 1.15.11); Knight, Valeria < Wizard, Maahir (Half-RTA 1.15.11);2 - 3;2018.11.01[/confirmed]
+[confirmed]Imladris1 vs JuDaR; Necromancer, ? > Ranger, Wyngaal (Half-RTA 1.15.11); Necromancer, Kaspar > Knight, Valeria (Half-RTA 1.15.11); Inferno, Grok > Ranger, Ossir (Half-RTA 1.15.11);3 - 0;2018.11.02[/confirmed]
+[open]WhiteSwan vs C0rpse; Necromancer, Vlad > Knight, Dougal (Half-RTA 1.15.11); Wizard, Cyrus > Warlock, Sinitar (Half-RTA 1.15.11); Necromancer, Arantir < Necromancer, Orson (Half-RTA 1.15.11); Wizard, Zehir < Ranger, Ghost (Half-RTA 1.15.11); Warlock, Shadya > Wizard, Narxez (Half-RTA 1.15.11);3 - 2;2018.11.02[/open]
+[confirmed]Doge vs Levis; Ranger, Talanar > Wizard, Havez (Half-RTA 1.15.11); Necromancer, Vlad < Knight, Helmar (Half-RTA 1.15.11); Warlock, Eruina > Inferno, Orlando (Half-RTA 1.15.11); Necromancer, Naadir > Necromancer, Raven (Half-RTA 1.15.11);3 - 1;2018.11.02[/confirmed]
+[confirmed]Yung_Yarik vs kArtorFun; Necromancer, Naadir > Runemage, Ingvar (Half-RTA 1.15.11); Barbarian, Kujin > Inferno, Grok (Half-RTA 1.15.11); Barbarian, Kilghan < Knight, Godric (Half-RTA 1.15.11); Wizard, Nur > Necromancer, Arantir (Half-RTA 1.15.11);3 - 1;2018.11.02[/confirmed]
+[confirmed]dipper vs zub; Inferno, Marbas > Ranger, Findan (Half-RTA 1.15.11); Knight, Maeve < Warlock, Garuna (Half-RTA 1.15.11); Inferno, Jezebeth > Necromancer, Markal (Half-RTA 1.15.11); Knight, Dougal < Runemage, Ebba (Half-RTA 1.15.11); Runemage, Karli > Runemage, Inga (Half-RTA 1.15.11);3 - 2;2018.11.03[/confirmed]
+[confirmed]vadolazo vs Moonitouch; Inferno, Grok < Ranger, Garuna (Half-RTA 1.15.11); Knight, Godric < Ranger, Vinrael (Half-RTA 1.15.11); Knight, Klaus > Ranger, Ghost (Half-RTA 1.15.11); Inferno, Nebiros > Inferno, Nymus (Half-RTA 1.15.11); Knight, Godric > Necromancer, Raven (Half-RTA 1.15.11);3 - 2;2018.11.03[/confirmed]
+[confirmed]Gerodot vs SpaceCowboy; Wizard, Faiz < Wizard, Narxez (Half-RTA 1.15.11); Necromancer, Ornella > Runemage, Helmar (Half-RTA 1.15.11); Knight, Irina > Barbarian, Kujin (Half-RTA 1.15.11); Knight, Dougal < Wizard, Jhora (Half-RTA 1.15.11); Knight, Maeve > Ranger, Ghost (Half-RTA 1.15.11);3 - 2;2018.11.03[/confirmed]
+[open]Mind vs Mithrandir; Ranger, Anwen > Wizard, Cyrus (Half-RTA 1.15.11); Necromancer, Deirdre > Runemage, Helmar (Half-RTA 1.15.11); Necromancer, Zoltan > Inferno, Grawl (Half-RTA 1.15.11);3 - 0;2018.11.03[/open]
+[confirmed]Miff vs Azaryph; Ranger, Talanar > Warlock, Lethos (Half-RTA 1.15.11); Ranger, Ossir > Inferno, Grok (Half-RTA 1.15.11); Ranger, Gilrean > Necromancer, Markal (Half-RTA 1.15.11);3 - 0;2018.11.03[/confirmed]
+[confirmed]NirvanaWiz vs Strider_HL; Warlock, Yrwanna < Inferno, Nymus (Half-RTA 1.15.11); Warlock, Sorgal < Wizard, ? (Half-RTA 1.15.11); Barbarian, Urghat > Inferno, Nebiros (Half-RTA 1.15.11); Knight, Klaus > Barbarian, Gotai (Half-RTA 1.15.11); Wizard, Cyrus > Inferno, Nymus (Half-RTA 1.15.11);3 - 2;2018.11.03[/confirmed]
+[confirmed]mizargurus vs sigurt900; Inferno, Agrael < Necromancer, Markal (Half-RTA 1.15.11); Wizard, Faiz > Barbarian, Shak'Karukat (Half-RTA 1.15.11); Runemage, Inga > Necromancer, Deirdre (Half-RTA 1.15.11); Necromancer, Ornella > Wizard, Maahir (Half-RTA 1.15.11);3 - 1;2018.11.04[/confirmed]
+[confirmed]alex_nv vs Mosol; Warlock, Kythra < Necromancer, Naadir (Half-RTA 1.15.11); Warlock, Raelag > Wizard, Narxez (Half-RTA 1.15.11); Warlock, Shadya > Knight, Klaus (Half-RTA 1.15.11); Runemage, Inga > Necromancer, Zoltan (Half-RTA 1.15.11);3 - 1;2018.11.04[/confirmed]
+[confirmed]bezumnuixleb vs Disheppard; Barbarian, Gorshak > Necromancer, Vlad (Half-RTA 1.15.11); Ranger, Vinrael > Knight, Lazlo (Half-RTA 1.15.11); Necromancer, Ornella > Barbarian, Telsek (Half-RTA 1.15.11);3 - 0;2018.11.04[/confirmed]
+[confirmed]Miff vs mizargurus; Ranger, Anwen > Barbarian, Garuna (Half-RTA 1.15.11); Inferno, Marbas > Runemage, Wulfstan (Half-RTA 1.15.11); Inferno, Grok > Barbarian, Haggash (Half-RTA 1.15.11);3 - 0;2018.11.08[/confirmed]
+[open]NirvanaWiz vs RomaGl; Runemage, Ebba < Inferno, Agrael (Half-RTA 1.15.11); Barbarian, Urghat > Ranger, Ylthin (Half-RTA 1.15.11); Ranger, Anwen > Warlock, Sinitar (Half-RTA 1.15.11); Runemage, Erling < Inferno, Nymus (Half-RTA 1.15.11); Runemage, Ingvar > Warlock, Yrbeth (Half-RTA 1.15.11);3 - 2;2018.11.08[/open]
+[open]SpaceCowboy vs C0rpse; Inferno, Agrael > Ranger, Wyngaal (Half-RTA 1.15.11); Knight, Maeve < Barbarian, Kujin (Half-RTA 1.15.11); Necromancer, Naadir < Barbarian, Quroq (Half-RTA 1.15.11); Inferno, Orlando > Necromancer, Markal (Half-RTA 1.15.11); Necromancer, Markal > Warlock, Yrwanna (Half-RTA 1.15.11);3 - 2;2018.11.08[/open]
+[confirmed]Xokkeistik vs Kauzal; Necromancer, Raven < Inferno, Orlando (Half-RTA 1.15.11); Inferno, Grawl < Wizard, Razzak (Half-RTA 1.15.11); Runemage, Inga > Necromancer, Raven (Half-RTA 1.15.11); Wizard, Razzak < Ranger, Ylthin (Half-RTA 1.15.11);1 - 3;2018.11.09[/confirmed]
+[confirmed]Kauzal vs Xokkeistik; Inferno, Orlando > Necromancer, Raven (Half-RTA 1.15.11); Wizard, Razzak > Inferno, Grawl (Half-RTA 1.15.11); Necromancer, Raven < Runemage, Inga (Half-RTA 1.15.11); Ranger, Ylthin > Wizard, Razzak (Half-RTA 1.15.11);3 - 1;2018.11.08[/confirmed]
+[confirmed]Azaryph vs dwarve; Necromancer, Arantir > Runemage, Inga (Half-RTA 1.15.11); Necromancer, Naadir < Necromancer, Arantir (Half-RTA 1.15.11); Necromancer, Orson > Ranger, Ylthin (Half-RTA 1.15.11); Necromancer, Naadir > Necromancer, Arantir (Half-RTA 1.15.11);3 - 1;2018.11.09[/confirmed]
+[confirmed]Sithis vs vadolazo; Knight, Isabel > Necromancer, Naadir (Half-RTA 1.15.11); Necromancer, Naadir < Ranger, Talanar (Half-RTA 1.15.11); Knight, Nicolai > Wizard, Nur (Half-RTA 1.15.11); Knight, Isabel > Necromancer, Orson (Half-RTA 1.15.11);3 - 1;2018.11.09[/confirmed]
+[confirmed]Yung_Yarik vs aliemin; Knight, Klaus > Warlock, Vayshan (Half-RTA 1.15.11); Barbarian, Kilghan > Knight, Nicolai (Half-RTA 1.15.11); Knight, Valeria > Necromancer, Arantir (Half-RTA 1.15.11);3 - 0;2018.11.09[/confirmed]
+[confirmed]Veles201 vs Disheppard; Warlock, Eruina < Knight, Dougal (Half-RTA 1.15.11); Warlock, Shadya > Knight, Valeria (Half-RTA 1.15.11); Knight, Godric > Knight, Valeria (Half-RTA 1.15.11); Ranger, Ylthin > Ranger, Talanar (Half-RTA 1.15.11);3 - 1;2018.11.10[/confirmed]
+[confirmed]zub vs WhiteSwan; Necromancer, Arantir > Necromancer, Markal (Half-RTA 1.15.11); Knight, Godric > Warlock, Lethos (Half-RTA 1.15.11); Wizard, Havez > Wizard, Nur (Half-RTA 1.15.11);3 - 0;2018.11.10[/confirmed]
+[open]alex_nv vs Nargott; Inferno, Alastor < Barbarian, Gorshak (Half-RTA 1.15.11); Warlock, Kythra > Warlock, Sorgal (Half-RTA 1.15.11); Knight, Valeria > Knight, Klaus (Half-RTA 1.15.11); Ranger, Ossir > Knight, Valeria (Half-RTA 1.15.11);3 - 1;2018.11.10[/open]
+[open]Imladris1 vs Mithrandir; Warlock, Shadwyn > Necromancer, Zoltan (Half-RTA 1.15.11); Barbarian, Garuna < Inferno, Orlando (Half-RTA 1.15.11); Barbarian, Gorshak < Necromancer, Markal (Half-RTA 1.15.11); Ranger, Ossir > Inferno, Grok (Half-RTA 1.15.11); Warlock, Raelag > Warlock, Yrbeth (Half-RTA 1.15.11);3 - 2;2018.11.10[/open]
+[confirmed]Arantur vs dipper; Barbarian, Kujin > Barbarian, Gotai (Half-RTA 1.15.11); Knight, Ellaine > Wizard, Razzak (Half-RTA 1.15.11); Runemage, Ebba > Knight, Rutger (Half-RTA 1.15.11);3 - 0;2018.11.11[/confirmed]
+[open]Strider_HL vs Gerodot; Necromancer, Zoltan < Runemage, Wulfstan (Half-RTA 1.15.11); Runemage, Inga > Ranger, Alaron (Half-RTA 1.15.11); Wizard, Jhora > Warlock, Raelag (Half-RTA 1.15.11); Necromancer, Zoltan > Warlock, Thralsai (Half-RTA 1.15.11);3 - 1;2018.11.11[/open]
+[open]MoloX vs WINgaeLL; Knight, Lazlo < Knight, Valeria (Half-RTA 1.15.11); Warlock, Sinitar > Knight, Dougal (Half-RTA 1.15.11); Necromancer, Vlad > Knight, Ellaine (Half-RTA 1.15.11); Knight, Maeve < Runemage, Tolghar (Half-RTA 1.15.11); Wizard, Vinrael > Knight, Maeve (Half-RTA 1.15.11);3 - 2;2018.11.11[/open]
+[confirmed]sigurt900 vs Levis; Necromancer, Lucretia > Warlock, Sorgal (Half-RTA 1.15.11); Runemage, Wulfstan > Wizard, Maahir (Half-RTA 1.15.11); Barbarian, Haggash > Warlock, Shadya (Half-RTA 1.15.11);3 - 0;2018.11.11[/confirmed]
+[confirmed]Mosol vs bezumnuixleb; Inferno, Agrael > Runemage, Rolf (Half-RTA 1.15.11); Knight, Godric > Necromancer, Vlad (Half-RTA 1.15.11); Necromancer, Deirdre < Runemage, Erling (Half-RTA 1.15.11); Knight, Dougal < Barbarian, Gotai (Half-RTA 1.15.11); Knight, Godric > Wizard, Havez (Half-RTA 1.15.11);3 - 2;2018.11.11[/confirmed]
+[confirmed]dexterwar vs Moonitouch; Wizard, Nur < Barbarian, Gotai (Half-RTA 1.15.11); Necromancer, Deirdre > Barbarian, Gotai (Half-RTA 1.15.11); Wizard, Jhora > Wizard, Nur (Half-RTA 1.15.11); Ranger, Wyngaal < Wizard, Ornella (Half-RTA 1.15.11); Knight, Vittorio > Inferno, Nebiros (Half-RTA 1.15.11);3 - 2;2018.11.11[/confirmed]
+[confirmed]kArtorFun vs anduBrutus; Necromancer, Raven > Ranger, Ylthin (Half-RTA 1.15.11); Knight, Maeve > Necromancer, Kaspar (Half-RTA 1.15.11); Barbarian, Gorshak > Wizard, Maahir (Half-RTA 1.15.11);3 - 0;2018.11.11[/confirmed]
+[open]JuDaR vs HRISTOS; Inferno, Deleb > Barbarian, Haggash (Half-RTA 1.15.11); Necromancer, Markal > Barbarian, Gotai (Half-RTA 1.15.11); Runemage, Tolghar > Barbarian, Gorshak (Half-RTA 1.15.11);3 - 0;2018.11.12[/open]
+[confirmed]dipper vs aliemin; Knight, Godric > Knight, Sorgal (Half-RTA 1.15.11); Knight, Godric > Warlock, Thralsai (Half-RTA 1.15.11); Barbarian, Shak'Karukat > Necromancer, Orson (Half-RTA 1.15.11);3 - 0;2018.11.13[/confirmed]
+[confirmed]Moonitouch vs mizargurus; Ranger, Gilrean > Wizard, Cyrus (Half-RTA 1.15.11); Wizard, Cyrus > Knight, Rutger (Half-RTA 1.15.11); Ranger, Vinrael > Inferno, Alastor (Half-RTA 1.15.11);3 - 0;2018.11.15[/confirmed]
+[open]dexterwar vs Mosol; Inferno, Grawl < Inferno, Nymus (Half-RTA 1.15.11); Knight, Lazlo > Knight, Godric (Half-RTA 1.15.11); Knight, Irina > Inferno, Jezebeth (Half-RTA 1.15.11); Warlock, Thralsai > Knight, Valeria (Half-RTA 1.15.11);3 - 1;2018.11.14[/open]
+[confirmed]zub vs SpaceCowboy; Ranger, Findan > Warlock, Lethos (Half-RTA 1.15.11); Necromancer, Ornella > Warlock, Shadya (Half-RTA 1.15.11); Necromancer, Orson > Ranger, Anwen (Half-RTA 1.15.11);3 - 0;2018.11.14[/confirmed]
+[open]dwarve vs HRISTOS; Inferno, Grok > Barbarian, Gotai (Half-RTA 1.15.11); Wizard, Zehir > Knight, Isabel (Half-RTA 1.15.11); Inferno, Nymus > Wizard, Razzak (Half-RTA 1.15.11);3 - 0;2018.11.14[/open]
+[open]Kauzal vs Yung_Yarik; Warlock, Shadya > Knight, Godric (Half-RTA 1.15.11); Necromancer, Lucretia > Warlock, Yrbeth (Half-RTA 1.15.11); Inferno, Grok > Barbarian, Haggash (Half-RTA 1.15.11);3 - 0;2018.11.15[/open]
+[open]Strider_HL vs Imladris1; Inferno, Orlando > Wizard, ? (Half-RTA 1.15.11); ?, ? > ?, ? (Half-RTA 1.15.11); ?, ? > ?, ? (Half-RTA 1.15.11);3 - 0;2018.11.15[/open]
+[confirmed]Veles201 vs bezumnuixleb; Barbarian, Kujin > Ranger, Anwen (Half-RTA 1.15.11); Knight, Rutger < Barbarian, Haggash (Half-RTA 1.15.11); Knight, Valeria > Barbarian, Gotai (Half-RTA 1.15.11); Warlock, Kythra > Knight, Valeria (Half-RTA 1.15.11);3 - 1;2018.11.16[/confirmed]
+[open]Azaryph vs Mithrandir; Inferno, Jezebeth < Inferno, Agrael (Half-RTA 1.15.11); Knight, Lazlo > Warlock, Yrbeth (Half-RTA 1.15.11); Barbarian, Garuna > Inferno, Grawl (Half-RTA 1.15.11); Necromancer, Arantir > Knight, Vittorio (Half-RTA 1.15.11);3 - 1;2018.11.17[/open]
+[open]Miff vs Mind; Necromancer, Raven > Barbarian, Shak'Karukat (Half-RTA 1.15.11); Barbarian, Kragh < Knight, Maeve (Half-RTA 1.15.11); Warlock, Vayshan > Wizard, Ghost (Half-RTA 1.15.11); Ranger, Ylthin > Barbarian, Quroq (Half-RTA 1.15.11);3 - 1;2018.11.18[/open]
+[confirmed]Xokkeistik vs Kauzal; Wizard, Nur > Necromancer, Zoltan (Half-RTA 1.15.11); Necromancer, Markal < Warlock, Yrwanna (Half-RTA 1.15.11); Warlock, Kythra > Necromancer, Ornella (Half-RTA 1.15.11); Ranger, Findan < Necromancer, Vlad (Half-RTA 1.15.11); Ranger, Talanar < Inferno, Marbas (Half-RTA 1.15.11);2 - 3;2018.11.18[/confirmed]
+[confirmed]WhiteSwan vs Xokkeistik; Necromancer, Zoltan < Wizard, Nur (Half-RTA 1.15.11); Warlock, Yrwanna > Necromancer, Markal (Half-RTA 1.15.11); Necromancer, Ornella < Warlock, Kythra (Half-RTA 1.15.11); Necromancer, Vlad > Ranger, Findan (Half-RTA 1.15.11); Inferno, Marbas > Ranger, Talanar (Half-RTA 1.15.11);3 - 2;2018.11.17[/confirmed]
+[confirmed]Disheppard vs anduBrutus; Necromancer, Ornella > Inferno, Jezebeth (Half-RTA 1.15.11); Knight, Irina < Inferno, Nymus (Half-RTA 1.15.11); Warlock, Sorgal < Wizard, Maahir (Half-RTA 1.15.11); Necromancer, Raven > Necromancer, Arantir (Half-RTA 1.15.11); Warlock, Shadya < Necromancer, Lucretia (Half-RTA 1.15.11);2 - 3;2018.11.18[/confirmed]
+[open]JuDaR vs Gerodot; Necromancer, Ornella > Ranger, Ylthin (Half-RTA 1.15.11); Warlock, Sorgal < Inferno, Agrael (Half-RTA 1.15.11); Warlock, Shadya < Barbarian, Kragh (Half-RTA 1.15.11); Necromancer, Markal > Necromancer, Orson (Half-RTA 1.15.11); Wizard, Faiz > Inferno, Orlando (Half-RTA 1.15.11);3 - 2;2018.11.17[/open]
+[open]vadolazo vs NirvanaWiz; Wizard, Galib > Inferno, Nymus (Half-RTA 1.15.11); Wizard, Narxez < Knight, Ellaine (Half-RTA 1.15.11); Inferno, Nebiros > Necromancer, Markal (Half-RTA 1.15.11); Necromancer, Markal < Barbarian, Quroq (Half-RTA 1.15.11); Necromancer, Markal > Warlock, Sinitar (Half-RTA 1.15.11);3 - 2;2018.11.18[/open]
+[open]Arantur vs Nargott; Knight, Maeve > Warlock, Lethos (Half-RTA 1.15.11); Necromancer, ? > Barbarian, Quroq (Half-RTA 1.15.11); Inferno, Nymus > Barbarian, Garuna (Half-RTA 1.15.11);3 - 0;2018.11.18[/open]
+[open]Sithis vs alex_nv; Wizard, Razzak > Ranger, Ylthin (Half-RTA 1.15.11); Inferno, Deleb > Barbarian, Kujin (Half-RTA 1.15.11); Ranger, Vinrael < Knight, Lazlo (Half-RTA 1.15.11); Inferno, Deleb < Necromancer, Markal (Half-RTA 1.15.11); Necromancer, Naadir > Warlock, Sinitar (Half-RTA 1.15.11);3 - 2;2018.11.18[/open]
+[open]Levis vs kArtorFun; Inferno, Alastor < Runemage, Rolf (Half-RTA 1.15.11); Wizard, Cyrus > Wizard, Faiz (Half-RTA 1.15.11); Warlock, Kythra < Necromancer, Ornella (Half-RTA 1.15.11); Inferno, Agrael > Knight, Valeria (Half-RTA 1.15.11); Necromancer, Deirdre > Ranger, Talanar (Half-RTA 1.15.11);3 - 2;2018.11.18[/open]
+[confirmed]anduBrutus vs Disheppard; Inferno, Jezebeth < Necromancer, Ornella (Half-RTA 1.15.11); Inferno, Nymus > Knight, Irina (Half-RTA 1.15.11); Wizard, Havez > Warlock, Sorgal (Half-RTA 1.15.11); Necromancer, Arantir < Necromancer, Raven (Half-RTA 1.15.11); Necromancer, Lucretia > Warlock, Sorgal (Half-RTA 1.15.11);3 - 2;2018.11.19[/confirmed]
+[open]sigurt900 vs RomaGl; Barbarian, Haggash < Runemage, Tolghar (Half-RTA 1.15.11); Runemage, Wulfstan > Warlock, Vayshan (Half-RTA 1.15.11); ?, ? < ?, ? (Half-RTA 1.15.11); ?, ? < ?, ? (Half-RTA 1.15.11);1 - 3;2018.11.19[/open]
+[open]Kauzal vs RomaGl; Knight, Lazlo < Ranger, Ylthin (Half-RTA 1.15.11); Warlock, Raelag < Ranger, Talanar (Half-RTA 1.15.11); Warlock, Thralsai > Necromancer, Raven (Half-RTA 1.15.11); Barbarian, Gotai < Ranger, Vinrael (Half-RTA 1.15.11);1 - 3;2018.11.20[/open]
+[open]zub vs Levis; Necromancer, Zoltan < Knight, Vittorio (Half-RTA 1.15.11); Inferno, Deirdre > Knight, Nicolai (Half-RTA 1.15.11); Necromancer, Vlad > Knight, Irina (Half-RTA 1.15.11); Necromancer, Markal > Wizard, Nathir (Half-RTA 1.15.11);3 - 1;2018.11.21[/open]
+[open]SpaceCowboy vs WINgaeLL; Knight, Valeria > Knight, Maeve (Half-RTA 1.15.11); Wizard, Razzak > Knight, Nicolai (Half-RTA 1.15.11); Inferno, Agrael > Warlock, Sinitar (Half-RTA 1.15.11);3 - 0;2018.11.21[/open]
+@tourn@
+Турнир Masters 2018
+Masters Tournament 2018
+2018
+false
+0
+true
+2018.04.24
+Half-RTA 1.15.10
+@group@
+Плей-офф
+Play-off
+4
+#
+[open]Mind vs GedxBlood; Necromancer, ? > Barbarian, Gorshak (Half-RTA 1.15.10); Barbarian, Shak'Karukat > Ranger, Vinrael (Half-RTA 1.15.10); Inferno, Nebiros > Ranger, Vinrael (Half-RTA 1.15.10);3 - 0;2018.09.08[/open]
+[confirmed]theOverlord vs alex_nv; Necromancer, Orson > Runemage, Ingvar (Half-RTA 1.15.10); Barbarian, Urghat > Ranger, Gilrean (Half-RTA 1.15.10); Inferno, Agrael < Ranger, Ghost (Half-RTA 1.15.10); Knight, Maeve > Barbarian, Gotai (Half-RTA 1.15.10);3 - 1;2018.09.09[/confirmed]
+[confirmed]dipper vs Mosol; Inferno, Grok < Necromancer, Naadir (Half-RTA 1.15.10); Inferno, Nebiros > Necromancer, Raven (Half-RTA 1.15.10); Inferno, Deleb > Necromancer, Arantir (Half-RTA 1.15.10); Ranger, Anwen < Runemage, Helmar (Half-RTA 1.15.10); Knight, Ellaine > Warlock, Yrbeth (Half-RTA 1.15.10);3 - 2;2018.09.10[/confirmed]
+[open]zub vs GedxBlood; Ranger, Ghost < Necromancer, Arantir (Half-RTA 1.15.10);0 - 1;2018.09.14[/open]
+[open]zub vs GedxBlood; Ranger, Ghost < Necromancer, Arantir (Half-RTA 1.15.10); Necromancer, Vlad > Inferno, Orlando (Half-RTA 1.15.10); Barbarian, Kilghan > Inferno, Orlando (Half-RTA 1.15.10);2 - 1;2018.09.14[/open]
+[confirmed]vadolazo vs dipper; Necromancer, Lucretia < Runemage, Rolf (Half-RTA 1.15.10); Runemage, Inga < Knight, Klaus (Half-RTA 1.15.10); Barbarian, Gorshak > Ranger, Vinrael (Half-RTA 1.15.10); Runemage, Karli > Knight, Dougal (Half-RTA 1.15.10); Barbarian, Haggash > Knight, Lazlo (Half-RTA 1.15.10);3 - 2;2018.09.15[/confirmed]
+[confirmed]Sithis vs Mind; Wizard, Razzak > Warlock, Kythra (Half-RTA 1.15.10); Necromancer, Raven < Barbarian, Kilghan (Half-RTA 1.15.10); Ranger, Ossir < Necromancer, Kragh (Half-RTA 1.15.10); Wizard, Nathir > Barbarian, Kujin (Half-RTA 1.15.10); Knight, Maeve > Necromancer, Naadir (Half-RTA 1.15.10);3 - 2;2018.09.16[/confirmed]
+[open]vadolazo vs RomaGl; Wizard, Jhora > Warlock, Sinitar (Half-RTA 1.15.10); Barbarian, Kujin < Knight, Irina (Half-RTA 1.15.10); Runemage, Helmar > Necromancer, Ornella (Half-RTA 1.15.10); Ranger, Ylthin > Knight, Valeria (Half-RTA 1.15.10);3 - 1;2018.09.16[/open]
+[open]Mosol vs theOverlord; Wizard, Havez > Inferno, Jezebeth (Half-RTA 1.15.10); Inferno, Orlando > Barbarian, Kujin (Half-RTA 1.15.10);2 - 0;2018.09.18[/open]
+[confirmed]dipper vs alex_nv; Runemage, Rolf < Runemage, Inga (Half-RTA 1.15.10); Ranger, Wyngaal > Warlock, Shadya (Half-RTA 1.15.10); Knight, Deleb > Necromancer, Naadir (Half-RTA 1.15.10);2 - 1;2018.09.19[/confirmed]
+[confirmed]Mosol vs zub; Inferno, Agrael > Ranger, Gilrean (Half-RTA 1.15.10); Wizard, Havez < Warlock, Shadwyn (Half-RTA 1.15.10); Inferno, Grawl > Necromancer, Naadir (Half-RTA 1.15.10);2 - 1;2018.09.20[/confirmed]
+[confirmed]Strider_HL vs dipper; Inferno, Nymus < Barbarian, Garuna (Half-RTA 1.15.10); Inferno, Sovereign > Runemage, Erling (Half-RTA 1.15.10); Inferno, Jezebeth > Runemage, Inga (Half-RTA 1.15.10);2 - 1;2018.09.23[/confirmed]
+[confirmed]vadolazo vs Sithis; Wizard, Maahir > Knight, Isabel (Half-RTA 1.15.10); Wizard, ? > Knight, Isabel (Half-RTA 1.15.10); Warlock, Shadwyn < Ranger, Ylthin (Half-RTA 1.15.10); Wizard, Razzak > Ranger, Vinrael (Half-RTA 1.15.10);3 - 1;2018.09.26[/confirmed]
+[confirmed]Strider_HL vs Mind; Barbarian, Garuna > Necromancer, Ornella (Half-RTA 1.15.10); Warlock, Lethos < Knight, Maeve (Half-RTA 1.15.10); Barbarian, Kilghan > Necromancer, Raven (Half-RTA 1.15.10);2 - 1;2018.09.27[/confirmed]
+[open]Strider_HL vs RomaGl; Inferno, Marbas > Ranger, Wyngaal (Half-RTA 1.15.10); Runemage, Tolghar > Runemage, Ingvar (Half-RTA 1.15.10);2 - 0;2018.09.28[/open]
+[confirmed]Sithis vs Strider_HL; Necromancer, Raven > Necromancer, Arantir (Half-RTA 1.15.10); Runemage, Ingvar < Inferno, Grawl (Half-RTA 1.15.10); Knight, Ellaine > Warlock, Thralsai (Half-RTA 1.15.10); Necromancer, Zoltan > Inferno, Deleb (Half-RTA 1.15.10);3 - 1;2018.10.04[/confirmed]
+[confirmed]vadolazo vs Sithis; Warlock, Thralsai < Ranger, Anwen (Half-RTA 1.15.10); Runemage, Ingvar > Ranger, Ghost (Half-RTA 1.15.10); Necromancer, Orson > Knight, Valeria (Half-RTA 1.15.10); Wizard, Cyrus < Ranger, Ghost (Half-RTA 1.15.10); Runemage, Ebba > Ranger, Gilrean (Half-RTA 1.15.10);3 - 2;2018.10.08[/confirmed]
+@tourn@
+Итоговый Тактический Турнир 2017
+Final Tactics Tournament 2017
+2017
+false
+0
+true
+2017.12.08
+Half-RTA 1.15.2
+@group@
+Плей-офф
+Play-off
+3
+#
+[open]vadolazo vs RomaGl; Runemage, Rolf > Wizard, Narxez (Half-RTA 1.15.2); Knight, Ellaine > Barbarian, Garuna (Half-RTA 1.15.2);2 - 0;2017.12.04[/open]
+[confirmed]vadolazo vs Armadill0; Ranger, Ossir > Wizard, Faiz (Half-RTA 1.15.2); Ranger, Talanar > Wizard, Zehir (Half-RTA 1.15.2);2 - 0;2017.12.04[/confirmed]
+[confirmed]vadolazo vs NirvanaWiz; Inferno, Orlando < Ranger, Talanar (Half-RTA 1.15.2); Runemage, Ingvar > Knight, Maeve (Half-RTA 1.15.2); Ranger, Ghost > Wizard, Maahir (Half-RTA 1.15.2);2 - 1;2017.12.04[/confirmed]
+[confirmed]Mind vs Dio; Inferno, ? > Knight, ? (Half-RTA 1.15.2); Ranger, ? < Wizard, ? (Half-RTA 1.15.2); Barbarian, Urghat > Necromancer, Orson (Half-RTA 1.15.2);2 - 1;2017.12.04[/confirmed]
+[confirmed]Mind vs Levis; Inferno, Grok > Ranger, Wyngaal (Half-RTA 1.15.2); Wizard, Razzak > Knight, ? (Half-RTA 1.15.2);2 - 0;2017.12.04[/confirmed]
+[confirmed]Armadill0 vs Miff; Wizard, Jhora > Inferno, Alastor (Half-RTA 1.15.2); Ranger, Talanar < Barbarian, Kujin (Half-RTA 1.15.2); Barbarian, Garuna > Inferno, Nebiros (Half-RTA 1.15.2);2 - 1;2017.12.05[/confirmed]
+[confirmed]Strider_HL vs Dio; Inferno, Nymus > Warlock, Lethos (Half-RTA 1.15.2); Wizard, Zehir < Wizard, ? (Half-RTA 1.15.2); Wizard, Zehir > Wizard, Narxez (Half-RTA 1.15.2);2 - 1;2017.12.08[/confirmed]
+[confirmed]Sithis vs Levis; Wizard, Maahir < Runemage, Brand (Half-RTA 1.15.2); Runemage, Helmar > Wizard, Narxez (Half-RTA 1.15.2); Necromancer, Deirdre > Ranger, Gilrean (Half-RTA 1.15.2);2 - 1;2017.12.10[/confirmed]
+[open]NirvanaWiz vs RomaGl; Ranger, Dirael > Barbarian, Kragh (Half-RTA 1.15.2); Knight, Maeve < Warlock, Raelag (Half-RTA 1.15.2); Ranger, Ghost < Inferno, Orlando (Half-RTA 1.15.2);1 - 2;2017.12.10[/open]
+[confirmed]Sithis vs Dio; Wizard, Maahir > Warlock, Yrbeth (Half-RTA 1.15.2); Runemage, Inga > Knight, Irina (Half-RTA 1.15.2);2 - 0;2017.12.10[/confirmed]
+[confirmed]Sithis vs Mind; Necromancer, Raven < Barbarian, Gotai (Half-RTA 1.15.2); Wizard, Narxez > Runemage, Karli (Half-RTA 1.15.2); Knight, Godric > Runemage, Brand (Half-RTA 1.15.2);2 - 1;2017.12.10[/confirmed]
+[open]Strider_HL vs Levis; Barbarian, Quroq > Necromancer, Arantir (Half-RTA 1.15.2); Ranger, Vinrael > Wizard, Jhora (Half-RTA 1.15.2);2 - 0;2017.12.10[/open]
+[confirmed]NirvanaWiz vs Miff; Runemage, Ingvar > Inferno, Agrael (Half-RTA 1.15.2); Knight, Klaus < Warlock, Vayshan (Half-RTA 1.15.2); Wizard, Cyrus > Knight, Godric (Half-RTA 1.15.2);2 - 1;2017.12.11[/confirmed]
+[confirmed]Strider_HL vs Sithis; Barbarian, Haggash < Necromancer, Lucretia (Half-RTA 1.15.2); Runemage, Helmar > Knight, Vittorio (Half-RTA 1.15.2); Warlock, Raelag > Wizard, Zehir (Half-RTA 1.15.2);2 - 1;2017.12.11[/confirmed]
+[open]Dio vs Levis; Inferno, Jezebeth > Inferno, Marbas (Half-RTA 1.15.2); Wizard, Zehir < Knight, Dougal (Half-RTA 1.15.2); Knight, Rutger > Barbarian, Haggash (Half-RTA 1.15.2);2 - 1;2017.12.11[/open]
+[confirmed]Armadill0 vs NirvanaWiz; Warlock, Lethos > Inferno, Nebiros (Half-RTA 1.15.2); Warlock, Thralsai > Runemage, Ebba (Half-RTA 1.15.2);2 - 0;2017.12.11[/confirmed]
+[confirmed]Miff vs vadolazo; Warlock, Talanar > Wizard, Maahir (Half-RTA 1.15.2); Inferno, Agrael < Warlock, Thralsai (Half-RTA 1.15.2); Warlock, Maeve > Wizard, Cyrus (Half-RTA 1.15.2);2 - 1;2017.12.15[/confirmed]
+[open]Mind vs Strider_HL; Barbarian, Gorshak < Runemage, Ingvar (Half-RTA 1.15.2); Wizard, Razzak > Necromancer, ? (Half-RTA 1.15.2); Warlock, Raelag > Runemage, Inga (Half-RTA 1.15.2);2 - 1;2017.12.14[/open]
+[open]vadolazo vs Mind; Necromancer, Vlad > Knight, Isabel (Half-RTA 1.15.2); Warlock, Raelag > Ranger, Alaron (Half-RTA 1.15.2); Knight, Isabel < Knight, Godric (Half-RTA 1.15.2); Necromancer, Ornella > Barbarian, Kujin (Half-RTA 1.15.2);3 - 1;2017.12.16[/open]
+[open]Sithis vs RomaGl; Runemage, Helmar > Wizard, Maahir (Half-RTA 1.15.2); Runemage, Inga > Wizard, Jhora (Half-RTA 1.15.2); Knight, Klaus < Runemage, Ingvar (Half-RTA 1.15.2); Ranger, Wyngaal < Barbarian, Urghat (Half-RTA 1.15.2); Wizard, Cyrus > Wizard, Havez (Half-RTA 1.15.2);3 - 2;2017.12.20[/open]
+[confirmed]vadolazo vs Sithis; Wizard, Galib > Ranger, Ghost (Half-RTA 1.15.2); Inferno, Nebiros > Warlock, Shadya (Half-RTA 1.15.2); Runemage, Inga > Ranger, Wyngaal (Half-RTA 1.15.2); Ranger, Talanar > Wizard, Razzak (Half-RTA 1.15.2);4 - 0;2017.12.23[/confirmed]
+@tourn@
+Весений Тактический Турнир 2017
+Spring Tactics Tournament 2017
+2017
+true
+2
+false
+2017.04.26
+Half-RTA 1.14.1
+@group@
+Группа A
+Group A
+1
+#
+[open]Mind vs coldbloodedvlad; Wizard, Havez > Barbarian, Quroq (Half-RTA 1.14.1); Ranger, Vinrael > Wizard, Zehir (Half-RTA 1.14.1); Barbarian, Kujin > Inferno, Marbas (Half-RTA 1.14.1);3 - 0;2017.04.14[/open]
+[confirmed]zub vs Levis; Barbarian, Shak'Karukat > Knight, Lazlo (Half-RTA 1.14.1); Barbarian, Kujin < Warlock, Vayshan (Half-RTA 1.14.1); Ranger, Gilrean < Wizard, Narxez (Half-RTA 1.14.1); Barbarian, Kilghan > Warlock, Thralsai (Half-RTA 1.14.1); Barbarian, Shak'Karukat > Wizard, Jhora (Half-RTA 1.14.1);3 - 2;2017.04.27[/confirmed]
+[confirmed]Levis vs Mind; Wizard, Quroq < Necromancer, Naadir (Half-RTA 1.14.1); Wizard, Zehir < Barbarian, Kragh (Half-RTA 1.14.1);0 - 2;2017.04.28[/confirmed]
+[open]Levis vs coldbloodedvlad; Knight, Irina > Knight, Rutger (Half-RTA 1.14.1); Knight, Lazlo < Barbarian, Urghat (Half-RTA 1.14.1); Warlock, Thralsai > Knight, Klaus (Half-RTA 1.14.1); Wizard, Maahir > Ranger, Alaron (Half-RTA 1.14.1);3 - 1;2017.04.29[/open]
+[confirmed]Levis vs Mind; Wizard, Quroq < Necromancer, Naadir (Half-RTA 1.14.1); Wizard, Zehir < Barbarian, Kragh (Half-RTA 1.14.1); Knight, Godric > Knight, Ellaine (Half-RTA 1.14.1); Warlock, Sorgal < Barbarian, Kilghan (Half-RTA 1.14.1);1 - 3;2017.04.29[/confirmed]
+[open]Mind vs Levis; Necromancer, Naadir > Wizard, Quroq (Half-RTA 1.14.1); Barbarian, Kragh > Wizard, Zehir (Half-RTA 1.14.1); Knight, Ellaine < Knight, Godric (Half-RTA 1.14.1); Barbarian, Kilghan > Warlock, Sorgal (Half-RTA 1.14.1);3 - 1;2017.04.29[/open]
+[confirmed]Mind vs zub; Knight, Dougal > Barbarian, Quroq (Half-RTA 1.14.1); Wizard, ? < Barbarian, ? (Half-RTA 1.14.1); Ranger, Alaron < Runemage, ? (Half-RTA 1.14.1); Necromancer, Deirdre > Barbarian, Kujin (Half-RTA 1.14.1); Inferno, Sovereign > Ranger, Eruina (Half-RTA 1.14.1);3 - 2;2017.04.30[/confirmed]
+[open]zub vs coldbloodedvlad; Barbarian, Kilghan > Necromancer, Markal (Half-RTA 1.14.1); Necromancer, Raven > Inferno, Grok (Half-RTA 1.14.1); Barbarian, Shak'Karukat > Warlock, Yrwanna (Half-RTA 1.14.1);3 - 0;2017.04.30[/open]
+@group@
+Группа B
+Group B
+1
+#
+[confirmed]gregarah vs MikeM; Knight, Dougal > Barbarian, Kujin (Half-RTA 1.14.1); Barbarian, Gorshak > Runemage, Brand (Half-RTA 1.14.1); Knight, Maeve > Runemage, Helmar (Half-RTA 1.14.1);3 - 0;2017.04.15[/confirmed]
+[confirmed]gregarah vs Syrill; Knight, Valeria > Runemage, Helmar (Half-RTA 1.14.1); Runemage, Inga > Ranger, Wyngaal (Half-RTA 1.14.1); Knight, Dougal > Barbarian, Garuna (Half-RTA 1.14.1);3 - 0;2017.04.21[/confirmed]
+[confirmed]MikeM vs Syrill; Wizard, Jhora > Runemage, Wulfstan (Half-RTA 1.14.1); Necromancer, Deirdre < Warlock, Vayshan (Half-RTA 1.14.1); Barbarian, Haggash > Warlock, Raelag (Half-RTA 1.14.1); Barbarian, Kujin < Inferno, ? (Half-RTA 1.14.1); Wizard, Nathir > Warlock, Shadya (Half-RTA 1.14.1);3 - 2;2017.04.28[/confirmed]
+@group@
+Группа C
+Group C
+1
+#
+[open]StRiGoi vs Evgeniy; Necromancer, Markal > Ranger, Wyngaal (Half-RTA 1.14.1); Wizard, Nur > Knight, Rutger (Half-RTA 1.14.1); Runemage, Inga > Runemage, Ebba (Half-RTA 1.14.1);3 - 0;2017.04.14[/open]
+[open]StRiGoi vs Ezhov; Knight, Rutger > Barbarian, Quroq (Half-RTA 1.14.1); Necromancer, Raven > Wizard, Nur (Half-RTA 1.14.1); Knight, Dougal < Barbarian, Quroq (Half-RTA 1.14.1); Warlock, Yrwanna > Knight, Dougal (Half-RTA 1.14.1);3 - 1;2017.04.15[/open]
+[open]StRiGoi vs Bronenosec; Knight, Isabel < Barbarian, Gotai (Half-RTA 1.14.1); Wizard, Narxez > Runemage, Tolghar (Half-RTA 1.14.1); Warlock, Vayshan < Knight, Godric (Half-RTA 1.14.1); ?, ? < ?, ? (Half-RTA 1.14.1);1 - 3;2017.04.19[/open]
+@group@
+Группа D
+Group D
+1
+#
+[confirmed]Kabovir vs AlexRus1985; Knight, Isabel > Barbarian, Urghat (Half-RTA 1.14.1); Knight, Vittorio > Ranger, Gilrean (Half-RTA 1.14.1); Barbarian, Quroq < Knight, Rutger (Half-RTA 1.14.1); Ranger, Ghost > Knight, Maeve (Half-RTA 1.14.1);3 - 1;2017.04.10[/confirmed]
+[open]GedxBlood vs XanderCage; Necromancer, ? < Runemage, Tolghar (Half-RTA 1.14.1); Ranger, Ghost < Barbarian, Telsek (Half-RTA 1.14.1); Ranger, Anwen > Knight, Ellaine (Half-RTA 1.14.1); Inferno, Nymus > Runemage, Svea (Half-RTA 1.14.1); Runemage, Ingvar > Warlock, Shadya (Half-RTA 1.14.1);3 - 2;2017.04.14[/open]
+[confirmed]GedxBlood vs AlexRus1985; Ranger, Ylthin > Knight, Lazlo (Half-RTA 1.14.1); Knight, Klaus > Barbarian, Kilghan (Half-RTA 1.14.1); Knight, Valeria > Wizard, Jhora (Half-RTA 1.14.1);3 - 0;2017.04.15[/confirmed]
+[open]Kabovir vs XanderCage; Wizard, Maahir > Wizard, Jhora (Half-RTA 1.14.1); Barbarian, Quroq > Knight, Klaus (Half-RTA 1.14.1); Ranger, Wyngaal < Warlock, Kythra (Half-RTA 1.14.1); Necromancer, Markal > Runemage, Tolghar (Half-RTA 1.14.1);3 - 1;2017.04.16[/open]
+[confirmed]Kabovir vs Boeing-767; Barbarian, Gotai > Ranger, Wyngaal (Half-RTA 1.14.1); Barbarian, Gotai > Knight, Klaus (Half-RTA 1.14.1); Runemage, Tolghar > Ranger, Talanar (Half-RTA 1.14.1);3 - 0;2017.04.22[/confirmed]
+[open]Boeing-767 vs AlexRus1985; Runemage, Wulfstan > Ranger, Kilghan (Half-RTA 1.14.1); Necromancer, Orson > Barbarian, Gotai (Half-RTA 1.14.1); Knight, Vittorio < Inferno, Nymus (Half-RTA 1.14.1); Runemage, Wulfstan < Warlock, Gotai (Half-RTA 1.14.1); Inferno, Agrael > Barbarian, Kilghan (Half-RTA 1.14.1);3 - 2;2017.04.23[/open]
+[confirmed]GedxBlood vs Boeing-767; Necromancer, Markal > Knight, Vittorio (Half-RTA 1.14.1); Necromancer, Vlad < Barbarian, Kilghan (Half-RTA 1.14.1); Barbarian, Kujin > Knight, Lazlo (Half-RTA 1.14.1); Ranger, Alaron > Runemage, Svea (Half-RTA 1.14.1);3 - 1;2017.04.23[/confirmed]
+[open]Boeing-767 vs XanderCage; Necromancer, Deirdre > Runemage, Wulfstan (Half-RTA 1.14.1); Runemage, Karli > Wizard, Narxez (Half-RTA 1.14.1); Ranger, Anwen > Warlock, Raelag (Half-RTA 1.14.1);3 - 0;2017.04.24[/open]
+[confirmed]GedxBlood vs Kabovir; Wizard, Razzak > Inferno, Jezebeth (Half-RTA 1.14.1); Ranger, Gilrean > Runemage, Rolf (Half-RTA 1.14.1); Warlock, Vayshan < Necromancer, Zoltan (Half-RTA 1.14.1); Ranger, Ossir < Knight, Maeve (Half-RTA 1.14.1); Ranger, Alaron > Runemage, Inga (Half-RTA 1.14.1);3 - 2;2017.04.29[/confirmed]
+@group@
+Группа E
+Group E
+1
+#
+[confirmed]Armadill0 vs ris62; Warlock, Raelag < Knight, Ellaine (Half-RTA 1.14.1); Warlock, Thralsai > Knight, Maeve (Half-RTA 1.14.1); Necromancer, Nathir < Necromancer, Lucretia (Half-RTA 1.14.1); Warlock, Thralsai > Barbarian, Shak'Karukat (Half-RTA 1.14.1); Warlock, Sorgal > Barbarian, Kilghan (Half-RTA 1.14.1);3 - 2;2017.04.09[/confirmed]
+[confirmed]Armadill0 vs Chester_Air; Runemage, Helmar > Knight, Kujin (Half-RTA 1.14.1); Necromancer, Naadir > Knight, Isabel (Half-RTA 1.14.1); Ranger, Vinrael > Barbarian, Quroq (Half-RTA 1.14.1);3 - 0;2017.04.17[/confirmed]
+[confirmed]Armadill0 vs neverim; Barbarian, Kragh > Ranger, Findan (Half-RTA 1.14.1); Necromancer, ? < Warlock, Kythra (Half-RTA 1.14.1); Warlock, Thralsai < Warlock, Urghat (Half-RTA 1.14.1); Barbarian, Garuna > Knight, Irina (Half-RTA 1.14.1); Barbarian, Kujin > Ranger, Gilrean (Half-RTA 1.14.1);3 - 2;2017.04.18[/confirmed]
+[confirmed]ris62 vs Chester_Air; Wizard, Cyrus > Inferno, Orlando (Half-RTA 1.14.1); Barbarian, Kragh > Ranger, Findan (Half-RTA 1.14.1); Inferno, Agrael > Knight, Isabel (Half-RTA 1.14.1);3 - 0;2017.04.26[/confirmed]
+[confirmed]Chester_Air vs kArtorFun; Knight, Godric < Inferno, Nebiros (Half-RTA 1.14.1); Barbarian, Kujin < Knight, Ellaine (Half-RTA 1.14.1); Warlock, Sinitar < Necromancer, Vlad (Half-RTA 1.14.1);0 - 3;2017.04.27[/confirmed]
+[confirmed]kArtorFun vs Armadill0; Inferno, Nymus < Ranger, Gilrean (Half-RTA 1.14.1); Ranger, Ossir > Barbarian, Kujin (Half-RTA 1.14.1); Knight, Irina > Barbarian, Telsek (Half-RTA 1.14.1); Barbarian, Quroq < Warlock, Sorgal (Half-RTA 1.14.1); Wizard, Narxez > Runemage, Brand (Half-RTA 1.14.1);3 - 2;2017.04.28[/confirmed]
+[confirmed]kArtorFun vs neverim; Necromancer, Lucretia > Wizard, Garuna (Half-RTA 1.14.1); Necromancer, ? > Warlock, Eruina (Half-RTA 1.14.1); Runemage, Helmar > Inferno, Orlando (Half-RTA 1.14.1);3 - 0;2017.04.29[/confirmed]
+[open]kArtorFun vs ris62; Inferno, Alastor > Wizard, Jhora (Half-RTA 1.14.1); Warlock, Sinitar < Ranger, Ossir (Half-RTA 1.14.1); Necromancer, Naadir > Wizard, Galib (Half-RTA 1.14.1); Ranger, Gilrean > Barbarian, Quroq (Half-RTA 1.14.1);3 - 1;2017.04.29[/open]
+[confirmed]neverim vs Chester_Air; Inferno, Deleb > Necromancer, Kaspar (Half-RTA 1.14.1); Knight, Isabel > Warlock, Yrbeth (Half-RTA 1.14.1); Inferno, Orlando > Knight, Rutger (Half-RTA 1.14.1);3 - 0;2017.04.29[/confirmed]
+[open]Chester_Air vs neverim; Necromancer, Kaspar < Inferno, Deleb (Half-RTA 1.14.1); Warlock, Yrbeth < Knight, Isabel (Half-RTA 1.14.1); Knight, Rutger < Inferno, Orlando (Half-RTA 1.14.1);0 - 3;2017.04.30[/open]
+@group@
+Группа E
+Group E
+1
+#
+[denied]Syrill vs alex_nv; ?, ? > ?, ? (Half-RTA 1.14.1);1 - 0;2017.04.10[/denied]
+[open]alex_nv vs Anion; Wizard, Nathir > Necromancer, Vlad (Half-RTA 1.14.1); Necromancer, Raven > Necromancer, Ornella (Half-RTA 1.14.1); Inferno, Nebiros > Wizard, Zehir (Half-RTA 1.14.1);3 - 0;2017.04.22[/open]
+[open]alex_nv vs EeOneGuy; Knight, Ellaine < Knight, Maeve (Half-RTA 1.14.1); Barbarian, Garuna > Barbarian, Kilghan (Half-RTA 1.14.1); Necromancer, Arantir < Necromancer, Orson (Half-RTA 1.14.1); Ranger, Talanar > Ranger, Ossir (Half-RTA 1.14.1); Warlock, Shadya > Necromancer, Vlad (Half-RTA 1.14.1);3 - 2;2017.04.23[/open]
+[confirmed]alex_nv vs NirvanaWiz; Knight, Ellaine > Warlock, Eruina (Half-RTA 1.14.1); Warlock, Shadwyn > Ranger, Talanar (Half-RTA 1.14.1); Knight, Klaus > Wizard, Havez (Half-RTA 1.14.1);3 - 0;2017.04.26[/confirmed]
+[open]alex_nv vs Mirovoi; Necromancer, Zoltan < Knight, Lazlo (Half-RTA 1.14.1); Barbarian, Kujin > Wizard, Jhora (Half-RTA 1.14.1); Warlock, Yrwanna > Ranger, Vinrael (Half-RTA 1.14.1); Inferno, Nymus < Wizard, Cyrus (Half-RTA 1.14.1); Warlock, Kythra > Warlock, Sinitar (Half-RTA 1.14.1);3 - 2;2017.04.30[/open]
+[open]NirvanaWiz vs Anion; Runemage, Brand > Wizard, Nur (Half-RTA 1.14.1); Warlock, Raelag > Barbarian, Kujin (Half-RTA 1.14.1); Wizard, ? > Necromancer, Ornella (Half-RTA 1.14.1);3 - 0;2017.05.01[/open]
+@group@
+Группа F
+Group F
+1
+#
+[denied]Syrill vs alex_nv; ?, ? > ?, ? (Half-RTA 1.14.1);1 - 0;2017.04.10[/denied]
+[open]alex_nv vs Anion; Wizard, Nathir > Necromancer, Vlad (Half-RTA 1.14.1); Necromancer, Raven > Necromancer, Ornella (Half-RTA 1.14.1); Inferno, Nebiros > Wizard, Zehir (Half-RTA 1.14.1);3 - 0;2017.04.22[/open]
+[open]alex_nv vs EeOneGuy; Knight, Ellaine < Knight, Maeve (Half-RTA 1.14.1); Barbarian, Garuna > Barbarian, Kilghan (Half-RTA 1.14.1); Necromancer, Arantir < Necromancer, Orson (Half-RTA 1.14.1); Ranger, Talanar > Ranger, Ossir (Half-RTA 1.14.1); Warlock, Shadya > Necromancer, Vlad (Half-RTA 1.14.1);3 - 2;2017.04.23[/open]
+[confirmed]alex_nv vs NirvanaWiz; Knight, Ellaine > Warlock, Eruina (Half-RTA 1.14.1); Warlock, Shadwyn > Ranger, Talanar (Half-RTA 1.14.1); Knight, Klaus > Wizard, Havez (Half-RTA 1.14.1);3 - 0;2017.04.26[/confirmed]
+[open]alex_nv vs Mirovoi; Necromancer, Zoltan < Knight, Lazlo (Half-RTA 1.14.1); Barbarian, Kujin > Wizard, Jhora (Half-RTA 1.14.1); Warlock, Yrwanna > Ranger, Vinrael (Half-RTA 1.14.1); Inferno, Nymus < Wizard, Cyrus (Half-RTA 1.14.1); Warlock, Kythra > Warlock, Sinitar (Half-RTA 1.14.1);3 - 2;2017.04.30[/open]
+[open]NirvanaWiz vs Anion; Runemage, Brand > Wizard, Nur (Half-RTA 1.14.1); Warlock, Raelag > Barbarian, Kujin (Half-RTA 1.14.1); Wizard, ? > Necromancer, Ornella (Half-RTA 1.14.1);3 - 0;2017.05.01[/open]
+@group@
+Группа G
+Group G
+1
+#
+[confirmed]Dio vs Miff; Wizard, Nur > Runemage, Ebba (Half-RTA 1.14.1); Knight, Valeria < Runemage, Inga (Half-RTA 1.14.1); Necromancer, Deirdre > Inferno, Sovereign (Half-RTA 1.14.1); Knight, Vittorio < Inferno, Sovereign (Half-RTA 1.14.1); Barbarian, Kujin > Inferno, Alastor (Half-RTA 1.14.1);3 - 2;2017.04.17[/confirmed]
+[confirmed]Strider_HL vs Dio; Barbarian, Telsek > Wizard, Maahir (Half-RTA 1.14.1); Ranger, Anwen > Wizard, Maahir (Half-RTA 1.14.1); Barbarian, Gotai > Knight, Klaus (Half-RTA 1.14.1);3 - 0;2017.04.27[/confirmed]
+[open]Dio vs theOverlord; Ranger, Findan < Wizard, Cyrus (Half-RTA 1.14.1); Necromancer, Markal > Inferno, Orlando (Half-RTA 1.14.1); Necromancer, Orson < Runemage, Helmar (Half-RTA 1.14.1); Wizard, Maahir > Warlock, Thralsai (Half-RTA 1.14.1); Necromancer, Lucretia < Barbarian, Urghat (Half-RTA 1.14.1);2 - 3;2017.04.28[/open]
+[open]Dio vs Sitrix; Knight, Dougal < Barbarian, Kujin (Half-RTA 1.14.1); Wizard, Narxez > Runemage, Ingvar (Half-RTA 1.14.1); Wizard, Kragh < Wizard, Havez (Half-RTA 1.14.1); Wizard, Faiz > Runemage, Eruina (Half-RTA 1.14.1); Knight, Irina > Barbarian, Kragh (Half-RTA 1.14.1);3 - 2;2017.04.28[/open]
+[confirmed]Strider_HL vs Miff; Barbarian, Telsek < Barbarian, Kujin (Half-RTA 1.14.1); Inferno, Nymus > Warlock, Raelag (Half-RTA 1.14.1); Knight, Klaus < Barbarian, Haggash (Half-RTA 1.14.1); Barbarian, Shak'Karukat > Knight, Lazlo (Half-RTA 1.14.1); Inferno, Agrael > Runemage, Karli (Half-RTA 1.14.1);3 - 2;2017.04.29[/confirmed]
+[open]Miff vs theOverlord; Warlock, Yrwanna > Knight, Isabel (Half-RTA 1.14.1); Inferno, Nymus < Barbarian, Gorshak (Half-RTA 1.14.1); Inferno, Agrael > Knight, Rutger (Half-RTA 1.14.1); Ranger, Ossir < Warlock, Yrwanna (Half-RTA 1.14.1); Necromancer, Vlad > Barbarian, Telsek (Half-RTA 1.14.1);3 - 2;2017.05.01[/open]
+[open]Miff vs Sitrix; Barbarian, Gorshak < Knight, Irina (Half-RTA 1.14.1); Warlock, Thralsai > Wizard, Galib (Half-RTA 1.14.1); Necromancer, Markal > Runemage, Erling (Half-RTA 1.14.1); Barbarian, Haggash > Knight, Rutger (Half-RTA 1.14.1);3 - 1;2017.05.04[/open]
+@group@
+Группа H
+Group H
+1
+#
+[open]vadolazo vs Vulfstan; Barbarian, Haggash > Necromancer, Deirdre (Half-RTA 1.14.1); Knight, Godric > Runemage, Rolf (Half-RTA 1.14.1); Barbarian, Kragh > Ranger, Vinrael (Half-RTA 1.14.1);3 - 0;2017.04.10[/open]
+[open]vadolazo vs Imladris1; Inferno, Sovereign > Ranger, Ghost (Half-RTA 1.14.1); Ranger, Gilrean < Necromancer, Orson (Half-RTA 1.14.1); Barbarian, Kujin > Necromancer, Arantir (Half-RTA 1.14.1); Wizard, ? > Ranger, Anwen (Half-RTA 1.14.1);3 - 1;2017.04.21[/open]
+[confirmed]vadolazo vs Gerodot; Warlock, Raelag > Necromancer, Naadir (Half-RTA 1.14.1); Necromancer, Arantir > Warlock, Thralsai (Half-RTA 1.14.1); Barbarian, Gorshak > Warlock, Yrbeth (Half-RTA 1.14.1);3 - 0;2017.04.22[/confirmed]
+[open]Gerodot vs Imladris1; Runemage, Karli > Necromancer, Markal (Half-RTA 1.14.1); Runemage, Rolf < Ranger, Ylthin (Half-RTA 1.14.1); Runemage, Ebba > Runemage, Wulfstan (Half-RTA 1.14.1); Necromancer, Naadir > Warlock, Shadwyn (Half-RTA 1.14.1);3 - 1;2017.04.27[/open]
+[open]Gerodot vs Vulfstan; Runemage, Inga > Runemage, Wulfstan (Half-RTA 1.14.1); Knight, Dougal > Warlock, Eruina (Half-RTA 1.14.1); ?, ? > ?, ? (Half-RTA 1.14.1);3 - 0;2017.04.30[/open]
+@group@
+Плей-офф
+Play-off
+4
+#
+[confirmed]vadolazo vs zub; Knight, Isabel < Barbarian, Kilghan (Half-RTA 1.14.1); Runemage, Tolghar > Necromancer, Deirdre (Half-RTA 1.14.1); Wizard, ? > Necromancer, ? (Half-RTA 1.14.1); Ranger, Wyngaal > Barbarian, Kilghan (Half-RTA 1.14.1);3 - 1;2017.05.04[/confirmed]
+[open]Kabovir vs BlackFox; Ranger, Findan < Warlock, Kythra (Half-RTA 1.14.1); Ranger, Anwen < Warlock, Shadya (Half-RTA 1.14.1); Barbarian, Quroq > Ranger, Wyngaal (Half-RTA 1.14.1); Necromancer, Naadir > Runemage, Ingvar (Half-RTA 1.14.1); Knight, Irina > Runemage, Ebba (Half-RTA 1.14.1);3 - 2;2017.05.06[/open]
+[confirmed]StRiGoi vs GedxBlood; Necromancer, Ornella > Inferno, Sorgal (Half-RTA 1.14.1); Necromancer, Garuna > Wizard, Razzak (Half-RTA 1.14.1); Barbarian, Kujin > Ranger, Anwen (Half-RTA 1.14.1);3 - 0;2017.05.06[/confirmed]
+[confirmed]alex_nv vs Dio; Inferno, Nymus > Wizard, Nur (Half-RTA 1.14.1); Barbarian, Gotai < Warlock, Yrwanna (Half-RTA 1.14.1); Wizard, Jhora < Necromancer, Lucretia (Half-RTA 1.14.1); Knight, Maeve > Warlock, Shadya (Half-RTA 1.14.1); Barbarian, Kilghan > Knight, Rutger (Half-RTA 1.14.1);3 - 2;2017.05.07[/confirmed]
+[confirmed]Mind vs Gerodot; Necromancer, Arantir < Wizard, Zehir (Half-RTA 1.14.1); Knight, Rutger < Necromancer, ? (Half-RTA 1.14.1); Knight, Dougal > Barbarian, Quroq (Half-RTA 1.14.1); Necromancer, Kaspar > Inferno, Sovereign (Half-RTA 1.14.1); Ranger, Vinrael > Necromancer, Arantir (Half-RTA 1.14.1);3 - 2;2017.05.07[/confirmed]
+[open]Dio vs Imladris1; Warlock, Yrwanna > Barbarian, Kilghan (Half-RTA 1.14.1); Wizard, Maahir > Wizard, Cyrus (Half-RTA 1.14.1);2 - 0;2017.05.07[/open]
+[open]Armadill0 vs Bronenosec; Runemage, Tolghar > Runemage, Ebba (Half-RTA 1.14.1); Necromancer, Naadir < Necromancer, Vlad (Half-RTA 1.14.1); Necromancer, Orson > Knight, Ellaine (Half-RTA 1.14.1); Warlock, Yrwanna > Knight, Maeve (Half-RTA 1.14.1);3 - 1;2017.05.08[/open]
+[confirmed]Strider_HL vs gregarah; Necromancer, Deirdre > Barbarian, Gotai (Half-RTA 1.14.1); Runemage, Karli > Knight, Godric (Half-RTA 1.14.1); Barbarian, Haggash > Ranger, Vinrael (Half-RTA 1.14.1);3 - 0;2017.05.08[/confirmed]
+[open]zub vs ris62; Barbarian, Garuna > Ranger, Dirael (Half-RTA 1.14.1); Wizard, Narxez > Warlock, Raelag (Half-RTA 1.14.1);2 - 0;2017.05.09[/open]
+[confirmed]StRiGoi vs Armadill0; Ranger, Gilrean > Warlock, Sorgal (Half-RTA 1.14.1); Wizard, Razzak < Warlock, Thralsai (Half-RTA 1.14.1); Barbarian, Kujin > Knight, Maeve (Half-RTA 1.14.1); Knight, Maeve > Ranger, Wyngaal (Half-RTA 1.14.1);3 - 1;2017.05.09[/confirmed]
+[confirmed]gregarah vs Levis; Barbarian, Gotai > Necromancer, Deirdre (Half-RTA 1.14.1); Barbarian, Shak'Karukat > Ranger, Ylthin (Half-RTA 1.14.1);2 - 0;2017.05.09[/confirmed]
+[confirmed]gregarah vs zub; Warlock, Thralsai > Necromancer, Zoltan (Half-RTA 1.14.1); Warlock, Kythra < Ranger, Wyngaal (Half-RTA 1.14.1); Knight, Klaus > Necromancer, Zoltan (Half-RTA 1.14.1);2 - 1;2017.05.11[/confirmed]
+[confirmed]Kabovir vs Mind; Barbarian, Gorshak > Runemage, Ingvar (Half-RTA 1.14.1); Knight, Maeve < Ranger, Ossir (Half-RTA 1.14.1); Inferno, Deleb > Necromancer, Orson (Half-RTA 1.14.1); Runemage, Inga < Ranger, Anwen (Half-RTA 1.14.1); Warlock, Sorgal > Wizard, Ghost (Half-RTA 1.14.1);3 - 2;2017.05.11[/confirmed]
+[confirmed]NirvanaWiz vs GedxBlood; Runemage, Ingvar > Barbarian, Shak'Karukat (Half-RTA 1.14.1); Warlock, Sorgal < Necromancer, Ornella (Half-RTA 1.14.1); Ranger, Anwen > Barbarian, Kujin (Half-RTA 1.14.1);2 - 1;2017.05.11[/confirmed]
+[open]Ezhov vs BlackFox; Wizard, Maahir > Warlock, Sinitar (Half-RTA 1.14.1); Necromancer, Markal > Warlock, Yrbeth (Half-RTA 1.14.1);2 - 0;2017.05.11[/open]
+[confirmed]Boeing-767 vs Gerodot; Runemage, Helmar > Warlock, Raelag (Half-RTA 1.14.1); Runemage, Karli < Warlock, Raelag (Half-RTA 1.14.1); Runemage, Karli > Ranger, Talanar (Half-RTA 1.14.1);2 - 1;2017.05.12[/confirmed]
+[confirmed]Mind vs gregarah; Inferno, Sovereign > Barbarian, Shak'Karukat (Half-RTA 1.14.1); Necromancer, Naadir < Barbarian, Kilghan (Half-RTA 1.14.1); Ranger, Gilrean > Inferno, Nebiros (Half-RTA 1.14.1);2 - 1;2017.05.13[/confirmed]
+[open]alex_nv vs EeOneGuy; Runemage, Ingvar > Inferno, Sovereign (Half-RTA 1.14.1); Warlock, Raelag > Necromancer, Ornella (Half-RTA 1.14.1); Inferno, Jezebeth < Knight, Rutger (Half-RTA 1.14.1); Necromancer, Vlad < Ranger, Findan (Half-RTA 1.14.1); Warlock, Eruina > Warlock, Yrwanna (Half-RTA 1.14.1);3 - 2;2017.05.14[/open]
+[confirmed]StRiGoi vs Kabovir; Necromancer, Naadir > Knight, Lazlo (Half-RTA 1.14.1); Wizard, ? > Warlock, Shadya (Half-RTA 1.14.1); Warlock, Thralsai > Runemage, Ebba (Half-RTA 1.14.1);3 - 0;2017.05.14[/confirmed]
+[confirmed]Ezhov vs Boeing-767; Necromancer, Orson > Knight, Dougal (Half-RTA 1.14.1); Barbarian, Kilghan > Knight, Lazlo (Half-RTA 1.14.1);2 - 0;2017.05.14[/confirmed]
+[confirmed]vadolazo vs Strider_HL; Wizard, Galib < Wizard, Nur (Half-RTA 1.14.1); Necromancer, Vlad < Warlock, Yrbeth (Half-RTA 1.14.1); Knight, Irina < Ranger, Anwen (Half-RTA 1.14.1);0 - 3;2017.05.15[/confirmed]
+[denied]Strider_HL vs vadolazo; Wizard, Nur > Wizard, Galib (Half-RTA 1.14.1); Warlock, Yrbeth > Necromancer, Vlad (Half-RTA 1.14.1); Ranger, Anwen > Knight, Irina (Half-RTA 1.14.1);3 - 0;2017.05.15[/denied]
+[confirmed]Miff vs Dio; Inferno, Nymus > Knight, Ellaine (Half-RTA 1.14.1); Inferno, Agrael > Warlock, Sinitar (Half-RTA 1.14.1);2 - 0;2017.05.16[/confirmed]
+[open]NirvanaWiz vs Bronenosec; Runemage, Helmar < Barbarian, Kujin (Half-RTA 1.14.1); Runemage, Karli > Wizard, Maahir (Half-RTA 1.14.1); Ranger, Talanar > Warlock, Raelag (Half-RTA 1.14.1);2 - 1;2017.05.17[/open]
+[open]NirvanaWiz vs EeOneGuy; Inferno, Sovereign < Knight, Godric (Half-RTA 1.14.1); Wizard, Shadya > Necromancer, Naadir (Half-RTA 1.14.1); Ranger, Gilrean < Barbarian, Telsek (Half-RTA 1.14.1);1 - 2;2017.05.18[/open]
+[open]vadolazo vs Ezhov; Necromancer, Zoltan < Wizard, Zehir (Half-RTA 1.14.1); Knight, Dougal > Warlock, Yrbeth (Half-RTA 1.14.1); Warlock, Yrwanna > Necromancer, Naadir (Half-RTA 1.14.1);2 - 1;2017.05.18[/open]
+[open]vadolazo vs EeOneGuy; Wizard, Nur > Warlock, Lethos (Half-RTA 1.14.1); Ranger, Wyngaal < Knight, Rutger (Half-RTA 1.14.1); Necromancer, Orson > Barbarian, Kujin (Half-RTA 1.14.1);2 - 1;2017.05.20[/open]
+[confirmed]Strider_HL vs alex_nv; Inferno, Sovereign > Warlock, Yrwanna (Half-RTA 1.14.1); Knight, Ellaine > Knight, Godric (Half-RTA 1.14.1); ?, ? > ?, ? (Half-RTA 1.14.1);3 - 0;2017.05.20[/confirmed]
+[confirmed]alex_nv vs Miff; Inferno, Alastor < Wizard, Nathir (Half-RTA 1.14.1); Knight, Lazlo > Barbarian, Haggash (Half-RTA 1.14.1); Knight, Klaus > Warlock, Raelag (Half-RTA 1.14.1);2 - 1;2017.05.23[/confirmed]
+[open]Miff vs Armadill0; Runemage, Wulfstan < Knight, Klaus (Half-RTA 1.14.1); Inferno, Deleb > Ranger, Ossir (Half-RTA 1.14.1); Inferno, Orlando > Runemage, Tolghar (Half-RTA 1.14.1);2 - 1;2017.05.25[/open]
+[confirmed]Miff vs Mind; Wizard, Maahir > Barbarian, Haggash (Half-RTA 1.14.1); Knight, Rutger < Barbarian, Kragh (Half-RTA 1.14.1); Barbarian, Gotai > Knight, Godric (Half-RTA 1.14.1);2 - 1;2017.05.25[/confirmed]
+[open]vadolazo vs Kabovir; Warlock, Sorgal > Necromancer, Lucretia (Half-RTA 1.14.1); Ranger, Anwen > Knight, Godric (Half-RTA 1.14.1);2 - 0;2017.05.24[/open]
+[open]vadolazo vs Strider_HL; ?, ? < ?, ? (Half-RTA 1.14.1); Inferno, Marbas > Inferno, Deleb (Half-RTA 1.14.1); Ranger, Vinrael < Barbarian, Gorshak (Half-RTA 1.14.1); Necromancer, Arantir < Barbarian, Gotai (Half-RTA 1.14.1); ?, ? < ?, ? (Half-RTA 1.14.1);1 - 4;2017.06.06[/open]

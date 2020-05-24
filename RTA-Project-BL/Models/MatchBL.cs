@@ -13,8 +13,8 @@ namespace RTA_Project_BL.Models
         public bool IsTechnicalResult { get; set; }
         public bool IsSpecialMatch { get; set; }
 
-        public string Player1Id { get; set; }
-        public string Player2Id { get; set; }
+        public int Player1Id { get; set; }
+        public int Player2Id { get; set; }
 
         public string Player1Name { get; set; }
         public string Player2Name { get; set; }

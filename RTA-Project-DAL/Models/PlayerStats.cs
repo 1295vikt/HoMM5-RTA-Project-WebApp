@@ -15,7 +15,7 @@ namespace RTA_Project_DAL.Models
         public int SilverMedals { get; set; }
         public int BronzeMedals { get; set; }
         public int TournamentExperience { get; set; }
-        //TODO more stats
+        //TODO more player-specific stats
 
         public Player Player { get; set; }
     }

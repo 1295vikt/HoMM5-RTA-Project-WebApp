@@ -15,7 +15,7 @@ namespace RTA_Project_DAL.Models
         public int Year { get; set; }
         public byte Season { get; set; }
 
-        public DateTime DateCreated { get; set; }
+        public DateTime? DateCreated { get; set; }
 
         [DefaultValue(false)]
         public bool IsActive { get; set; }

@@ -2,10 +2,11 @@
 1	Zehir	Зехир
 1	Maahir	Маахир
 1	Nathir	Назир
-1	Narxes	Нархиз
+1	Narxez	Нархиз
 1	Nur	Нура
+1	Jhora	Ора
 1	Razzak	Раззак
-1	Cyrys	Сайрус
+1	Cyrus	Сайрус
 1	Temkhan	Тимхан
 1	Faiz	Фаиз
 1	Havez	Хафиз
@@ -43,7 +44,7 @@
 4	Vittorio	Витторио
 4	Godric	Годрик
 4	Isabel	Изабель
-4	Nikolai	Николас
+4	Nicolai	Николас
 4	Valeria	Валерия
 5	Alastor	Аластор
 5	Deleb	Дэлеб
@@ -83,7 +84,7 @@
 8	Dirael	Дираэль
 8	Gilraen	Гильраэн
 8	Ossir	Оссир
-8	Ossir	Призрак
+8	Ghost	Призрак
 8	Talanar	Таланар
 8	Vinrael	Винраэль
 8	Wyngaal	Вингаэль

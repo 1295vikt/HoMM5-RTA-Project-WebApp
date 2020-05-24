@@ -615,6 +615,7 @@
     <Content Include="SeedFiles\Heroes.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="SeedFiles\HLReport_Tournaments.txt" />
     <Content Include="SeedFiles\Players.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -21,8 +21,12 @@ body {
 
 
 
-#placeholder {
-    height: 250px;
+#tactical-arena-logo {
+    height: 360px;
+    width: 900px;
+    position: relative;
+    right: 30px;
+    background: url('../Resources/Tactical_Arena_Logo.png') no-repeat center;
 }
 
 
@@ -498,18 +502,33 @@ input.form-control {
 
 /* Profile */
 
-#profile-div{
+#profile-div {
     font-size: 15px;
 }
 
-/*#rewards [class*="col-"] {
-    background-color: antiquewhite;
-    background-clip: content-box;
-    border-color: saddlebrown;
-}*/
 
 #awards img {
-    width: 25px;
-    height: 25px;
-    background-size: 25px, 25px;
+    width: 22px;
+    height: 22px;
+    background-size: 22px, 22px;
 }
+
+.table-bordered  {
+    background-color: antiquewhite;    
+}
+
+    .table-bordered > thead > tr > th {
+        text-align: center;
+        border: 1px solid saddlebrown;
+        min-width: 90px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .table-bordered > tbody > tr > td {
+        text-align: center;
+        border: 1px solid saddlebrown;
+        min-width: 90px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }

@@ -26,7 +26,7 @@ namespace RTA_Project_MVC.Controllers
             _mapper = mapper;
         }
 
-        // GET: Profile/?id=name
+        // GET: Profile/?name=
         [AllowAnonymous]
         public ActionResult Index(string name)
         {
@@ -53,7 +53,7 @@ namespace RTA_Project_MVC.Controllers
 
 
                 var model = _mapper.Map<PlayerProfileViewModel>(playerBL);
-                
+                               
 
                 return View(model);
             }
@@ -101,49 +101,7 @@ namespace RTA_Project_MVC.Controllers
             return RedirectToAction("Index");
         }
 
-        // GET: Profile/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
 
-        // POST: Profile/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Profile/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Profile/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
 
         public JsonResult CheckIfNameExists(string Nickname)
         {

@@ -18,7 +18,7 @@ namespace RTA_Project_BL.Models
         public bool IsSeasonal { get; set; }
         public bool IsPrivate { get; set; }
 
-        public DateTime DateCreated { get; set; }
+        public DateTime? DateCreated { get; set; }
 
         public string HostsId { get; set; }
 

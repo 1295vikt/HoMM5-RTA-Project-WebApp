@@ -105,16 +105,19 @@ namespace RTA_Project_DAL.Repositories
             _dbSet.Add(item);
             _context.SaveChanges();
         }
+
         public virtual void Update(TEntity item)
         {
             _context.Entry(item).State = EntityState.Modified;
             _context.SaveChanges();
         }
+
         public virtual void Remove(TEntity item)
         {
             _dbSet.Remove(item);
             _context.SaveChanges();
         }
+
         public virtual void RemoveById(int id)
         {
             _dbSet.Remove(_dbSet.Find(id));
