@@ -29,6 +29,8 @@ namespace RTA_Project_DAL.Models
         public bool IsSeasonal { get; set; }
         [DefaultValue(false)]
         public bool IsPrivate { get; set; }
+        [DefaultValue(false)]
+        public bool IsArchived { get; set; }
 
         public string HostsId { get; set; }
 

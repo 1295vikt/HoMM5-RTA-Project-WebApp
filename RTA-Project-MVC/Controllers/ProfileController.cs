@@ -76,7 +76,19 @@ namespace RTA_Project_MVC.Controllers
                 if (!_playerService.QueryAll().Any(p=>p.AccountId==userId))
                 {
                     var key = Guid.NewGuid().ToString();
-                    var player = new PlayerBL { Name = model.Nickname, AccountId = userId, GuidKey = key };
+                    var player = new PlayerBL
+                    {
+                        Name = model.Nickname,
+                        AccountId = userId,
+                        GuidKey = key,
+
+                        Stats = new PlayerStatsBL
+                        {
+                            RatingClass = "B",
+                            RatingPointsCurrent = 1200,
+                            RatingPointsMax = 1200
+                        }
+                    };
 
                     _playerService.Create(player);
                 }

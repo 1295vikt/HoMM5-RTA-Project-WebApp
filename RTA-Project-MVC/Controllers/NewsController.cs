@@ -21,6 +21,7 @@ namespace RTA_Project_MVC.Controllers
         public NewsController(IArticleService articleService, IMapper mapper)
         {
             _articleService = articleService;
+
             _mapper = mapper;
         }
 
@@ -28,7 +29,7 @@ namespace RTA_Project_MVC.Controllers
         public ActionResult Index(int? page)
         {
 
-            int pageSize = 4;
+            int pageSize = 8;
             int pageNumber = (page ?? 1);
 
             var articlesBL = _articleService.QueryArticles((byte)Lang.Rus);
@@ -85,7 +86,7 @@ namespace RTA_Project_MVC.Controllers
 
         // POST: News/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int id, ArticleViewModel model)
         {
             try
             {

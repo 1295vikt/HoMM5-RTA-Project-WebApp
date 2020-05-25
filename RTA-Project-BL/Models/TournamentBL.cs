@@ -16,6 +16,7 @@ namespace RTA_Project_BL.Models
         public bool IsOfficial { get; set; }
         public bool IsSeasonal { get; set; }
         public bool IsPrivate { get; set; }
+        public bool IsArchived { get; set; }
 
         public DateTime? DateCreated { get; set; }
 

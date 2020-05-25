@@ -56,7 +56,7 @@
                 @Html.DisplayNameFor(model => model.Winrate):
             </dt>
             <dd class="col-sm-4">
-                @Html.DisplayFor(model => model.Winrate)
+                @Html.DisplayFor(model => model.Winrate)%
             </dd>
 
         </dl>
@@ -88,6 +88,80 @@
                         <td><img src="/Resources/icons/2nd.png" /> : @Html.DisplayFor(model => model.SilverMedals)</td>
                         <td><img src="/Resources/icons/3rd.png" /> : @Html.DisplayFor(model => model.BronzeMedals)</td>
                         <td><img src="/Resources/icons/ExpPic.png" /> :@Html.DisplayFor(model => model.TournamentExperience)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="col-sm-12">
+        <div class="row">
+            <h3>Статистика по фракциям</h3>
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            Фракция
+                        </th>
+                        <th scope="col">
+                            Академия
+                        </th>
+                        <th scope="col">
+                            Лига Теней
+                        </th>
+                        <th scope="col">
+                            Северные Кланы
+                        </th>
+                        <th scope="col">
+                            Орден Порядка
+                        </th>
+                        <th scope="col">
+                            Инферно
+                        </th>
+                        <th scope="col">
+                            Некрополис
+                        </th>
+                        <th scope="col">
+                            Великая Орда
+                        </th>
+                        <th scope="col">
+                            Лесной Союз
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Игр</th>
+                        <td>@Html.DisplayFor(model => model.GamesAsAcademy)</td>
+                        <td>@Html.DisplayFor(model => model.GamesAsDungeon)</td>
+                        <td>@Html.DisplayFor(model => model.GamesAsFortress)</td>
+                        <td>@Html.DisplayFor(model => model.GamesAsHaven)</td>
+                        <td>@Html.DisplayFor(model => model.GamesAsInferno)</td>
+                        <td>@Html.DisplayFor(model => model.GamesAsNecropolis)</td>
+                        <td>@Html.DisplayFor(model => model.GamesAsStronghold)</td>
+                        <td>@Html.DisplayFor(model => model.GamesAsSylvan)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Побед</th>
+                        <td>@Html.DisplayFor(model => model.WinsAsAcademy)</td>
+                        <td>@Html.DisplayFor(model => model.WinsAsDungeon)</td>
+                        <td>@Html.DisplayFor(model => model.WinsAsFortress)</td>
+                        <td>@Html.DisplayFor(model => model.WinsAsHaven)</td>
+                        <td>@Html.DisplayFor(model => model.WinsAsInferno)</td>
+                        <td>@Html.DisplayFor(model => model.WinsAsNecropolis)</td>
+                        <td>@Html.DisplayFor(model => model.WinsAsStronghold)</td>
+                        <td>@Html.DisplayFor(model => model.WinsAsSylvan)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">% Побед</th>
+                        <td>@Html.DisplayFor(model => model.WinrateAsAcademy)%</td>
+                        <td>@Html.DisplayFor(model => model.WinrateAsDungeon)%</td>
+                        <td>@Html.DisplayFor(model => model.WinrateAsFortress)%</td>
+                        <td>@Html.DisplayFor(model => model.WinrateAsHaven)%</td>
+                        <td>@Html.DisplayFor(model => model.WinrateAsInferno)%</td>
+                        <td>@Html.DisplayFor(model => model.WinrateAsNecropolis)%</td>
+                        <td>@Html.DisplayFor(model => model.WinrateAsStronghold)%</td>
+                        <td>@Html.DisplayFor(model => model.WinrateAsSylvan)%</td>
                     </tr>
                 </tbody>
             </table>
