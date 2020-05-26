@@ -60,14 +60,14 @@ namespace RTA_Project_DAL
             // Factions from HLReport
             var factionDictEng = new Dictionary<string, byte>
             {
-                    { "Wizard", 1 },
-                    { "Warlock", 2 },
-                    { "Runemage", 3 },
-                    { "Knight", 4 },
-                    { "Inferno", 5 },
-                    { "Necromancer", 6 },
-                    { "Barbarian", 7 },
-                    { "Ranger", 8 }
+                { "Wizard", 1 },
+                { "Warlock", 2 },
+                { "Runemage", 3 },
+                { "Knight", 4 },
+                { "Inferno", 5 },
+                { "Necromancer", 6 },
+                { "Barbarian", 7 },
+                { "Ranger", 8 }
             };
 
             // Factions from GoogleDocs
@@ -543,7 +543,7 @@ namespace RTA_Project_DAL
 
 
 
-            void UpdateStats (PlayerStats stats1, PlayerStats stats2, byte faction1Id, byte faction2Id, bool player1Won)
+            void UpdateStats(PlayerStats stats1, PlayerStats stats2, byte faction1Id, byte faction2Id, bool player1Won)
             {
                 stats1.GamesPlayed++;
                 stats2.GamesPlayed++;

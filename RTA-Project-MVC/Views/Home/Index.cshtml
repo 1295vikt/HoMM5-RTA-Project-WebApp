@@ -9,8 +9,10 @@
         <div>
             <center><label id="news-header">@item.Title</label></center>
             <div class="row" id="news-content">
-                <label style="padding-left:15px;">@String.Format("{0:MM/dd/yyyy}", item.Date)</label>
-                <div class="col-md-12 col-sm-9 col-xs-6">@Html.Raw(WebUtility.HtmlDecode(item.Content))</div>
+                <div class="col-md-12 col-sm-9 col-xs-6">
+                    <label>@String.Format("{0:MM/dd/yyyy}", item.Date)</label>
+                    @Html.Raw(WebUtility.HtmlDecode(item.Content))
+                </div>
             </div>
         </div>
     }
