@@ -1,8 +1,6 @@
 ﻿using AutoMapper;
 using RTA_Project_BL.Models;
 using RTA_Project_DAL.Models;
-using System;
-using System.Linq;
 
 namespace RTA_Project_BL.Configs
 {

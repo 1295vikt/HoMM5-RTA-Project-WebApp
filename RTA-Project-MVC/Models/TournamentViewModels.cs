@@ -8,7 +8,8 @@ namespace RTA_Project_MVC.Models
 {
     public class TournamentCreateModel
     {
-        [Required(ErrorMessage="Поле является обязательным для заполнения")]        
+        [Required(ErrorMessage="Поле является обязательным для заполнения")]
+        [Display(Name = "Название турнира")]
         [StringLength(40, ErrorMessage = "{0} должно содержать от {2} до {1} символов", MinimumLength = 8)]
         public string NameRus { get; set; }
 

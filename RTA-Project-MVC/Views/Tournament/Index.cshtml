@@ -5,9 +5,11 @@
 <div>
 
     <h3>Текущие турниры :</h3>
-    @foreach(var item in Model)
+    @foreach (var item in Model)
     {
-        <a href="@Url.Action("Details", "Tournament", new { id=item.Id })">@item.NameRus</a>
+        <div class="row">
+            <a href="@Url.Action("Details", "Tournament", new { id=item.Id })">@item.NameRus</a>
+        </div>
     }
 
 
