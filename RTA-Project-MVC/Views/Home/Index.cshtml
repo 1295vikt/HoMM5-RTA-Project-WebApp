@@ -2,6 +2,17 @@
 
 <div id="tactical-arena-logo"></div>
 
-<h3>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at accumsan mauris, a egestas orci. Nulla posuere lectus nunc, dignissim dictum mauris pretium ut. Etiam rutrum ex massa, sit amet aliquam massa egestas vitae. Suspendisse vestibulum consequat mauris, vehicula sodales odio molestie eget. Donec eu maximus mauris. Pellentesque condimentum non lectus ut aliquam. Nullam at volutpat ex. Aliquam sed ipsum justo. Nunc efficitur vehicula sem. Nullam tempus pellentesque nibh, pharetra tempor tortor venenatis semper. Morbi nunc sapien, mollis et nisi nec, scelerisque tincidunt enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam et quam a nulla tincidunt luctus. Etiam volutpat vehicula velit eget commodo.
-</h3>
+<div id="news-container">
+
+    @foreach (var item in Model)
+    {
+        <div>
+            <center><label id="news-header">@item.Title</label></center>
+            <div class="row" id="news-content">
+                <label style="padding-left:15px;">@String.Format("{0:MM/dd/yyyy}", item.Date)</label>
+                <div class="col-md-12 col-sm-9 col-xs-6">@Html.Raw(WebUtility.HtmlDecode(item.Content))</div>
+            </div>
+        </div>
+    }
+
+</div>

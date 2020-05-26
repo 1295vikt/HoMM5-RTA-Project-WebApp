@@ -15,7 +15,7 @@ namespace RTA_Project_BL.Services
 
         void Create(BLModel modelBL);
         void Delete(int id);
-        void Edit(BLModel modelBL);
+        void Update(BLModel modelBL);
     }
 
     public class GenericService<BLModel, DModel> : IGenereicService<BLModel>
@@ -61,7 +61,7 @@ namespace RTA_Project_BL.Services
             _repository.RemoveById(id);
         }
 
-        public void Edit(BLModel modelBL)
+        public void Update(BLModel modelBL)
         {
             var entity = Map(modelBL);
             _repository.Update(entity);

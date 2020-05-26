@@ -13,13 +13,14 @@ namespace RTA_Project_MVC.Models
 
         [Required(ErrorMessage = "Поле является обязательным для заполнения")]
         [Display(Name = "Заголовок")]
-        [StringLength(40, ErrorMessage = "{0} должен содержать от {2} до {1} символов", MinimumLength = 5)]
+        [StringLength(60, ErrorMessage = "{0} должен содержать от {2} до {1} символов", MinimumLength = 5)]
         public string Title { get; set; }
 
         public Lang LangId { get; set; }
 
+        [Display(Name = "Содержание")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "{0} не должно быть пустым")]
-        [MaxLength(6000)]
+        [MaxLength(8000)]
         public string Content { get; set; }
 
         public string AuthorId { get; set; }

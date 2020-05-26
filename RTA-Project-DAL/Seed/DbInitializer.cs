@@ -85,10 +85,7 @@ namespace RTA_Project_DAL
 
 
             //Tournaments from HLReport data
-            var HLReportTournaments = ParseHLReport(currentPath + "/SeedFiles/HLReport_Tournaments.txt");
-
-            foreach (var tourn in HLReportTournaments)
-                context.Tournaments.Add(tourn);
+            var tournamentList = ParseHLReport(currentPath + "/SeedFiles/HLReport_Tournaments.txt");
 
             //Tournament from GoogleDocs data
             var tournamentData = File.ReadAllText(currentPath + "/SeedFiles/Masters2019.txt").Split('@');
@@ -140,7 +137,7 @@ namespace RTA_Project_DAL
                         IsConfirmed = true
                     };
 
-                    UpdateStats(player1, player2, faction1Id, faction2Id, player1Won);
+                    UpdateStats(player1.Stats, player2.Stats, faction1Id, faction2Id, player1Won);
 
                     games.Add(game);
 
@@ -194,7 +191,7 @@ namespace RTA_Project_DAL
 
                 Description = new TournamentDescription
                 {
-                    ContentRus = "Закрытый турнир для 16 сильнейших игроков в соответствии с Рейтингом RTA от alex_nv"
+                    ContentRus = File.ReadAllText(currentPath + "/SeedFiles/description-SpringTactics2020.txt"),
                 },
 
                 TournamentPlayers = tournamentPlayersList,
@@ -216,27 +213,97 @@ namespace RTA_Project_DAL
                 }
             };
 
-            context.Tournaments.Add(masters2019);
+            tournamentList.Add(masters2019);
 
+
+            var springTactics2020 = new Tournament
+            {
+                NameRus = "Весенний Тактический Турнир 2020",
+                NameEng = "Spring Tactics Tournament 2020",
+
+                Year = 2020,
+                DateCreated = new DateTime(2020, 3, 21),
+
+                IsOfficial = true,
+                IsSeasonal = true,
+                Season = 2,
+
+                TournamentGroups = new List<TournamentGroup>
+                {
+                    new TournamentGroup
+                    {
+                        NameRus = "Группа A",
+                        GroupFormatId = 1,
+                    },
+                    new TournamentGroup
+                    {
+                        NameRus = "Группа B",
+                        GroupFormatId = 1,
+                    },
+                    new TournamentGroup
+                    {
+                        NameRus = "Группа C",
+                        GroupFormatId = 1,
+                    },
+                    new TournamentGroup
+                    {
+                        NameRus = "Группа D",
+                        GroupFormatId = 1,
+                    },
+                    new TournamentGroup
+                    {
+                        NameRus = "Плей-офф",
+                        GroupFormatId = 4,
+                    },
+                },
+
+                Map = new Map
+                {
+                    Version = "RTA 16.4",
+                    ChangelogRus = File.ReadAllText(currentPath + "/SeedFiles/changelog-RTA16.4.txt"),
+                    DownloadLinkRus = "http://heroesleague.ru/public/homm5/rta/maps/RTA16.4.h5m"
+                },
+
+                Description = new TournamentDescription
+                {
+                    ContentRus = File.ReadAllText(currentPath + "/SeedFiles/description-SpringTactics2020.txt"),
+                },
+
+                HostsId = "391a1272-0a44-4749-8962-27f5c49d2a0d"
+
+            };
+
+            tournamentList.Add(springTactics2020);
+
+            foreach (var tourn in tournamentList)
+                context.Tournaments.Add(tourn);
 
             // News
             var articles = new List<Article>
             {
                 new Article
                 {
-                    Title = "RTA 2.0.2",
+                    Title = "Турнир Masters 2019 завершен!",
                     LangId = 1,
-                    Content = "Доступна новая версия RTA 2.0.2, хвала Редхейвену! Lorem ipsum dolor sit amet!",
-                    AuthorId = "bbab0a2e-7e19-46e7-9abe-bd80e5462d69",
-                    Date = new DateTime(2020, 5, 12, 15, 25, 30)
+                    Content = File.ReadAllText(currentPath+"/SeedFiles/article-masters2019.txt"),
+                    AuthorId = "391a1272-0a44-4749-8962-27f5c49d2a0d",
+                    Date = new DateTime(2019, 10, 22)
                 },
                 new Article
                 {
-                    Title = "Открыта регистрация на Командный Тактический Турнир 2020",
+                    Title = "RTA обновлена до версии 2.0",
                     LangId = 1,
-                    Content = "Командный Тактический Турнир - 2020 - круговой командный турнир, в котором может принять участие любой желающий.",
-                    AuthorId = "bbab0a2e-7e19-46e7-9abe-bd80e5462d69",
-                    Date = new DateTime(2020, 5, 12, 16, 25, 30)
+                    Content = File.ReadAllText(currentPath+"/SeedFiles/article-RTA2.0.txt"),
+                    AuthorId = "391a1272-0a44-4749-8962-27f5c49d2a0d",
+                    Date = new DateTime(2020, 5, 2)
+                },
+                new Article
+                {
+                    Title = "Открыта регистрация на Весенний Тактический Турнир 2020",
+                    LangId = 1,
+                    Content = File.ReadAllText(currentPath+"/SeedFiles/article-SpringTactics2020.txt"),
+                    AuthorId = "391a1272-0a44-4749-8962-27f5c49d2a0d",
+                    Date = new DateTime(2020, 3, 21)
                 },
             };
 
@@ -247,11 +314,6 @@ namespace RTA_Project_DAL
 
 
             context.SaveChanges();
-
-
-
-
-
 
 
 
@@ -308,7 +370,6 @@ namespace RTA_Project_DAL
                             NameEng = groupData[1],
                             GroupFormatId = byte.Parse(groupData[2])
                         };
-
 
                         var matches = new List<Match>();
                         var tournamentGroupPlayers = new List<TournamentGroupPlayer>();
@@ -403,7 +464,7 @@ namespace RTA_Project_DAL
                                             DateSubmitted = DateTime.ParseExact(matchEntry[matchEntry.Length - 1], "yyyy.MM.dd", null),
                                         };
 
-                                        UpdateStats(player1, player2, faction1Id, faction2Id, player1Won);
+                                        UpdateStats(player1.Stats, player2.Stats, faction1Id, faction2Id, player1Won);
 
                                         games.Add(game);
                                     }
@@ -482,114 +543,114 @@ namespace RTA_Project_DAL
 
 
 
-            void UpdateStats (Player player1, Player player2, byte faction1Id, byte faction2Id, bool player1Won)
-            {         
-                player1.Stats.GamesPlayed++;
-                player2.Stats.GamesPlayed++;
+            void UpdateStats (PlayerStats stats1, PlayerStats stats2, byte faction1Id, byte faction2Id, bool player1Won)
+            {
+                stats1.GamesPlayed++;
+                stats2.GamesPlayed++;
                 if (player1Won)
-                    player1.Stats.GamesWon++;
+                    stats1.GamesWon++;
                 else
-                    player2.Stats.GamesWon++;
+                    stats2.GamesWon++;
 
                 switch (faction1Id)
                 {
                     case 1:
-                        player1.Stats.GamesAsAcademy++;
+                        stats1.GamesAsAcademy++;
                         if (player1Won)
-                            player1.Stats.WinsAsAcademy++;
+                            stats1.WinsAsAcademy++;
                         break;
 
                     case 2:
-                        player1.Stats.GamesAsDungeon++;
+                        stats1.GamesAsDungeon++;
                         if (player1Won)
-                            player1.Stats.WinsAsDungeon++;
+                            stats1.WinsAsDungeon++;
                         break;
 
                     case 3:
-                        player1.Stats.GamesAsFortress++;
+                        stats1.GamesAsFortress++;
                         if (player1Won)
-                            player1.Stats.WinsAsFortress++;
+                            stats1.WinsAsFortress++;
                         break;
 
                     case 4:
-                        player1.Stats.GamesAsHaven++;
+                        stats1.GamesAsHaven++;
                         if (player1Won)
-                            player1.Stats.WinsAsHaven++;
+                            stats1.WinsAsHaven++;
                         break;
 
                     case 5:
-                        player1.Stats.GamesAsInferno++;
+                        stats1.GamesAsInferno++;
                         if (player1Won)
-                            player1.Stats.WinsAsInferno++;
+                            stats1.WinsAsInferno++;
                         break;
 
                     case 6:
-                        player1.Stats.GamesAsNecropolis++;
+                        stats1.GamesAsNecropolis++;
                         if (player1Won)
-                            player1.Stats.WinsAsNecropolis++;
+                            stats1.WinsAsNecropolis++;
                         break;
 
                     case 7:
-                        player1.Stats.GamesAsStronghold++;
+                        stats1.GamesAsStronghold++;
                         if (player1Won)
-                            player1.Stats.WinsAsStronghold++;
+                            stats1.WinsAsStronghold++;
                         break;
 
                     case 8:
-                        player1.Stats.GamesAsSylvan++;
+                        stats1.GamesAsSylvan++;
                         if (player1Won)
-                            player1.Stats.WinsAsSylvan++;
+                            stats1.WinsAsSylvan++;
                         break;
                 }
 
                 switch (faction2Id)
                 {
                     case 1:
-                        player2.Stats.GamesAsAcademy++;
+                        stats2.GamesAsAcademy++;
                         if (!player1Won)
-                            player2.Stats.WinsAsAcademy++;
+                            stats2.WinsAsAcademy++;
                         break;
 
                     case 2:
-                        player2.Stats.GamesAsDungeon++;
+                        stats2.GamesAsDungeon++;
                         if (!player1Won)
-                            player2.Stats.WinsAsDungeon++;
+                            stats2.WinsAsDungeon++;
                         break;
 
                     case 3:
-                        player2.Stats.GamesAsFortress++;
+                        stats2.GamesAsFortress++;
                         if (!player1Won)
-                            player2.Stats.WinsAsFortress++;
+                            stats2.WinsAsFortress++;
                         break;
 
                     case 4:
-                        player2.Stats.GamesAsHaven++;
+                        stats2.GamesAsHaven++;
                         if (!player1Won)
-                            player2.Stats.WinsAsHaven++;
+                            stats2.WinsAsHaven++;
                         break;
 
                     case 5:
-                        player2.Stats.GamesAsInferno++;
+                        stats2.GamesAsInferno++;
                         if (!player1Won)
-                            player2.Stats.WinsAsInferno++;
+                            stats2.WinsAsInferno++;
                         break;
 
                     case 6:
-                        player2.Stats.GamesAsNecropolis++;
+                        stats2.GamesAsNecropolis++;
                         if (!player1Won)
-                            player2.Stats.WinsAsNecropolis++;
+                            stats2.WinsAsNecropolis++;
                         break;
 
                     case 7:
-                        player2.Stats.GamesAsStronghold++;
+                        stats2.GamesAsStronghold++;
                         if (!player1Won)
-                            player2.Stats.WinsAsStronghold++;
+                            stats2.WinsAsStronghold++;
                         break;
 
                     case 8:
-                        player2.Stats.GamesAsSylvan++;
+                        stats2.GamesAsSylvan++;
                         if (!player1Won)
-                            player2.Stats.WinsAsSylvan++;
+                            stats2.WinsAsSylvan++;
                         break;
                 }
 

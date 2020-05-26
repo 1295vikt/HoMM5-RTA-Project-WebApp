@@ -1,0 +1,54 @@
+﻿@model RTA_Project_MVC.Models.TournamentDetailsModel
+
+
+<h2>Details</h2>
+
+<div>
+    <h4>@Html.DisplayFor(model => model.NameRus)</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MapVersion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MapVersion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </dt>
+
+        <dd>
+            @String.Format("{0:MM/dd/yyyy}", Model.DateCreated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TournamentPlayers)
+        </dt>
+
+
+        @foreach (var item in Model.TournamentPlayers)
+        {
+            <dd>
+                <a href="@Url.Action("Index","Profile", new { name = item})">@item</a>
+            </dd>
+        }
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Content)
+        </dt>
+
+        <dd>
+            @Html.Raw(WebUtility.HtmlDecode(Model.Content))
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm("Register", "Tournament", new { id = Model.Id }, FormMethod.Post))
+    {
+        <input type="submit" class="btn btn-default" value="Регистрация" />
+    }
+
+
+</div>

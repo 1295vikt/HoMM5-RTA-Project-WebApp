@@ -14,6 +14,7 @@ namespace RTA_Project_BL.Configs
             CreateMap<ArticleBL, Article>().ReverseMap();
 
             CreateMap<TournamentBL, Tournament>().ReverseMap();
+
             CreateMap<TournamentGroupBL, TournamentGroup>().ReverseMap();
             CreateMap<TournamentDescriptionBL, TournamentDescription>().ReverseMap();
             CreateMap<TournamentPlayerBL, TournamentPlayer>().ReverseMap();

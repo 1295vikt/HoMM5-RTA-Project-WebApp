@@ -7,44 +7,44 @@
 
 <div id="profile-div">
 
-    <div class="col-sm-4">
+
+    <div class="col-sm-3" id="upper-half">
         <h3>Рейтинг</h3>
         <dl class="row">
-            <dt class="col-sm-7">
+            <dt class="col-sm-8">
                 @Html.DisplayNameFor(model => model.RatingClass):
             </dt>
             <dd class="col-sm-4">
                 @Html.DisplayFor(model => model.RatingClass)
             </dd>
 
-            <dt class="col-sm-7">
+            <dt class="col-sm-8">
                 @Html.DisplayNameFor(model => model.RatingPointsCurrent):
             </dt>
             <dd class="col-sm-4">
                 @Html.DisplayFor(model => model.RatingPointsCurrent)
             </dd>
 
-            <dt class="col-sm-7">
+            <dt class="col-sm-8">
                 @Html.DisplayNameFor(model => model.RatingPointsMax):
             </dt>
             <dd class="col-sm-4">
                 @Html.DisplayFor(model => model.RatingPointsMax)
             </dd>
-
         </dl>
     </div>
 
-    <div class="col-sm-4">
+    <div class="col-sm-3" id="upper-half">
         <h3>Статистика</h3>
         <dl class="row">
-            <dt class="col-sm-7">
+            <dt class="col-sm-8">
                 @Html.DisplayNameFor(model => model.GamesPlayed):
             </dt>
             <dd class="col-sm-4">
                 @Html.DisplayFor(model => model.GamesPlayed)
             </dd>
 
-            <dt class="col-sm-7">
+            <dt class="col-sm-8">
                 @Html.DisplayNameFor(model => model.GamesWon):
             </dt>
             <dd class="col-sm-4">
@@ -52,13 +52,12 @@
             </dd>
 
 
-            <dt class="col-sm-7">
+            <dt class="col-sm-8">
                 @Html.DisplayNameFor(model => model.Winrate):
             </dt>
             <dd class="col-sm-4">
                 @Html.DisplayFor(model => model.Winrate)%
             </dd>
-
         </dl>
     </div>
 

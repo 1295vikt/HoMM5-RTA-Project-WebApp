@@ -23,7 +23,7 @@ namespace RTA_Project_MVC.Controllers
         }
 
         // GET: RTA
-        public ActionResult Index()
+        public ActionResult Info()
         {
             return View();
         }

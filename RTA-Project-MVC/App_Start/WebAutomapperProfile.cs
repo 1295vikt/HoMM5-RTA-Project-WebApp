@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace RTA_Project_MVC.App_Start
 {
@@ -16,7 +17,19 @@ namespace RTA_Project_MVC.App_Start
             CreateMap<PlayerStatsBL, PlayerProfileViewModel>();
 
             CreateMap<ArticleViewModel, ArticleBL>().ReverseMap();
+
+
+
             CreateMap<TournamentCreateModel, TournamentBL>().ReverseMap();
+            CreateMap<TournamentBL, TournamentPreviewModel>();
+
+            CreateMap<TournamentBL, TournamentDetailsModel>().ForMember(dest=> dest.TournamentPlayers,
+                opt=>opt.MapFrom(src=>src.TournamentPlayers.Select(tp => tp.Player.Name))).
+                ForMember(dest=>dest.Content,opt=>opt.MapFrom(src=>src.Description.ContentRus)).ReverseMap(); 
+            
+            // TODO: change content to support ENG
+
+
         }
 
     }

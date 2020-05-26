@@ -1,4 +1,5 @@
 ﻿using RTA_Project_DAL.enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
@@ -7,8 +8,7 @@ namespace RTA_Project_MVC.Models
 {
     public class TournamentCreateModel
     {
-        [Required(ErrorMessage="Поле является обязательным для заполнения")]
-        [Display(Name = "Название турнира")]
+        [Required(ErrorMessage="Поле является обязательным для заполнения")]        
         [StringLength(40, ErrorMessage = "{0} должно содержать от {2} до {1} символов", MinimumLength = 8)]
         public string NameRus { get; set; }
 
@@ -81,5 +81,46 @@ namespace RTA_Project_MVC.Models
 
     }
 
+    public class TournamentPreviewModel
+    {
+        public int Id { get; set; }
+        [Display(Name = "Название турнира")]
+        public string NameRus { get; set; }
+        public string NameEng { get; set; }
+
+        public bool IsActive { get; set; }
+    }
+
+    public class TournamentDetailsModel
+    {
+        public int Id { get; set; }
+        [Display(Name = "Название турнира")]
+        public string NameRus { get; set; }
+        public string NameEng { get; set; }
+
+        [Display(Name = "Версия карты")]
+        public string MapVersion { get; set; }
+
+        //public bool IsActive { get; set; }
+        //public bool Is2Stage { get; set; }
+
+        //public TournamentGroupFormat Stage1Format { get; set; }
+        //public TournamentGroupFormat Stage2Format { get; set; }
+
+        //public bool IsOfficial { get; set; }
+        //public bool IsSeasonal { get; set; }
+        //public bool IsPrivate { get; set; }
+
+        public DateTime? DateCreated { get; set; }
+
+        public string HostsId { get; set; }
+
+        //public ICollection<SelectListItem> TournamentGroups { get; set; }
+
+        public IEnumerable<string> TournamentPlayers { get; set; }
+
+        public string Content { get; set; }
+
+    }
 
 }

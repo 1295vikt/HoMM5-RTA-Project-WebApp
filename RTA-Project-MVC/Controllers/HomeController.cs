@@ -24,7 +24,7 @@ namespace RTA_Project_MVC.Controllers
 
         public ActionResult Index()
         {
-            var newsBL = _articleService.QueryArticles((byte)Lang.Rus).Take(5);
+            var newsBL = _articleService.QueryArticles((byte)Lang.Rus).Take(3);
 
             var news = _mapper.Map<IEnumerable<ArticleViewModel>>(newsBL);
 

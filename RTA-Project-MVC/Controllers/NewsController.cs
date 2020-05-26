@@ -7,6 +7,7 @@ using RTA_Project_DAL.enums;
 using RTA_Project_MVC.Models;
 using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Web.Mvc;
 
 namespace RTA_Project_MVC.Controllers
@@ -29,7 +30,7 @@ namespace RTA_Project_MVC.Controllers
         public ActionResult Index(int? page)
         {
 
-            int pageSize = 8;
+            int pageSize = 6;
             int pageNumber = (page ?? 1);
 
             var articlesBL = _articleService.QueryArticles((byte)Lang.Rus);
@@ -58,17 +59,17 @@ namespace RTA_Project_MVC.Controllers
         // POST: News/Create
         [HttpPost]
         [Authorize(Roles = "Host")]
-        public ActionResult Create(ArticleViewModel article)
+        public ActionResult Create(ArticleViewModel model)
         {
 
             if (!ModelState.IsValid)
             {
-                return View(article);
+                return View(model);
             }
 
-            article.LangId = Lang.Rus;
+            model.LangId = Lang.Rus;
 
-            var articleBL = _mapper.Map<ArticleBL>(article);
+            var articleBL = _mapper.Map<ArticleBL>(model);
 
             articleBL.AuthorId = User.Identity.GetUserId();
             articleBL.Date = DateTime.Now;
@@ -81,23 +82,29 @@ namespace RTA_Project_MVC.Controllers
         // GET: News/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var articleBL = _articleService.GetById(id);
+
+            var model = _mapper.Map<ArticleViewModel>(articleBL);
+
+            model.Content = WebUtility.HtmlDecode(model.Content);
+
+            return View(model);
         }
 
         // POST: News/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, ArticleViewModel model)
         {
-            try
+            if (!ModelState.IsValid)
             {
-                // TODO: Add update logic here
+                return View(model);
+            }
 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            var articleBL = _mapper.Map<ArticleBL>(model);
+
+            _articleService.Update(articleBL);
+
+            return RedirectToAction("Index");
         }
 
 
@@ -113,6 +120,8 @@ namespace RTA_Project_MVC.Controllers
 
             if (authorId == userId)
                 _articleService.Delete(id);
+            else
+                RedirectToAction("LogIn", "Account");
 
             return View();
         }

@@ -17,6 +17,10 @@ namespace RTA_Project_BL.Services
 
         IQueryable<GameBL> QueryTournamentGames(int? playerId = null, Expression<Func<GameBL, bool>> filterForGame = null,
             Expression<Func<MatchBL, bool>> filterForMatch = null, Expression<Func<TournamentBL, bool>> filterForTournament = null);
+
+        TournamentBL GetById(int id);
+
+        void RegisterPlayer(int tournamentId, int playerId);
     }
 
 
@@ -81,6 +85,25 @@ namespace RTA_Project_BL.Services
             return gamesBL;
         }
 
+        public TournamentBL GetById(int id)
+        {
+            var tournament = _repository.GetFirstOrDefault(t => t.Id == id, t => t.Description);
+            var tournamentBL = Map(tournament);
+            return tournamentBL;
+        }
+
+        public void RegisterPlayer(int tournamentId, int playerId)
+        {
+            var tournament = _repository.FindById(tournamentId);
+
+            if(!tournament.TournamentPlayers.Any(tp=>tp.PlayerId == playerId))
+            {
+                var tournamentPlayer = new TournamentPlayer { PlayerId = playerId };
+                tournament.TournamentPlayers.Add(tournamentPlayer);
+                _repository.Update(tournament);
+            }
+
+        }
     }
 
 }

@@ -1,4 +1,15 @@
-﻿
+﻿@model IEnumerable<RTA_Project_MVC.Models.TournamentPreviewModel>
 
-<h2>Index</h2>
+<h2>Турниры</h2>
+
+<div>
+
+    <h3>Текущие турниры :</h3>
+    @foreach(var item in Model)
+    {
+        <a href="@Url.Action("Details", "Tournament", new { id=item.Id })">@item.NameRus</a>
+    }
+
+
+</div>
 

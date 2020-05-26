@@ -5,9 +5,11 @@ using RTA_Project_BL.Models;
 using RTA_Project_BL.Services;
 using RTA_Project_MVC.Models;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Fluentx.Mvc;
 
 namespace RTA_Project_MVC.Controllers
 {
@@ -30,14 +32,21 @@ namespace RTA_Project_MVC.Controllers
         // GET: Tournament
         public ActionResult Index()
         {
-            var s = User.Identity;
-            return View();
+            var tournamentsBL = _tournamentService.QueryTournaments(null, t => !t.IsFinished).ToList();
+
+            var tournaments = _mapper.Map<IEnumerable<TournamentPreviewModel>>(tournamentsBL);
+
+            return View(tournaments);
         }
 
         // GET: Tournament/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var tournamentBL = _tournamentService.GetById(id);
+
+            var tournament = _mapper.Map<TournamentDetailsModel>(tournamentBL);
+
+            return View(tournament);
         }
 
         // GET: Tournament/Create
@@ -81,6 +90,7 @@ namespace RTA_Project_MVC.Controllers
         }
 
         // GET: Tournament/Edit/5
+        [Authorize(Roles = "Host")]
         public ActionResult Edit(int id)
         {
             return View();
@@ -88,6 +98,7 @@ namespace RTA_Project_MVC.Controllers
 
         // POST: Tournament/Edit/5
         [HttpPost]
+        [Authorize(Roles = "Host")]
         public ActionResult Edit(int id, FormCollection collection)
         {
             try
@@ -123,5 +134,30 @@ namespace RTA_Project_MVC.Controllers
                 return View();
             }
         }
+
+
+        // POST: Tournament/Register/5
+        [HttpPost]
+        public ActionResult Register(int id)
+        {
+
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("LogIn", "Account");
+            }
+
+            var userId = User.Identity.GetUserId();
+            var player = _playerService.GetByAccountId(userId);
+
+            if (player == null)
+            {
+                return RedirectToAction("Register", "Profile");
+            }
+
+            _tournamentService.RegisterPlayer(id, player.Id);
+
+            return RedirectToAction("Index");
+        }
+
     }
 }

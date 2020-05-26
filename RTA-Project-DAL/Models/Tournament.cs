@@ -11,7 +11,7 @@ namespace RTA_Project_DAL.Models
         public string NameRus { get; set; }
         public string NameEng { get; set; }
         [ForeignKey("Map")]
-        public string MapVersionId { get; set; }
+        public string MapVersion { get; set; }
         public int Year { get; set; }
         public byte Season { get; set; }
 
@@ -37,8 +37,8 @@ namespace RTA_Project_DAL.Models
         public virtual ICollection<TournamentGroup> TournamentGroups { get; set; }
         public virtual ICollection<TournamentPlayer> TournamentPlayers { get; set; }
 
-        public virtual Map Map { get; set; }
-        public virtual TournamentDescription Description { get; set; }
+        public Map Map { get; set; }
+        public TournamentDescription Description { get; set; }
 
     }
 }

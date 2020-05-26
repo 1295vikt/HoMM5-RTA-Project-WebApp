@@ -2,6 +2,11 @@
     height: 100%;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
 }
 
 body {
@@ -19,13 +24,11 @@ body {
     cursor: url('../Resources/cursor/Default.png') 6 2, auto;
 }
 
-
-
 #tactical-arena-logo {
     height: 360px;
     width: 900px;
     position: relative;
-    right: 30px;
+    right: 34px;
     background: url('../Resources/Tactical_Arena_Logo.png') no-repeat center;
 }
 
@@ -55,7 +58,6 @@ h2 {
 #left {
     background: url('../Resources/lbg.jpg') 100% 0 repeat-y;
     width: 265px;
-    float: left;
     margin-top: 18px;
     padding-top: -18px;
     min-height: 750px;
@@ -66,14 +68,32 @@ h2 {
 #right {
     background: url('../Resources/rbg.jpg') repeat-y;
     width: 935px;
-    float: right;
     margin-top: 18px;
-    margin-left: -1px;
     min-height: 750px;
     position: relative;
+    right: 1px;
     flex-grow: 1;
 }
 
+#news-header {
+    text-align: center;
+    padding-top: 8px;
+    background: url('../Resources/ResourceBar-heavy.png') no-repeat;
+    width: 820px;
+    height: 43px;
+    font-size: 20px;
+    color: goldenrod;
+    margin-top: 18px;
+}
+
+#news-content {
+    padding: 6px 35px 8px 35px;
+}
+
+#title-form {
+    background: url('../Resources/ui/TextForm-Long.png') no-repeat;
+    width: 512px;
+}
 
 /* Left column styles */
 #ltop {
@@ -89,9 +109,8 @@ h2 {
     width: 265px;
     height: 19px;
     background: url('../Resources/lbot.gif') top left no-repeat;
-    position: relative;
-    bottom: -28px;
-    float: left;
+    position: absolute;
+    bottom: 32px;
 }
 
 #nav-block {
@@ -138,6 +157,11 @@ h2 {
     display: block;
 }
 
+#larea {
+    background: url('../Resources/larea.jpg') 100% 0 no-repeat;
+    width: 265px;
+    height: 392px;
+}
 
 
 /* Right column styles */
@@ -391,7 +415,7 @@ h2 {
     padding-right: 60px;
     position: relative;
     margin-top: -56px;
-    padding-bottom: 18px;
+    padding-bottom: 22px;
     z-index: 3;
 }
 
@@ -523,9 +547,20 @@ input.form-control {
 }
 
 .table-bordered {
-    background-color: antiquewhite; 
+    background-color: antiquewhite;
 }
 
+#upper-half {
+    padding: 0 0;
+}
+
+    #upper-half .row {
+        margin-bottom: 0;
+    }
+
+    #upper-half .col-sm-8 {
+        padding-right: 0;
+    }
 
     .table-bordered > thead > tr > th {
         text-align: center;
@@ -535,19 +570,19 @@ input.form-control {
         border: 1px solid saddlebrown;
     }
 
-    .table-bordered > tbody > tr > td {
-        text-align: center;
-        min-width: 92px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border: 1px solid saddlebrown;
-    }
+.table-bordered > tbody > tr > td {
+    text-align: center;
+    min-width: 92px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid saddlebrown;
+}
 
 
-    .table-bordered > tbody > tr > th {
-        text-align: center;
-        border: 1px solid saddlebrown;
-    }
+.table-bordered > tbody > tr > th {
+    text-align: center;
+    border: 1px solid saddlebrown;
+}
 
 #pf-griffin {
     background: url('../Resources/icons/Griffin.png') no-repeat;

@@ -8,11 +8,15 @@ namespace RTA_Project_BL.Models
         public int Id { get; set; }
         public string NameRus { get; set; }
         public string NameEng { get; set; }
+
+        public string MapVersion { get; set; }
+
         public int Year { get; set; }
         public byte Season { get; set; }
 
         public bool IsActive { get; set; }
         public bool IsInSecondStage { get; set; }
+        public bool IsFinished { get; set; }
         public bool IsOfficial { get; set; }
         public bool IsSeasonal { get; set; }
         public bool IsPrivate { get; set; }
