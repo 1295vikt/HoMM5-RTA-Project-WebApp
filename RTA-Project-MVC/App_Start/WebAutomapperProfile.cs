@@ -18,7 +18,7 @@ namespace RTA_Project_MVC.App_Start
 
             CreateMap<ArticleViewModel, ArticleBL>().ReverseMap();
 
-            CreateMap<TournamentCreateModel, TournamentBL>().ForMember(dest=>dest.Description.ContentRus,opt=>opt.MapFrom(src=>src.ContentRus)).ReverseMap();
+            CreateMap<TournamentCreateModel, TournamentBL>().ForPath(dest=>dest.Description.ContentRus,opt=>opt.MapFrom(src=>src.ContentRus)).ReverseMap();
 
             CreateMap<TournamentBL, TournamentPreviewModel>();
 

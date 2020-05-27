@@ -316,7 +316,6 @@ namespace RTA_Project_DAL
             context.SaveChanges();
 
 
-
             //Parse methods
             List<Tournament> ParseHLReport(string filepath)
             {
@@ -332,6 +331,15 @@ namespace RTA_Project_DAL
                     var tournamentPlayers = new List<TournamentPlayer>();
 
                     var tournData = tournEntry[0].Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries);
+
+                    var mapVersion = tournData[7];
+                    var map = context.Maps.FirstOrDefault(m => m.Version == mapVersion);
+                    if (map == null)
+                    {
+                        map = new Map { Version = mapVersion };
+                        context.Maps.Add(map);
+                    }
+
                     var tournament = new Tournament
                     {
                         IsFinished = true,
@@ -346,10 +354,7 @@ namespace RTA_Project_DAL
                         IsPrivate = bool.Parse(tournData[5]),
                         DateCreated = DateTime.ParseExact(tournData[6], "yyyy.MM.dd", null),
 
-                        Map = new Map
-                        {
-                            Version = tournData[7]
-                        },
+                        Map = map,
 
                         Description = new TournamentDescription
                         {

@@ -79,6 +79,10 @@ namespace RTA_Project_MVC.Controllers
             if (ModelState.IsValid)
             {
                 var modelBL = _mapper.Map<TournamentBL>(model);
+
+                if (selectedHost == null)
+                    selectedHost = new string[] { };
+
                 selectedHost.Prepend(User.Identity.GetUserId());
                 modelBL.HostsId = string.Join(";", selectedHost);
                 modelBL.DateCreated = DateTime.Now;

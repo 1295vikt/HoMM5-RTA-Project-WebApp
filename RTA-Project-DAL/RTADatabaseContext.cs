@@ -30,6 +30,7 @@ namespace RTA_Project_DAL
         public DbSet<Player> Players { get; set; }
         public DbSet<PlayerStats> PlayerStats { get; set; }
         public DbSet<Article> Articles { get; set; }
+        public DbSet<Map> Maps { get; set; }
 
     }
 }
