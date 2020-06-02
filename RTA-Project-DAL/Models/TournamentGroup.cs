@@ -9,7 +9,7 @@ namespace RTA_Project_DAL.Models
         public int Id { get; set; }
 
         public int TournamentId { get; set; }
-        public byte GroupFormatId { get; set; }
+        public int GroupFormatId { get; set; }
         public string NameRus { get; set; }
         public string NameEng { get; set; }
         [DefaultValue(false)]

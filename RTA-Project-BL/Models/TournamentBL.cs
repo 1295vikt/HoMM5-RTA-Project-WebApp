@@ -12,7 +12,7 @@ namespace RTA_Project_BL.Models
         public string MapVersion { get; set; }
 
         public int Year { get; set; }
-        public byte Season { get; set; }
+        public int Season { get; set; }
 
         public bool IsActive { get; set; }
         public bool IsInSecondStage { get; set; }

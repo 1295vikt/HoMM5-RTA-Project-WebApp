@@ -13,7 +13,7 @@ namespace RTA_Project_DAL.Models
         [ForeignKey("Map")]
         public string MapVersion { get; set; }
         public int Year { get; set; }
-        public byte Season { get; set; }
+        public int Season { get; set; }
 
         public DateTime? DateCreated { get; set; }
 

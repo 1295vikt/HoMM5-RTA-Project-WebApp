@@ -16,16 +16,16 @@ namespace RTA_Project_DAL.Models
         [DefaultValue(false)]
         public bool IsTechnicalWin { get; set; }
 
-        public byte Faction1Id { get; set; }
-        public byte Faction2Id { get; set; }
+        public int Faction1Id { get; set; }
+        public int Faction2Id { get; set; }
 
         [ForeignKey("Hero1")]
         public int Hero1Id { get; set; }
         [ForeignKey("Hero2")]
         public int Hero2Id { get; set; }
 
-        public virtual Hero Hero1 { get; set; }
-        public virtual Hero Hero2 { get; set; }
+        public Hero Hero1 { get; set; }
+        public Hero Hero2 { get; set; }
 
         public string Player1Comment { get; set; }
         public string Player2Comment { get; set; }

@@ -1,7 +1,8 @@
 ﻿namespace RTA_Project_DAL.enums
 {
-    public enum Faction : byte
+    public enum Faction
     {
+        Unspecified = 0,
         Academy = 1,
         Dungeon = 2,
         Fortress = 3,

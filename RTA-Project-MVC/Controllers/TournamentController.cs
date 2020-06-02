@@ -9,7 +9,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Fluentx.Mvc;
 
 namespace RTA_Project_MVC.Controllers
 {
@@ -76,19 +75,21 @@ namespace RTA_Project_MVC.Controllers
         [Authorize(Roles = "Host")]
         public ActionResult Create(TournamentCreateModel model, params string[] selectedHost)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                var modelBL = _mapper.Map<TournamentBL>(model);
-
-                if (selectedHost == null)
-                    selectedHost = new string[] { };
-
-                selectedHost.Prepend(User.Identity.GetUserId());
-                modelBL.HostsId = string.Join(";", selectedHost);
-                modelBL.DateCreated = DateTime.Now;
-
-                _tournamentService.Create(modelBL);
+                return View(model);
             }
+
+            var modelBL = _mapper.Map<TournamentBL>(model);
+
+            if (selectedHost == null)
+                selectedHost = new string[] { };
+
+            selectedHost.Prepend(User.Identity.GetUserId());
+            modelBL.HostsId = string.Join(";", selectedHost);
+            modelBL.DateCreated = DateTime.Now;
+
+            _tournamentService.Create(modelBL);
 
             return RedirectToAction("Index");
         }

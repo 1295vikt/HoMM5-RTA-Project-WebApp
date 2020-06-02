@@ -131,36 +131,24 @@
                 <tbody>
                     <tr>
                         <th scope="row">Игр</th>
-                        <td>@Html.DisplayFor(model => model.GamesAsAcademy)</td>
-                        <td>@Html.DisplayFor(model => model.GamesAsDungeon)</td>
-                        <td>@Html.DisplayFor(model => model.GamesAsFortress)</td>
-                        <td>@Html.DisplayFor(model => model.GamesAsHaven)</td>
-                        <td>@Html.DisplayFor(model => model.GamesAsInferno)</td>
-                        <td>@Html.DisplayFor(model => model.GamesAsNecropolis)</td>
-                        <td>@Html.DisplayFor(model => model.GamesAsStronghold)</td>
-                        <td>@Html.DisplayFor(model => model.GamesAsSylvan)</td>
+                        @foreach (var item in Model.GamesPlayedFaction)
+                        {
+                            <td>@item</td>
+                        }
                     </tr>
                     <tr>
                         <th scope="row">Побед</th>
-                        <td>@Html.DisplayFor(model => model.WinsAsAcademy)</td>
-                        <td>@Html.DisplayFor(model => model.WinsAsDungeon)</td>
-                        <td>@Html.DisplayFor(model => model.WinsAsFortress)</td>
-                        <td>@Html.DisplayFor(model => model.WinsAsHaven)</td>
-                        <td>@Html.DisplayFor(model => model.WinsAsInferno)</td>
-                        <td>@Html.DisplayFor(model => model.WinsAsNecropolis)</td>
-                        <td>@Html.DisplayFor(model => model.WinsAsStronghold)</td>
-                        <td>@Html.DisplayFor(model => model.WinsAsSylvan)</td>
+                        @foreach (var item in Model.GamesWonFaction)
+                        {
+                            <td>@item</td>
+                        }
                     </tr>
                     <tr>
                         <th scope="row">% Побед</th>
-                        <td>@Html.DisplayFor(model => model.WinrateAsAcademy)%</td>
-                        <td>@Html.DisplayFor(model => model.WinrateAsDungeon)%</td>
-                        <td>@Html.DisplayFor(model => model.WinrateAsFortress)%</td>
-                        <td>@Html.DisplayFor(model => model.WinrateAsHaven)%</td>
-                        <td>@Html.DisplayFor(model => model.WinrateAsInferno)%</td>
-                        <td>@Html.DisplayFor(model => model.WinrateAsNecropolis)%</td>
-                        <td>@Html.DisplayFor(model => model.WinrateAsStronghold)%</td>
-                        <td>@Html.DisplayFor(model => model.WinrateAsSylvan)%</td>
+                        @foreach (var item in Model.WinrateFaction)
+                        {
+                            <td>@item%</td>
+                        }
                     </tr>
                 </tbody>
             </table>

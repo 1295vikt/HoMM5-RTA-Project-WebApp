@@ -29,7 +29,29 @@ namespace RTA_Project_BL.Configs
             CreateMap<HeroBL, Hero>().ReverseMap();
 
             CreateMap<PlayerBL, Player>().ReverseMap();
-            CreateMap<PlayerStatsBL, PlayerStats>().ReverseMap();
+
+            CreateMap<PlayerStats, PlayerStatsBL>().ForMember(dest => dest.GamesPlayedFaction, opt => opt.MapFrom(src => new int[]
+            {
+                src.GamesAsAcademy,
+                src.GamesAsDungeon,
+                src.GamesAsFortress,
+                src.GamesAsHaven,
+                src.GamesAsInferno,
+                src.GamesAsNecropolis,
+                src.GamesAsStronghold,
+                src.GamesAsSylvan
+            })).
+            ForMember(dest => dest.GamesWonFaction, opt => opt.MapFrom(src => new int[]
+            {
+                src.WinsAsAcademy,
+                src.WinsAsDungeon,
+                src.WinsAsFortress,
+                src.WinsAsHaven,
+                src.WinsAsInferno,
+                src.WinsAsNecropolis,
+                src.WinsAsStronghold,
+                src.WinsAsSylvan
+            }));
 
             CreateMap<MapBL, Map>().ReverseMap();
 

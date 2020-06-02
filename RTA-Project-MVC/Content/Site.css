@@ -512,7 +512,7 @@ select {
     }
 
 
-input.form-control {
+form-control {
     background: url('../Resources/ui/TextForm.png') no-repeat;
     border-radius: 8px;
     border: none;
@@ -554,13 +554,10 @@ input.form-control {
     padding: 0 0;
 }
 
-    #upper-half .row {
-        margin-bottom: 0;
-    }
-
     #upper-half .col-sm-8 {
         padding-right: 0;
     }
+
 
     .table-bordered > thead > tr > th {
         text-align: center;

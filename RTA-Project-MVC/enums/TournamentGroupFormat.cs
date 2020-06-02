@@ -1,6 +1,6 @@
 ﻿namespace RTA_Project_DAL.enums
 {
-    public enum TournamentGroupFormat : byte
+    public enum TournamentGroupFormat
     {
         RoundRobin = 1,
         Swiss = 2,

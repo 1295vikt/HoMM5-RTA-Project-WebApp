@@ -24,7 +24,7 @@ namespace RTA_Project_MVC.Models
         public int Year { get; set; }
 
         [Display(Name = "Сезон")]
-        public byte Season { get; set; }
+        public int Season { get; set; }
 
 
         [Display(Name = "Двухэтапный турнир")]

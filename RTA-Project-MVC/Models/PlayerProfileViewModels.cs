@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
@@ -43,32 +44,11 @@ namespace RTA_Project_MVC.Models
         public string Winrate { get; set; }
 
         //Faction-specific stats
-        public int GamesAsAcademy { get; set; }
-        public int GamesAsDungeon { get; set; }
-        public int GamesAsFortress { get; set; }
-        public int GamesAsHaven { get; set; }
-        public int GamesAsInferno { get; set; }
-        public int GamesAsNecropolis { get; set; }
-        public int GamesAsStronghold { get; set; }
-        public int GamesAsSylvan { get; set; }
 
-        public int WinsAsAcademy { get; set; }
-        public int WinsAsDungeon { get; set; }
-        public int WinsAsFortress { get; set; }
-        public int WinsAsHaven { get; set; }
-        public int WinsAsInferno { get; set; }
-        public int WinsAsNecropolis { get; set; }
-        public int WinsAsStronghold { get; set; }
-        public int WinsAsSylvan { get; set; }
+        public IEnumerable<int> GamesPlayedFaction { get; set; }
+        public IEnumerable<int> GamesWonFaction { get; set; }
+        public IEnumerable<double> WinrateFaction { get; set; }
 
-        public string WinrateAsAcademy { get; set; }
-        public string WinrateAsDungeon { get; set; }
-        public string WinrateAsFortress { get; set; }
-        public string WinrateAsHaven { get; set; }
-        public string WinrateAsInferno { get; set; }
-        public string WinrateAsNecropolis { get; set; }
-        public string WinrateAsStronghold { get; set; }
-        public string WinrateAsSylvan { get; set; }
     }
 
     public class PlayerProfileCreateModel
@@ -80,7 +60,8 @@ namespace RTA_Project_MVC.Models
         public string Nickname { get; set; }
 
     }
-    //%$()@№#^+-=!~
+
+
     public class PlayerProfileLinkModel
     {
         [Display(Name = "Ключ")]
