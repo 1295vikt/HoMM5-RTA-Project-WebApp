@@ -46,6 +46,7 @@ namespace RTA_Project_BL.Services
         public IQueryable<BLModel> QueryAll()
         {
             var listEntity = _repository.QueryAll();
+            var ewq = listEntity.ToList();
             return Project(listEntity);
         }
 

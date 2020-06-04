@@ -1,11 +1,7 @@
 ﻿using AutoMapper;
 using RTA_Project_BL.Models;
 using RTA_Project_MVC.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.Mvc;
 
 namespace RTA_Project_MVC.App_Start
 {
@@ -18,14 +14,14 @@ namespace RTA_Project_MVC.App_Start
 
             CreateMap<ArticleViewModel, ArticleBL>().ReverseMap();
 
-            CreateMap<TournamentCreateModel, TournamentBL>().ForPath(dest=>dest.Description.ContentRus,opt=>opt.MapFrom(src=>src.ContentRus)).ReverseMap();
+            CreateMap<TournamentCreateModel, TournamentBL>().ForPath(dest => dest.Description.ContentRus, opt => opt.MapFrom(src => src.ContentRus)).ReverseMap();
 
             CreateMap<TournamentBL, TournamentPreviewModel>();
 
-            CreateMap<TournamentBL, TournamentDetailsModel>().ForMember(dest=> dest.TournamentPlayers,
-                opt=>opt.MapFrom(src=>src.TournamentPlayers.Select(tp => tp.Player.Name))).
-                ForMember(dest=>dest.Content,opt=>opt.MapFrom(src=>src.Description.ContentRus)).ReverseMap(); 
-            
+            CreateMap<TournamentBL, TournamentDetailsModel>().ForMember(dest => dest.TournamentPlayers,
+                opt => opt.MapFrom(src => src.TournamentPlayers.Select(tp => tp.Player.Name))).
+                ForMember(dest => dest.Content, opt => opt.MapFrom(src => src.Description.ContentRus)).ReverseMap();
+
             // TODO: change content to support ENG
 
 

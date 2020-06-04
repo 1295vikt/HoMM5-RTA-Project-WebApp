@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-*, *::after, *::before{
+*, *::after, *::before {
     box-sizing: inherit;
 }
 
@@ -41,6 +41,12 @@ h2 {
     font-weight: bold;
 }
 
+hr {
+    border: none;
+    color: black;
+    background-color: black;
+    height: 2px;
+}
 
 /* Main styles */
 #maincontainer {
@@ -473,14 +479,28 @@ input:not(.cke_dialog_ui_checkbox_input)[type='checkbox'] {
     height: 25px;
     background: url(../Resources/ui/Checkbox.png) no-repeat;
     display: inline-block;
-    position: relative;
-    margin-top: 0;
-    top: 4px;
+    vertical-align: middle;
 }
 
 input[type='checkbox']:checked {
-    background-image: url(../Resources/ui/Checked.png);
+    background-image: url(../Resources/ui/Checkbox_Checked.png);
 }
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../Resources/ui/RadioButton.png) no-repeat;
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-right: 5px;
+}
+
+    input[type='radio']:checked {
+        background-image: url(../Resources/ui/RadioButton_Checked.png);
+    }
 
 
 select {
@@ -506,13 +526,17 @@ select {
         background: url(../Resources/ui/ComboBoxPushed.png) no-repeat;
     }
 
+    select:disabled {
+        background: url(../Resources/ui/ComboBoxDisabled.png) no-repeat;
+    }
+
     select option {
         background: #312821;
         border: 2px solid #946631;
     }
 
 
-form-control {
+input.form-control {
     background: url('../Resources/ui/TextForm.png') no-repeat;
     border-radius: 8px;
     border: none;
@@ -525,6 +549,27 @@ form-control {
     position: relative;
     top: 8px;
 }
+
+input[type='date'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('../Resources/ui/TextForm-Short.png') no-repeat;
+    border: none;
+    width: 128px;
+    height: 25px;
+    color: #fef2e4;
+    margin-left: 6px;
+    text-align: center;
+}
+
+    input[type='date']:disabled {
+        background: url('../Resources/ui/TextForm-Short_Disabled.png') no-repeat;
+    }
+
+    input[type='date']::-webkit-calendar-picker-indicator,
+    input[type="date"]::-webkit-inner-spin-button {
+        display: none
+    }
 
 .text-danger {
     font-family: sans-serif, Times, Serif;
@@ -559,19 +604,18 @@ form-control {
     }
 
 
-    .table-bordered > thead > tr > th {
-        text-align: center;
-        min-width: 92px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border: 1px solid saddlebrown;
-    }
+.table-bordered > thead > tr > th {
+    text-align: center;
+    min-width: 90px;
+    padding: 5px;
+    border: 1px solid saddlebrown;
+    font-size: 16px;
+}
 
 .table-bordered > tbody > tr > td {
     text-align: center;
-    min-width: 92px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    min-width: 90px;
+    padding: 5px;
     border: 1px solid saddlebrown;
 }
 
@@ -579,6 +623,8 @@ form-control {
 .table-bordered > tbody > tr > th {
     text-align: center;
     border: 1px solid saddlebrown;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #pf-griffin {
@@ -587,5 +633,27 @@ form-control {
     width: 200px;
     height: 310px;
     right: 106px;
-    top: -10px;
+    top: 64px;
+}
+
+/* Statistics */
+
+#filter-checkbox {
+    margin-top: 0;
+    margin-left: 6px;
+}
+
+#filter-dropdown {
+    display: inline;
+    position: relative;
+    margin-left: 6px;
+    bottom: 6px;
+}
+
+#wins-count {
+    color: green;
+}
+
+#loses-count {
+    color: red;
 }

@@ -1,0 +1,64 @@
+﻿@model RTA_Project_MVC.Models.StatisticsAllFactionsModel
+
+<div class="col-sm-12" style="padding-bottom:32px">
+
+    <hr />
+
+    <table class="table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">
+                    Vs \ Фракц.
+                </th>
+                <th scope="col">
+                    Академия
+                </th>
+                <th scope="col">
+                    Лига Теней
+                </th>
+                <th scope="col">
+                    Северные Кланы
+                </th>
+                <th scope="col">
+                    Орден Порядка
+                </th>
+                <th scope="col">
+                    Инферно
+                </th>
+                <th scope="col">
+                    Некрополис
+                </th>
+                <th scope="col">
+                    Великая Орда
+                </th>
+                <th scope="col">
+                    Лесной Союз
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @for(int j=0; j<9; j++)
+            {
+                <tr>
+                    <th scope="row">
+                        @Model.Factions[j]
+                    </th>
+
+                    @for (int i = 0; i < 8; i++)
+                    {
+                    <td scope="row">
+                        <span id="games-count">@Model.GamesPlayed[i,j]</span>
+                        <div><span id="wins-count">@Model.GamesWon[i, j]</span>/<span id="loses-count">@Model.GamesLost[i, j]</span></div>
+                        <span id="win-percent">@Model.Winrate[i, j]%</span>
+                    </td>
+                    }
+
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+</div>
+

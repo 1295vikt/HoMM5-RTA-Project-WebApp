@@ -7,6 +7,7 @@ using RTA_Project_MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Web;
 using System.Web.Mvc;
 
@@ -31,7 +32,9 @@ namespace RTA_Project_MVC.Controllers
         // GET: Tournament
         public ActionResult Index()
         {
-            var tournamentsBL = _tournamentService.QueryTournaments(null, t => !t.IsFinished).ToList();
+            var tr = _tournamentService.QueryTournamentMatches().ToList();
+
+            var tournamentsBL = _tournamentService.QueryTournaments(null, new Expression<Func<TournamentBL,bool>>[] { t => !t.IsFinished } ).ToList();
 
             var tournaments = _mapper.Map<IEnumerable<TournamentPreviewModel>>(tournamentsBL);
 

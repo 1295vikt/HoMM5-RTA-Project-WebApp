@@ -15,7 +15,9 @@ namespace RTA_Project_BL.Configs
 
             CreateMap<TournamentGroupBL, TournamentGroup>().ReverseMap();
             CreateMap<TournamentDescriptionBL, TournamentDescription>().ReverseMap();
-            CreateMap<TournamentPlayerBL, TournamentPlayer>().ReverseMap();
+
+            CreateMap<TournamentPlayer, TournamentPlayerBL>().ForPath(dest=>dest.Player.Stats, opt=>opt.Ignore()).ReverseMap();
+
             CreateMap<TournamentGroupPlayerBL, TournamentGroupPlayer>().ReverseMap();
             CreateMap<TournamentBracketBL, TournamentBracket>().ReverseMap();
 

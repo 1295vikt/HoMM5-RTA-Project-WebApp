@@ -10,13 +10,13 @@ namespace RTA_Project_BL.Services
 {
     public interface ITournamentService : IGenereicService<TournamentBL>
     {
-        IQueryable<TournamentBL> QueryTournaments(int? playerId = null, Expression<Func<TournamentBL, bool>> filterForTournament = null);
+        IQueryable<TournamentBL> QueryTournaments(int? playerId = null, Expression<Func<TournamentBL, bool>>[] filtersForTournament = null);
 
-        IQueryable<MatchBL> QueryTournamentMatches(int? playerId = null, Expression<Func<MatchBL, bool>> filterForMatch = null,
-            Expression<Func<TournamentBL, bool>> filterForTournament = null);
+        IQueryable<MatchBL> QueryTournamentMatches(int? playerId = null, Expression<Func<MatchBL, bool>>[] filtersForMatch = null,
+            Expression<Func<TournamentBL, bool>>[] filtersForTournament = null);
 
-        IQueryable<GameBL> QueryTournamentGames(int? playerId = null, Expression<Func<GameBL, bool>> filterForGame = null,
-            Expression<Func<MatchBL, bool>> filterForMatch = null, Expression<Func<TournamentBL, bool>> filterForTournament = null);
+        IQueryable<GameBL> QueryTournamentGames(int? playerId = null, Expression<Func<GameBL, bool>>[] filtersForGame = null,
+            Expression<Func<MatchBL, bool>>[] filtersForMatch = null, Expression<Func<TournamentBL, bool>>[] filtersForTournament = null);
 
         TournamentBL GetById(int id);
 
@@ -32,7 +32,7 @@ namespace RTA_Project_BL.Services
 
         }
 
-        public IQueryable<TournamentBL> QueryTournaments(int? playerId = null, Expression<Func<TournamentBL, bool>> filterForTournament = null)
+        public IQueryable<TournamentBL> QueryTournaments(int? playerId = null, Expression<Func<TournamentBL, bool>>[] filtersForTournament = null)
         {
             var tournaments = _repository.QueryAll();
 
@@ -41,16 +41,17 @@ namespace RTA_Project_BL.Services
 
             var tournamentsBL = Project(tournaments);
 
-            if (filterForTournament != null)
-                tournamentsBL = tournamentsBL.Where(filterForTournament);
+            if (filtersForTournament != null)
+                foreach (var filter in filtersForTournament)
+                    tournamentsBL = tournamentsBL.Where(filter);
 
             return tournamentsBL;
         }
 
-        public IQueryable<MatchBL> QueryTournamentMatches(int? playerId = null, Expression<Func<MatchBL, bool>> filterForMatch = null,
-            Expression<Func<TournamentBL, bool>> filterForTournament = null)
+        public IQueryable<MatchBL> QueryTournamentMatches(int? playerId = null, Expression<Func<MatchBL, bool>>[] filtersForMatch = null,
+            Expression<Func<TournamentBL, bool>>[] filtersForTournament = null)
         {
-            var tournamentsBL = QueryTournaments(playerId, filterForTournament);
+            var tournamentsBL = QueryTournaments(playerId, filtersForTournament);
 
 
             IQueryable<MatchBL> matchesBL;
@@ -66,21 +67,23 @@ namespace RTA_Project_BL.Services
                 matchesBL = tournamentsBL.SelectMany(t => t.TournamentGroups).SelectMany(gr => gr.Matches);
             }
 
-            if (filterForMatch != null)
-                matchesBL = matchesBL.Where(filterForMatch);
+            if (filtersForMatch != null)
+                foreach (var filter in filtersForMatch)
+                    matchesBL = matchesBL.Where(filter);
 
             return matchesBL;
         }
 
-        public IQueryable<GameBL> QueryTournamentGames(int? playerId = null, Expression<Func<GameBL, bool>> filterForGame = null,
-            Expression<Func<MatchBL, bool>> filterForMatch = null, Expression<Func<TournamentBL, bool>> filterForTournament = null)
+        public IQueryable<GameBL> QueryTournamentGames(int? playerId = null, Expression<Func<GameBL, bool>>[] filtersForGame = null,
+            Expression<Func<MatchBL, bool>>[] filtersForMatch = null, Expression<Func<TournamentBL, bool>>[] filtersForTournament = null)
         {
-            var matchesBL = QueryTournamentMatches(playerId, filterForMatch, filterForTournament);
+            var matchesBL = QueryTournamentMatches(playerId, filtersForMatch, filtersForTournament);
 
             var gamesBL = matchesBL.SelectMany(m => m.Games);
 
-            if (filterForGame != null)
-                gamesBL = gamesBL.Where(filterForGame);
+            if (filtersForGame != null)
+                foreach (var filter in filtersForGame)
+                    gamesBL = gamesBL.Where(filter);
 
             return gamesBL;
         }
@@ -96,7 +99,7 @@ namespace RTA_Project_BL.Services
         {
             var tournament = _repository.FindById(tournamentId);
 
-            if(!tournament.TournamentPlayers.Any(tp=>tp.PlayerId == playerId))
+            if (!tournament.TournamentPlayers.Any(tp => tp.PlayerId == playerId))
             {
                 var tournamentPlayer = new TournamentPlayer { PlayerId = playerId };
                 tournament.TournamentPlayers.Add(tournamentPlayer);

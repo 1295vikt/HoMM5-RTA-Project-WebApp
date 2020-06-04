@@ -1,0 +1,81 @@
+﻿@model RTA_Project_MVC.Models.StatisticsFactionHeroesModel
+
+<div class="col-sm-12" style="padding-bottom:32px">
+
+    <hr />
+
+    <table class="table-bordered">
+
+        <thead>
+            <tr>
+                <th scope="col">
+
+                </th>
+                <th scope="col">
+                    Академия
+                </th>
+                <th scope="col">
+                    Лига Теней
+                </th>
+                <th scope="col">
+                    Северные Кланы
+                </th>
+                <th scope="col">
+                    Орден Порядка
+                </th>
+                <th scope="col">
+                    Инферно
+                </th>
+                <th scope="col">
+                    Некрополис
+                </th>
+                <th scope="col">
+                    Великая Орда
+                </th>
+                <th scope="col">
+                    Лесной Союз
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @for(int i=0; i< Model.HeroNames.Count(); i++)
+            {
+                <tr>
+                    <th scope="row">
+                        @Model.HeroNames[i]
+                    </th>
+
+                    @for (int j = 0; j < 8; j++)
+                    {
+                    <td scope="row">
+                        <span id="games-count">@Model.GamesVsFactionPlayedHero[i][j]</span>
+                        <div><span id="wins-count">@Model.GamesVsFactionWonHero[i][j]</span>/<span id="loses-count">@Model.GamesVsFactionLostHero[i][j]</span></div>
+                        <span id="win-percent">@Model.WinrateVsFactionHero[i][j]%</span>
+                    </td>
+                    }
+
+                </tr>
+            }
+            <tr>
+                <th scope="row">
+                    Всего
+                </th>
+
+                @for (int i = 0; i < 8; i++)
+                {
+                <td scope="row">
+                    <span id="games-count">@Model.GamesVsFactionPlayed[i]</span>
+                    <div><span id="wins-count">@Model.GamesVsFactionWon[i]</span>/<span id="loses-count">@Model.GamesVsFactionLost[i]</span></div>
+                    <span id="win-percent">@Model.WinrateVsFaction[i]%</span>
+                </td>
+                }
+
+            </tr>
+
+
+        </tbody>
+    </table>
+
+</div>
+

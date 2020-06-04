@@ -1,9 +1,58 @@
-﻿@model RTA_Project_MVC.Models.StatisticsViewModel
+﻿@model RTA_Project_MVC.Models.StatisticsFilterModel
 
 <h2>Статистика</h2>
 
-<div>
-    
+<hr />
+
+@using (Ajax.BeginForm("GetStatistics", new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "stats-table", InsertionMode = InsertionMode.Replace }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div class="form-group">
+            <div class="col-md-6">
+
+                <div>
+                    <p><input type="radio" name="GetForSingleFaction" checked="checked"><label>По всем фракциям</label></p>
+                    <p>
+                        <div>
+                            @Html.RadioButtonFor(model => model.GetForSingleFaction, true)<label>По фракции и героям</label>
+                            <div id="filter-dropdown">@Html.DropDownListFor(model => model.FactionId, Model.Factions, new { disabled = "disabled" })</div>
+                        </div>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <p>
+                    <label>За период времени</label>
+                    @Html.CheckBoxFor(model => model.FilterByDate, new { id = "filter-checkbox" })
+                </p>
+
+                <p>
+                    <label>c</label>@Html.EditorFor(model => model.DateFrom, new { htmlAttributes = new { disabled = "disabled" } })
+                    <label>по</label>@Html.EditorFor(model => model.DateTo, new { htmlAttributes = new { disabled = "disabled" } })
+                    <div>@Html.ValidationMessageFor(model => model.DateFrom, "", new { @class = "text-danger" })</div>
+                    <div>@Html.ValidationMessageFor(model => model.DateTo, "", new { @class = "text-danger" })</div>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-12"><input type="submit" value="Поиск" class="btn btn-default" /></div>
+}
+
+<div id="stats-table"></div>
 
 
-</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/jquery.unobtrusive-ajax.js")
+
+    @Scripts.Render("~/Scripts/statistics-view.js")
+
+}
