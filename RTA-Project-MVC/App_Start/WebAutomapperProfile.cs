@@ -20,7 +20,7 @@ namespace RTA_Project_MVC.App_Start
 
             CreateMap<TournamentBL, TournamentDetailsModel>().ForMember(dest => dest.TournamentPlayers,
                 opt => opt.MapFrom(src => src.TournamentPlayers.Select(tp => tp.Player.Name))).
-                ForMember(dest => dest.Content, opt => opt.MapFrom(src => src.Description.ContentRus)).ReverseMap();
+                ForMember(dest => dest.Content, opt => opt.MapFrom(src => src==null ? "" : src.Description.ContentRus)).ReverseMap();
 
             // TODO: change content to support ENG
 

@@ -45,7 +45,7 @@ namespace RTA_Project_MVC.Models
 
 
         [Required(AllowEmptyStrings=false, ErrorMessage = "{0} не должно быть пустым")]
-        [MaxLength(8000)]
+        [MaxLength(10000)]
         [Display(Name = "Описание турнира")]
         public string ContentRus { get; set; }
 
@@ -89,7 +89,16 @@ namespace RTA_Project_MVC.Models
         public string NameRus { get; set; }
         public string NameEng { get; set; }
 
+        [Display(Name = "Версия карты")]
+        public string MapVersion { get; set; }
+
         public bool IsActive { get; set; }
+        public bool IsFinished { get; set; }
+
+
+        public bool IsOfficial { get; set; }
+        public bool IsSeasonal { get; set; }
+        public bool IsPrivate { get; set; }
     }
 
     public class TournamentDetailsModel
@@ -102,24 +111,23 @@ namespace RTA_Project_MVC.Models
         [Display(Name = "Версия карты")]
         public string MapVersion { get; set; }
 
-        //public bool IsActive { get; set; }
-        //public bool Is2Stage { get; set; }
+        public bool IsActive { get; set; }
+        public bool IsFinished { get; set; }    
 
-        //public TournamentGroupFormat Stage1Format { get; set; }
-        //public TournamentGroupFormat Stage2Format { get; set; }
+        public bool IsOfficial { get; set; }
+        public bool IsSeasonal { get; set; }
+        public bool IsPrivate { get; set; }
 
-        //public bool IsOfficial { get; set; }
-        //public bool IsSeasonal { get; set; }
-        //public bool IsPrivate { get; set; }
-
+        [Display(Name = "Дата создания")]
         public DateTime? DateCreated { get; set; }
 
-        public string HostsId { get; set; }
+        [Display(Name = "Организаторы")]
+        public IEnumerable<string> TournamentHosts { get; set; }
 
-        //public ICollection<SelectListItem> TournamentGroups { get; set; }
-
+        [Display(Name = "Участники")]
         public IEnumerable<string> TournamentPlayers { get; set; }
 
+        [Display(Name = "Описание")]
         public string Content { get; set; }
 
     }

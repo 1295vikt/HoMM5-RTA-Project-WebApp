@@ -202,8 +202,40 @@ hr {
     z-index: 2;
 }
 
+/* Tournaments */
+#act-scroll a:link,
+#act-scroll a:active,
+#act-scroll a:visited {
+    color: #873420;
+}
 
+#act-scroll a:hover {
+    color: #c00;
+}
 
+#scroll-tab {
+    background: url('../Resources/scroll.png') top left no-repeat;
+    padding: 16px 18px 30px 20px;
+    margin: 20px;
+    width: 328px;
+    height: 222px;
+    display: inline-block;
+}
+
+#scroll-details {
+    font-size: 16px;
+    color: black;
+}
+
+    #scroll-details > dt {
+        padding-left: 18px;
+        text-align: left;
+        width: 140px;
+    }
+
+    #scroll-details > dd {
+        margin-left: 0;
+    }
 
 #ltcorn {
     position: absolute;
@@ -335,11 +367,11 @@ hr {
         background: url('../Resources/ui/jog/HeroDisabled.png') no-repeat;
     }
 
-    .jog-btn.upper.right:active {
+    .jog-btn.upper.right.reg-btn:active {
         background: url('../Resources/ui/jog/GuildPushed.png') no-repeat;
     }
 
-    .jog-btn.upper.right#grayed-out {
+    .jog-btn.upper.right.reg-btn#grayed-out {
         background: url('../Resources/ui/jog/GuildDisabled.png') no-repeat;
     }
 
@@ -371,10 +403,15 @@ hr {
                 background: url('../Resources/ui/jog/CogsDisabled.png') no-repeat;
             }
 
+    .jog-btn.upper.right.adm-btn {
+        background: url('../Resources/ui/jog/CrownNormal.png') no-repeat;
+    }
 
+        .jog-btn.upper.right.adm-btn:active {
+            background: url('../Resources/ui/jog/CrownPushed.png') no-repeat;
+        }
 
     /* Tournament hosts */
-
     .jog-btn.plus-btn {
         position: relative;
         display: inline-block;
@@ -421,7 +458,7 @@ hr {
     padding-right: 60px;
     position: relative;
     margin-top: -56px;
-    padding-bottom: 22px;
+    padding-bottom: 25px;
     z-index: 3;
 }
 

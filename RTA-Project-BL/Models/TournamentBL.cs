@@ -15,7 +15,6 @@ namespace RTA_Project_BL.Models
         public int Season { get; set; }
 
         public bool IsActive { get; set; }
-        public bool IsInSecondStage { get; set; }
         public bool IsFinished { get; set; }
         public bool IsOfficial { get; set; }
         public bool IsSeasonal { get; set; }

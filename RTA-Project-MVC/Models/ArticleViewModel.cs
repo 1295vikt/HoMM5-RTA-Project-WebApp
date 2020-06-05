@@ -20,7 +20,7 @@ namespace RTA_Project_MVC.Models
 
         [Display(Name = "Содержание")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "{0} не должно быть пустым")]
-        [MaxLength(8000)]
+        [MaxLength(10000)]
         public string Content { get; set; }
 
         public string AuthorId { get; set; }

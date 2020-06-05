@@ -20,8 +20,6 @@ namespace RTA_Project_DAL.Models
         [DefaultValue(false)]
         public bool IsActive { get; set; }
         [DefaultValue(false)]
-        public bool IsInSecondStage { get; set; }
-        [DefaultValue(false)]
         public bool IsFinished { get; set; }
         [DefaultValue(false)]
         public bool IsOfficial { get; set; }

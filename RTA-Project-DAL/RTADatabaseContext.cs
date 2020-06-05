@@ -1,9 +1,11 @@
 ﻿using RTA_Project_DAL.Models;
+using RTA_Project_DAL.Seed;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace RTA_Project_DAL
 {
+
     public class RTADatabaseContext : DbContext
     {
         public RTADatabaseContext() : base(@"Data Source = .\SQLEXPRESS;integrated security = true; initial catalog = RTA")
@@ -15,7 +17,6 @@ namespace RTA_Project_DAL
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
-
 
         }
 

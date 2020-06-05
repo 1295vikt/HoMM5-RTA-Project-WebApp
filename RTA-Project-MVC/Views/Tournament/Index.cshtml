@@ -1,17 +1,47 @@
-﻿@model IEnumerable<RTA_Project_MVC.Models.TournamentPreviewModel>
+﻿@model PagedList.IPagedList<RTA_Project_MVC.Models.TournamentPreviewModel>
+@using PagedList.Mvc
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
 
 <h2>Турниры</h2>
 
+<hr />
+
+@if (User.IsInRole("Host"))
+{
+    <button class="btn btn-default" onclick="window.location.href='@Url.Action("Create")'">Создать</button>
+}
+
 <div>
 
-    <h3>Текущие турниры :</h3>
     @foreach (var item in Model)
     {
-        <div class="row">
-            <a href="@Url.Action("Details", "Tournament", new { id=item.Id })">@item.NameRus</a>
+        <div class="col-md-6" id="act-scroll">
+            <a href="@Url.Action("Details", "Tournament", new { id=item.Id, style="none;" })">
+                <div id="scroll-tab">
+                    <center><h4><b>@item.NameRus</b></h4></center>
+
+                    <dl class="dl-horizontal" id="scroll-details">
+                        <dt>
+                            @Html.DisplayNameFor(model => item.MapVersion):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => item.MapVersion)
+                        </dd>
+
+
+                    </dl>
+
+                </div>
+            </a>
         </div>
     }
 
+    <br />
+    <div class="col-md-12">
+
+        <label>Страница @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) из @Model.PageCount</label>
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+    </div>
 
 </div>
 

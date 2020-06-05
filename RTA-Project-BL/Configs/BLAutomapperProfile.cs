@@ -16,7 +16,12 @@ namespace RTA_Project_BL.Configs
             CreateMap<TournamentGroupBL, TournamentGroup>().ReverseMap();
             CreateMap<TournamentDescriptionBL, TournamentDescription>().ReverseMap();
 
-            CreateMap<TournamentPlayer, TournamentPlayerBL>().ForPath(dest=>dest.Player.Stats, opt=>opt.Ignore()).ReverseMap();
+            CreateMap<TournamentPlayer, TournamentPlayerBL>().ForPath(dest => dest.Player, opt =>
+               {
+                   opt.Condition(src => src.SourceMember != null);
+                   opt.MapFrom(src => src.Player);
+               });
+            CreateMap<TournamentPlayerBL, TournamentPlayer>();
 
             CreateMap<TournamentGroupPlayerBL, TournamentGroupPlayer>().ReverseMap();
             CreateMap<TournamentBracketBL, TournamentBracket>().ReverseMap();
@@ -32,28 +37,29 @@ namespace RTA_Project_BL.Configs
 
             CreateMap<PlayerBL, Player>().ReverseMap();
 
-            CreateMap<PlayerStats, PlayerStatsBL>().ForMember(dest => dest.GamesPlayedFaction, opt => opt.MapFrom(src => new int[]
-            {
-                src.GamesAsAcademy,
-                src.GamesAsDungeon,
-                src.GamesAsFortress,
-                src.GamesAsHaven,
-                src.GamesAsInferno,
-                src.GamesAsNecropolis,
-                src.GamesAsStronghold,
-                src.GamesAsSylvan
-            })).
-            ForMember(dest => dest.GamesWonFaction, opt => opt.MapFrom(src => new int[]
-            {
-                src.WinsAsAcademy,
-                src.WinsAsDungeon,
-                src.WinsAsFortress,
-                src.WinsAsHaven,
-                src.WinsAsInferno,
-                src.WinsAsNecropolis,
-                src.WinsAsStronghold,
-                src.WinsAsSylvan
-            }));
+            CreateMap<PlayerStats, PlayerStatsBL>().
+                ForMember(dest => dest.GamesPlayedFaction, opt => opt.MapFrom(src => new int[]
+                {
+                    src.GamesAsAcademy,
+                    src.GamesAsDungeon,
+                    src.GamesAsFortress,
+                    src.GamesAsHaven,
+                    src.GamesAsInferno,
+                    src.GamesAsNecropolis,
+                    src.GamesAsStronghold,
+                    src.GamesAsSylvan
+                })).
+                ForMember(dest => dest.GamesWonFaction, opt => opt.MapFrom(src => new int[]
+                {
+                    src.WinsAsAcademy,
+                    src.WinsAsDungeon,
+                    src.WinsAsFortress,
+                    src.WinsAsHaven,
+                    src.WinsAsInferno,
+                    src.WinsAsNecropolis,
+                    src.WinsAsStronghold,
+                    src.WinsAsSylvan
+                })).ReverseMap();
 
             CreateMap<MapBL, Map>().ReverseMap();
 

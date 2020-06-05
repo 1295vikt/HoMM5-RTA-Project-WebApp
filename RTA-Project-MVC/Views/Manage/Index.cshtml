@@ -1,16 +1,13 @@
 ﻿@model RTA_Project_MVC.Models.IndexViewModel
-@{
-    ViewBag.Title = "Manage";
-}
 
-<h2>@ViewBag.Title.</h2>
+<h2>Управление учетной записью</h2>
 
 <p class="text-success">@ViewBag.StatusMessage</p>
 <div>
     <h4>Настройки учетной записи</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>Password:</dt>
+        <dt>Пароль</dt>
         <dd>
             [
             @if (Model.HasPassword)

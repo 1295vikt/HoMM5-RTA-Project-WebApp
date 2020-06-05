@@ -6,16 +6,14 @@
 
     @foreach (var item in Model)
     {
-        <div>
+        <div class="row">
             <center><label id="news-header">@item.Title</label></center>
-            <div class="container">
-                <div class="row" style="padding: 0 32px;">  
+                <div class="col-md-12 col-sm-8 col-xs-6" style="padding: 0 32px;">  
                     <div>
                         <label>@String.Format("{0:MM/dd/yyyy}", item.Date)</label>
-                        @Html.Raw(WebUtility.HtmlDecode(item.Content))
+                        <div>@Html.Raw(WebUtility.HtmlDecode(item.Content))</div>
                     </div>
                 </div>
-            </div>
         </div>
     }
 

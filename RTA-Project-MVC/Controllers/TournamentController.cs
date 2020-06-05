@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
+using PagedList;
 using RTA_Project_BL.Models;
 using RTA_Project_BL.Services;
 using RTA_Project_MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Web;
 using System.Web.Mvc;
 
@@ -30,23 +30,39 @@ namespace RTA_Project_MVC.Controllers
 
 
         // GET: Tournament
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
-            var tr = _tournamentService.QueryTournamentMatches().ToList();
+            int pageSize = 6;
+            int pageNumber = (page ?? 1);
 
-            var tournamentsBL = _tournamentService.QueryTournaments(null, new Expression<Func<TournamentBL,bool>>[] { t => !t.IsFinished } ).ToList();
+            var tournamentsBL = _tournamentService.QueryAll().OrderByDescending(t => t.DateCreated);
+            var tournamentsPageBL = tournamentsBL.ToPagedList(pageNumber, pageSize);
 
-            var tournaments = _mapper.Map<IEnumerable<TournamentPreviewModel>>(tournamentsBL);
+            var mappedList = _mapper.Map<IEnumerable<TournamentPreviewModel>>(tournamentsPageBL);
 
-            return View(tournaments);
+            var pagedResult = new StaticPagedList<TournamentPreviewModel>(mappedList, tournamentsPageBL.GetMetaData());
+
+            return View(pagedResult);
         }
 
         // GET: Tournament/Details/5
         public ActionResult Details(int id)
         {
             var tournamentBL = _tournamentService.GetById(id);
+            var hostsId = tournamentBL.HostsId.Split(';');
 
             var tournament = _mapper.Map<TournamentDetailsModel>(tournamentBL);
+
+            var userManager = Request.GetOwinContext().GetUserManager<ApplicationUserManager>();
+            var hosts = new List<string>();
+            foreach (var hostId in hostsId)
+            {
+                var host = userManager.Users.FirstOrDefault(u => u.UserName == hostId);
+                if (host != null)
+                    hosts.Add(host.UserName);
+            }
+
+            tournament.TournamentHosts = hosts;
 
             return View(tournament);
         }
@@ -119,12 +135,6 @@ namespace RTA_Project_MVC.Controllers
             {
                 return View();
             }
-        }
-
-        // GET: Tournament/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
         }
 
         // POST: Tournament/Delete/5

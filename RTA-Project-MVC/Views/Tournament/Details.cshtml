@@ -25,9 +25,19 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.TournamentPlayers)
+            @Html.DisplayNameFor(model => model.TournamentHosts)
         </dt>
 
+        @foreach (var item in Model.TournamentHosts)
+        {
+            <dd>
+                @item
+            </dd>
+        }
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TournamentPlayers)
+        </dt>
 
         @foreach (var item in Model.TournamentPlayers)
         {
