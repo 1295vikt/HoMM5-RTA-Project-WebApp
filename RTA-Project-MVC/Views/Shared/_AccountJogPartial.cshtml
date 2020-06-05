@@ -31,19 +31,30 @@
 
         <div class="jog-5">
 
-            <a class="jog-btn upper left" href="@Url.Action("Index","Profile")"></a>
+            <a class="jog-btn upper left" href="@Url.Action("Index","Profile")">
+                <span class="tooltiptext">Мой профиль</span>
+            </a>
             @if (User.IsInRole("Admin"))
             {
-                <a class="jog-btn upper right adm-btn" href="@Url.Action("Index","UsersAdmin")"></a>
+            <a class="jog-btn upper right adm-btn" href="@Url.Action("Index","UsersAdmin")">
+                <span class="tooltiptext">Админ</span>
+            </a>
             }
             else
             {
                 <a class="jog-btn upper right reg-btn" id="grayed-out"></a>
             }
 
-            <a class="jog-btn center" href="javascript:document.getElementById('logoutForm').submit()"></a>
-            <a class="jog-btn lower left" href="#"></a>
-            <a class="jog-btn lower right" href="@Url.Action("Index","Manage")"></a>
+                <a class="jog-btn center" href="javascript:document.getElementById('logoutForm').submit()">
+                    <span class="tooltiptext">Выход</span>
+                </a>
+
+                <a class="jog-btn lower left" href="#">
+                    <span class="tooltiptext">Мои матчи</span>
+                </a>
+                <a class="jog-btn lower right" href="@Url.Action("Index","Manage")">
+                    <span class="tooltiptext">Настройки аккаунта</span>
+                </a>
 
         </div>
 
@@ -52,17 +63,19 @@
 
 else
 {
-
     <label id="greetings-panel">Гость</label>
 
     <div class="jog-5">
 
         <a class="jog-btn upper left" id="grayed-out"></a>
-        <a class="jog-btn upper right reg-btn" href="@Url.Action("Register","Account")"></a>
-        <a class="jog-btn center" href="@Url.Action("LogIn","Account")"></a>
+        <a class="jog-btn upper right reg-btn" href="@Url.Action("Register","Account")">
+            <span class="tooltiptext">Регистрация</span>
+        </a>
+        <a class="jog-btn center" href="@Url.Action("LogIn","Account")">
+            <span class="tooltiptext">Вход</span>
+        </a>
         <a class="jog-btn lower left" id="grayed-out"></a>
         <a class="jog-btn lower right" id="grayed-out"></a>
-
 
     </div>
 

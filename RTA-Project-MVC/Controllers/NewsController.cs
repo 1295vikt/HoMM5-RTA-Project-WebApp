@@ -110,20 +110,12 @@ namespace RTA_Project_MVC.Controllers
 
         // POST: News/Delete/5
         [HttpDelete]
-        [Authorize]
+        [Authorize(Roles = "Host")]
         public ActionResult Delete(int id)
         {
+            _articleService.Delete(id);
 
-            var userId = User.Identity.GetUserId();
-
-            var authorId = _articleService.FindById(id).AuthorId;
-
-            if (authorId == userId)
-                _articleService.Delete(id);
-            else
-                RedirectToAction("LogIn", "Account");
-
-            return View();
+            return new EmptyResult();
         }
     }
 }

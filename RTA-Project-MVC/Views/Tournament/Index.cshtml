@@ -16,7 +16,7 @@
     @foreach (var item in Model)
     {
         <div class="col-md-6" id="act-scroll">
-            <a href="@Url.Action("Details", "Tournament", new { id=item.Id, style="none;" })">
+            <a href="@Url.Action("Details", "Tournament", new { id=item.Id })">
                 <div id="scroll-tab">
                     <center><h4><b>@item.NameRus</b></h4></center>
 

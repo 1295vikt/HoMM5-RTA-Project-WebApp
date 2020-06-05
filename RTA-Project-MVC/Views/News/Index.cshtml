@@ -4,33 +4,35 @@
 
 <h2>Новости</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+@if (User.IsInRole("Host"))
+{
+    <button class="btn btn-default" onclick="window.location.href='@Url.Action("Create")'">Добавить</button>
+}
 
-<table class="table">
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.Raw(WebUtility.HtmlDecode(item.Content))
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Ajax.ActionLink("Delete", "Delete", new { id = item.Id }, new AjaxOptions { HttpMethod = "DELETE", OnSuccess = "" })
-            </td>
-        </tr>
-    }
+@foreach (var item in Model)
+{
 
-</table>
+    <div class="row" id="@item.Id">
+        <center><label id="news-header">@item.Title</label></center>
+        <div class="col-md-12 col-sm-8 col-xs-6" style="padding: 0 32px;">
+            <div>
+                <label>@String.Format("{0:dd/MM/yyyy}", item.Date)</label>
+                <div>@Html.Raw(WebUtility.HtmlDecode(item.Content))</div>
+            </div>
+
+            @if (User.IsInRole("Host"))
+            {
+                <span>@Html.ActionLink("Редактировать", "Edit", new { id = item.Id }) |</span>
+                <span>@Ajax.ActionLink("Удалить", "Delete", new { id = item.Id }, new AjaxOptions
+                 { HttpMethod = "DELETE", UpdateTargetId=item.Id.ToString(), InsertionMode= InsertionMode.Replace})</span>
+            }
+
+        </div>
+    </div>
+
+}
+
 
 <br />
 Страница @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) из @Model.PageCount

@@ -49,19 +49,22 @@ namespace RTA_Project_MVC.Controllers
         public ActionResult Details(int id)
         {
             var tournamentBL = _tournamentService.GetById(id);
-            var hostsId = tournamentBL.HostsId.Split(';');
 
             var tournament = _mapper.Map<TournamentDetailsModel>(tournamentBL);
 
-            var userManager = Request.GetOwinContext().GetUserManager<ApplicationUserManager>();
             var hosts = new List<string>();
-            foreach (var hostId in hostsId)
+            if (tournamentBL.HostsId != null)
             {
-                var host = userManager.Users.FirstOrDefault(u => u.UserName == hostId);
-                if (host != null)
-                    hosts.Add(host.UserName);
-            }
+                var hostsId = tournamentBL.HostsId.Split(';');
 
+                var userManager = Request.GetOwinContext().GetUserManager<ApplicationUserManager>();               
+                foreach (var hostId in hostsId)
+                {
+                    var host = userManager.Users.FirstOrDefault(u => u.Id == hostId);
+                    if (host != null)
+                        hosts.Add(host.UserName);
+                }               
+            }
             tournament.TournamentHosts = hosts;
 
             return View(tournament);
@@ -104,8 +107,8 @@ namespace RTA_Project_MVC.Controllers
             if (selectedHost == null)
                 selectedHost = new string[] { };
 
-            selectedHost.Prepend(User.Identity.GetUserId());
-            modelBL.HostsId = string.Join(";", selectedHost);
+            var userId = User.Identity.GetUserId();
+            modelBL.HostsId = $"{userId};{string.Join(";", selectedHost)}";
             modelBL.DateCreated = DateTime.Now;
 
             _tournamentService.Create(modelBL);

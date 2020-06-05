@@ -778,11 +778,6 @@ HRTA 1.95
 [open]dexterwar vs Rodfeller; Ranger, Ylthin > Knight, Valeria (HRTA 1.95); Knight, Isabel > Warlock, Eruina (HRTA 1.95); Necromancer, Markal > Warlock, Yrwanna (HRTA 1.95);3 - 0;2015.05.05[/open]
 [open]gregarah vs mizargurus; Inferno, Nebiros < Barbarian, Garuna (HRTA 1.95); Knight, Lazlo < Runemage, Inga (HRTA 1.95); Runemage, Ingvar > Ranger, Ghost (HRTA 1.95); Runemage, Ingvar > Knight, Maeve (HRTA 1.95); Inferno, Nebiros > Ranger, Ylthin (HRTA 1.95);3 - 2;2015.05.07[/open]
 [open]Isile vs Hero_of_heroes; Runemage, Helmar > Necromancer, Markal (HRTA 1.95); Knight, Irina > Warlock, Raelag (HRTA 1.95); Wizard, Jhora < Warlock, Sinitar (HRTA 1.95); Runemage, Rolf > Ranger, Talanar (HRTA 1.95);3 - 1;2015.05.11[/open]
-[open]iMessor vs iMessor; Wizard, Jhora < Inferno, Grok (HRTA 1.5); Necromancer, Raven > Necromancer, Arantir (HRTA 1.5); Necromancer, Arantir > Knight, Irina (HRTA 1.5); Warlock, Shadya < Ranger, Alaron (HRTA 1.5); Barbarian, Telsek < Barbarian, Kilghan (HRTA 1.5);2 - 3;2015.05.12[/open]
-[open]iMessor vs iMessor; Ranger, Anwen > Ranger, Ylthin (HRTA 1.5); Wizard, Nur > Necromancer, Deirdre (HRTA 1.5); Runemage, Svea > Ranger, Findan (HRTA 1.5);3 - 0;2015.05.12[/open]
-[open]iMessor vs iMessor; Necromancer, Deirdre > Ranger, Ylthin (HRTA 1.5); Warlock, Vayshan < Runemage, Ebba (HRTA 1.5); Ranger, Ylthin > Knight, Nicolai (HRTA 1.5); Necromancer, Lucretia > Knight, Dougal (HRTA 1.5);3 - 1;2015.05.12[/open]
-[open]iMessor vs iMessor; Ranger, Anwen > Ranger, Sinitar (HRTA 1.5); Inferno, Jezebeth > Barbarian, Kujin (HRTA 1.5); Barbarian, Kilghan > Knight, Rutger (HRTA 1.5);3 - 0;2015.05.12[/open]
-[open]iMessor vs iMessor; Wizard, Cyrus > Inferno, Agrael (HRTA 1.5); Necromancer, Lucretia > Runemage, Brand (HRTA 1.5); Warlock, Shadya < Knight, Irina (HRTA 1.5); Necromancer, Orson > Necromancer, Klaus (HRTA 1.5);3 - 1;2015.05.12[/open]
 [open]Vsev vs Isile; Wizard, Jhora > Knight, Rutger (HRTA 1.95); Barbarian, Urghat < Ranger, Gilrean (HRTA 1.95); Barbarian, Kujin < Knight, Lazlo (HRTA 1.95); Knight, Vittorio > Necromancer, Zoltan (HRTA 1.95); Wizard, Razzak > Knight, Nicolai (HRTA 1.95);3 - 2;2015.05.12[/open]
 @tourn@
 Летний Тактический Турнир 2015

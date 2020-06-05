@@ -55,7 +55,7 @@ namespace RTA_Project_MVC.Models
     {
         [Display(Name = "Никнейм")]
         [StringLength(20, ErrorMessage = "Допустимая длина: {2}-{1} символов", MinimumLength = 3)]
-        [RegularExpression(@"^[^\\/:\*\?\""<>\|;%$()@№#^&+=!~{}[\]]+$", ErrorMessage = @"Имя содержит недопустимые символы")]
+        [RegularExpression(@"[a-zA-Zа-яА-Я0-9_ ]+$", ErrorMessage = @"Имя содержит недопустимые символы")]
         [Remote("CheckIfNameExists", "Profile", ErrorMessage = "Игрок с таким именем уже существует")]
         public string Nickname { get; set; }
 
