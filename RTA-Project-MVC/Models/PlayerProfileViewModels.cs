@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
@@ -56,7 +55,7 @@ namespace RTA_Project_MVC.Models
         [Display(Name = "Никнейм")]
         [StringLength(20, ErrorMessage = "Допустимая длина: {2}-{1} символов", MinimumLength = 3)]
         [RegularExpression(@"[a-zA-Zа-яА-Я0-9_ ]+$", ErrorMessage = @"Имя содержит недопустимые символы")]
-        [Remote("CheckIfNameExists", "Profile", ErrorMessage = "Игрок с таким именем уже существует")]
+        [Remote("CheckNameIsTaken", "Profile", ErrorMessage = "Игрок с таким именем уже существует")]
         public string Nickname { get; set; }
 
     }
@@ -66,7 +65,7 @@ namespace RTA_Project_MVC.Models
     {
         [Display(Name = "Ключ")]
         [StringLength(36, ErrorMessage = "Неверная длина ключа", MinimumLength = 36)]
-        [Remote("CheckIfKeyExists", "Profile", ErrorMessage = "Игрок с данным ключом не найден")]
+        [Remote("CheckKeyIsInvalid", "Profile", ErrorMessage = "Игрок с данным ключом не найден")]
         public string GuidKey { get; set; }
     }
 

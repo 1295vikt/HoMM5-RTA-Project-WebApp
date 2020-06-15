@@ -8,7 +8,7 @@ namespace RTA_Project_BL.Services
 {
     public interface IArticleService : IGenereicService<ArticleBL>
     {
-        IQueryable<ArticleBL> QueryArticles(byte lang);
+        IQueryable<ArticleBL> QueryArticles(int lang);
         ArticleBL GetById(int id);
     }
 
@@ -27,7 +27,7 @@ namespace RTA_Project_BL.Services
             return articleBL;
         }
 
-        public IQueryable<ArticleBL> QueryArticles(byte lang)
+        public IQueryable<ArticleBL> QueryArticles(int lang)
         {
             var articles = _repository.Query(x => x.LangId == lang, q => q.OrderByDescending(s => s.Date));
             return Project(articles);

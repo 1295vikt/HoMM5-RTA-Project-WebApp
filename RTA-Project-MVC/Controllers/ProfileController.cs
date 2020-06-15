@@ -113,14 +113,14 @@ namespace RTA_Project_MVC.Controllers
 
 
 
-        public JsonResult CheckIfNameExists(string Nickname)
+        public JsonResult CheckNameIsTaken(string Nickname)
         {
-            return Json(!_playerService.QueryAll().Any(p => p.Name == Nickname), JsonRequestBehavior.AllowGet);
+            return Json(!_playerService.CheckIfNameExists(Nickname), JsonRequestBehavior.AllowGet);
         }
 
-        public JsonResult CheckIfKeyExists(string GuidKey)
+        public JsonResult CheckKeyIsInvalid(string GuidKey)
         {
-            return Json(_playerService.QueryAll().Any(p => p.GuidKey == GuidKey), JsonRequestBehavior.AllowGet);
+            return Json(_playerService.CheckIfKeyExists(GuidKey), JsonRequestBehavior.AllowGet);
         }
 
     }

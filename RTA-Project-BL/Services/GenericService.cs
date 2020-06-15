@@ -18,7 +18,7 @@ namespace RTA_Project_BL.Services
         void Update(BLModel modelBL);
     }
 
-    public class GenericService<BLModel, DModel> : IGenereicService<BLModel>
+    public abstract class GenericService<BLModel, DModel> : IGenereicService<BLModel>
         where BLModel : class
         where DModel : class
     {
@@ -46,7 +46,6 @@ namespace RTA_Project_BL.Services
         public IQueryable<BLModel> QueryAll()
         {
             var listEntity = _repository.QueryAll();
-            var ewq = listEntity.ToList();
             return Project(listEntity);
         }
 
@@ -67,7 +66,6 @@ namespace RTA_Project_BL.Services
             var entity = Map(modelBL);
             _repository.Update(entity);
         }
-
 
 
         public BLModel Map(DModel model)

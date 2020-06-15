@@ -2,6 +2,7 @@
 using RTA_Project_BL.Models;
 using RTA_Project_DAL.Models;
 using RTA_Project_DAL.Repositories;
+using System.Linq;
 
 namespace RTA_Project_BL.Services
 {
@@ -10,6 +11,9 @@ namespace RTA_Project_BL.Services
         PlayerBL GetByName(string name);
         PlayerBL GetByAccountId(string userId);
         void LinkAccountToPlayer(string userId, string playerKey);
+
+        bool CheckIfNameExists(string name);
+        bool CheckIfKeyExists(string key);
     }
 
     public class PlayerService : GenericService<PlayerBL, Player>, IPlayerService
@@ -28,7 +32,7 @@ namespace RTA_Project_BL.Services
 
         public PlayerBL GetByAccountId(string userId)
         {
-            var player = _repository.GetFirstOrDefault(p => p.AccountId != null && p.AccountId == userId, p => p.Stats);
+            var player = _repository.GetFirstOrDefault(p => p.AccountId == userId, p => p.Stats);
             return Map(player);
         }
 
@@ -41,6 +45,16 @@ namespace RTA_Project_BL.Services
                 _repository.Update(player);
             }
 
+        }
+
+        public bool CheckIfNameExists(string name)
+        {
+            return _repository.QueryAll().Any(p => p.Name == name);
+        }
+
+        public bool CheckIfKeyExists(string key)
+        {
+            return _repository.QueryAll().Any(p => p.GuidKey == key);
         }
     }
 }

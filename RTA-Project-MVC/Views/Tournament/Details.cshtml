@@ -47,13 +47,13 @@
                     if (item != Model.TournamentPlayers.Last())
                     {@(", ")}
 
-            }
+                }
 
             </div>
         </div>
     </div>
 
-        @Html.Raw(WebUtility.HtmlDecode(Model.Content))
+    @Html.Raw(WebUtility.HtmlDecode(Model.Content))
 
     @if (!Model.IsFinished && !Model.IsActive)
     {

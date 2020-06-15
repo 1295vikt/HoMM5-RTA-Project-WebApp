@@ -33,7 +33,7 @@ namespace RTA_Project_MVC.Controllers
             int pageSize = 6;
             int pageNumber = (page ?? 1);
 
-            var articlesBL = _articleService.QueryArticles((byte)Lang.Rus);
+            var articlesBL = _articleService.QueryArticles((int)Lang.Rus);
             var articlesPageBL = articlesBL.ToPagedList(pageNumber, pageSize);
 
             var mappedList = _mapper.Map<IEnumerable<ArticleViewModel>>(articlesPageBL);
@@ -93,7 +93,7 @@ namespace RTA_Project_MVC.Controllers
 
         // POST: News/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, ArticleViewModel model)
+        public ActionResult Edit(ArticleViewModel model)
         {
             if (!ModelState.IsValid)
             {

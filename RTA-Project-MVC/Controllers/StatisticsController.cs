@@ -45,7 +45,7 @@ namespace RTA_Project_MVC.Controllers
 
             if (!model.GetForSingleFaction)
             {
-                var games = _tournamentService.QueryTournamentGames(null, filtersForGames.ToArray());
+                var games = _tournamentService.GetTournamentGames(null, filtersForGames.ToArray());
 
                 if (model.FilterByDate)
                     games = games.Where(g => g.DateSubmitted >= model.DateFrom && g.DateSubmitted <= model.DateTo);
@@ -64,7 +64,7 @@ namespace RTA_Project_MVC.Controllers
                 Expression<Func<GameBL, bool>> factionFilter = g => g.Faction1Id == factionId || g.Faction2Id == factionId;
                 filtersForGames.Add(factionFilter);
 
-                var games = _tournamentService.QueryTournamentGames(null, filtersForGames.ToArray());
+                var games = _tournamentService.GetTournamentGames(null, filtersForGames.ToArray());
 
 
                 var statsModel = _statsHelper.RecoverFactionHeroesStats(games.ToList(), factionId, heroesId);
